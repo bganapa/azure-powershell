@@ -2709,24 +2709,50 @@
             Initializes a new instance of the DefinitionTemplates class.
             </summary>
         </member>
-        <member name="T:Microsoft.AzureStack.Management.Models.Extension">
+        <member name="T:Microsoft.AzureStack.Management.Models.ExtensionCollectionDefinition">
+            <summary>
+            The manifest extension collection definition.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionCollectionDefinition.Extensions">
+            <summary>
+            Optional. Gets or sets the extensions.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionCollectionDefinition.Version">
+            <summary>
+            Optional. Gets or sets the version.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AzureStack.Management.Models.ExtensionCollectionDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the ExtensionCollectionDefinition
+            class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AzureStack.Management.Models.ExtensionDefinition">
             <summary>
             The resource provider extension.
             </summary>
         </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.Extension.Name">
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionDefinition.Name">
             <summary>
             Optional. Gets or sets the name.
             </summary>
         </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.Extension.Uri">
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionDefinition.Properties">
+            <summary>
+            Optional. Gets or sets the extension properties.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionDefinition.Uri">
             <summary>
             Optional. Gets or sets the Uri.
             </summary>
         </member>
-        <member name="M:Microsoft.AzureStack.Management.Models.Extension.#ctor">
+        <member name="M:Microsoft.AzureStack.Management.Models.ExtensionDefinition.#ctor">
             <summary>
-            Initializes a new instance of the Extension class.
+            Initializes a new instance of the ExtensionDefinition class.
             </summary>
         </member>
         <member name="T:Microsoft.AzureStack.Management.Models.ExtensionMetadata">
@@ -2772,6 +2798,27 @@
         <member name="M:Microsoft.AzureStack.Management.Models.ExtensionMetadataListResult.#ctor">
             <summary>
             Initializes a new instance of the ExtensionMetadataListResult class.
+            </summary>
+        </member>
+        <member name="T:Microsoft.AzureStack.Management.Models.ExtensionPropertiesDefinition">
+            <summary>
+            The extension properties definition.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionPropertiesDefinition.QuotaCreateBladeName">
+            <summary>
+            Optional. Gets or sets the quota create blade name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ExtensionPropertiesDefinition.ResourceProviderDashboardBladeName">
+            <summary>
+            Optional. Gets or sets the resource provider dashboard blade.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AzureStack.Management.Models.ExtensionPropertiesDefinition.#ctor">
+            <summary>
+            Initializes a new instance of the ExtensionPropertiesDefinition
+            class.
             </summary>
         </member>
         <member name="T:Microsoft.AzureStack.Management.Models.GalleryItem">
@@ -3363,19 +3410,9 @@
             provider is enabled.
             </summary>
         </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ExtensionName">
+        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ExtensionCollection">
             <summary>
-            Optional. Gets or sets the name of the extension.
-            </summary>
-        </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.Extensions">
-            <summary>
-            Optional. Gets or sets the extensions.
-            </summary>
-        </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ExtensionUri">
-            <summary>
-            Optional. Gets or sets the extension endpoint.
+            Optional. Gets or sets the extension collection.
             </summary>
         </member>
         <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ManifestEndpoint">
@@ -3405,14 +3442,14 @@
             Optional. Gets or sets the provisioning state.
             </summary>
         </member>
-        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ResourceManagerType">
-            <summary>
-            Optional. Gets or sets the resource manager type.
-            </summary>
-        </member>
         <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.ResourceTypes">
             <summary>
             Optional. Gets or sets the resource types.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.RoutingResourceManagerType">
+            <summary>
+            Optional. Gets or sets the resource manager type.
             </summary>
         </member>
         <member name="M:Microsoft.AzureStack.Management.Models.ManifestPropertiesDefinition.#ctor">
