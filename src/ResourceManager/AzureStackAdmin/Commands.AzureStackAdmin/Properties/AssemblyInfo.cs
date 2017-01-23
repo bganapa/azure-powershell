@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Microsoft AzureStack Powershell ")]
+[assembly: AssemblyTitle("Microsoft AzureStack Powershell Azure Stack Admin Cmdlets ")]
 [assembly: AssemblyCompany(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyCompany)]
 [assembly: AssemblyProduct(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyProduct)]
 [assembly: AssemblyCopyright(Microsoft.WindowsAzure.Commands.Common.AzurePowerShell.AssemblyCopyright)]
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 
 [assembly: Guid("0B02390C-8AA9-4D99-8AA8-2A9D2D39682F")]
 
-[assembly: AssemblyVersion("0.10.4")]
-[assembly: AssemblyFileVersion("0.10.4")]
+[assembly: AssemblyVersion("0.10.5")]
+[assembly: AssemblyFileVersion("0.10.5")]

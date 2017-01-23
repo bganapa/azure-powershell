@@ -10,7 +10,7 @@
 
 # Version number of this module.
 
-ModuleVersion = '0.10.4'
+ModuleVersion = '0.10.5'
 
 # ID used to uniquely identify this module
 GUID = '0e691e0a-ce16-40f2-af84-86fb0d82fb29'
@@ -22,7 +22,7 @@ Author = 'Microsoft Corporation'
 CompanyName = 'Microsoft Corporation'
 
 # Copyright statement for this module
-Copyright = 'Microsoft Corporation. All rights reserved.'
+Copyright = 'Copyright (c) Microsoft Corporation. All rights reserved.'
 
 # Description of the functionality provided by this module
 Description = 'Microsoft Azure Stack Administration Module'
@@ -46,7 +46,7 @@ CLRVersion = '4.0'
 ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @( @{ ModuleName = 'AzureRM.Profile'; ModuleVersion = '1.0.4.1'} )
+RequiredModules = @( @{ ModuleName = 'AzureRM.Profile'; ModuleVersion = '1.0.4.2'} )
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
