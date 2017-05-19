@@ -887,7 +887,7 @@
         </member>
         <member name="P:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentProperties.PrincipalId">
             <summary>
-            Optional. Gets or sets principal Id, change from GUID to string for the PAS Azure Stack.
+            Optional. Gets or sets principal Id.
             </summary>
         </member>
         <member name="P:Microsoft.Azure.Management.Authorization.Models.RoleAssignmentProperties.RoleDefinitionId">
