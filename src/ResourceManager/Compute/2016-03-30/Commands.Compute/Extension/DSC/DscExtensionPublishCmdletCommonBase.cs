@@ -424,8 +424,8 @@ namespace Microsoft.WindowsAzure.Commands.Common.Extensions.DSC.Publish
                                 ErrorCategory.PermissionDenied,
                                 null));
                     }
-                    //HACK
-                    //modulesBlob.UploadFromFile(archivePath, FileMode.Open);
+                    
+                    modulesBlob.UploadFromFile(archivePath, FileMode.Open);
 
                     WriteVerbose(string.Format(
                         CultureInfo.CurrentUICulture,

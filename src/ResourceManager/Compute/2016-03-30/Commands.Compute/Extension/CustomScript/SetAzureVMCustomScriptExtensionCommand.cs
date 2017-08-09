@@ -190,10 +190,10 @@ namespace Microsoft.Azure.Commands.Compute
                 }
                 catch (Rest.Azure.CloudException ex)
                 {
-                    //HACK
-                    //var errorReturned = JsonConvert.DeserializeObject<ComputeLongRunningOperationError>(
-                    //    ex.Response.Content.ReadAsStringAsync().Result);
-                    //WriteObject(errorReturned);
+                    
+                    var errorReturned = JsonConvert.DeserializeObject<ComputeLongRunningOperationError>(
+                        ex.Response.Content);
+                    WriteObject(errorReturned);
                 }
             });
         }

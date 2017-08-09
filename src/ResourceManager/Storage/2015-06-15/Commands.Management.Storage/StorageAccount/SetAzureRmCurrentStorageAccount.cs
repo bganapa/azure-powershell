@@ -56,7 +56,8 @@ namespace Microsoft.Azure.Commands.Management.Storage
 
             // Clear the current storage account for both SM and RM
             GeneralUtilities.ClearCurrentStorageAccount(true);
-            DefaultContext.SetCurrentStorageAccount(account.ToString(true));
+            //HACK
+            //DefaultContext.SetCurrentStorageAccount(account.ToString(true));
             WriteObject(account.Credentials.AccountName);
         }
     }
