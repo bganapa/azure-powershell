@@ -490,7 +490,7 @@
         "tags": [
           "Activations"
         ],
-        "operationId": "Activations_Put",
+        "operationId": "Activations_CreateOrUpdate",
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"

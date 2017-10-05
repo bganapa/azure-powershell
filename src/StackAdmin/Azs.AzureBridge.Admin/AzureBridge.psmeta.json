@@ -1,0 +1,1089 @@
+{
+  "info": {
+    "x-ps-code-generation-settings": {
+      "codeGenerator": "AzureCsharp",
+      "nameSpacePrefix": "Microsoft.AzureStack.Management.",
+      "noAssembly": false,
+      "powerShellCorePath": "",
+      "includeCoreFxAssembly": false,
+      "testBuild": false,
+      "confirmBootstrap": false,
+      "path": ".",
+      "symbolPath": ".",
+      "serviceType": "azure_stack",
+      "customAuthCommand": "",
+      "hostOverrideCommand": "",
+      "noAuthChallenge": ""
+    },
+    "x-ps-module-info": {
+      "name": "AzureBridgeAdminClient",
+      "moduleVersion": "0.0.1",
+      "guid": "ebb04c3d-7c6d-4db6-b505-caaf23eeb2a0",
+      "description": "AzureBridge Admin Client",
+      "author": "Jeffrey Robinson",
+      "companyName": "Microsoft",
+      "CopyRight": "MIT",
+      "licenseUri": "https://github.com/Azure/azure-powershell/blob/preview/LICENSE.txt",
+      "projectUri": "https://github.com/Azure/azure-powershell",
+      "helpInfoUri": "",
+      "iconUri": "",
+      "releaseNotes": "",
+      "defaultCommandPrefix": "Azs",
+      "tags": [
+        
+      ]
+    }
+  },
+  "paths": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/{activationName}/downloadedProducts": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-DownloadedProduct",
+            "description": "Get a list of downloaded products.",
+            "defaultParameterSet": "DownloadedProducts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/activations/{activationName}/downloadedProducts/{productName}": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-DownloadedProduct",
+            "description": "Get a downloaded product.",
+            "defaultParameterSet": "DownloadedProducts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/activations/{activationName}": {
+      "delete": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Remove-Activation",
+            "description": "Delete an activation.",
+            "defaultParameterSet": "Activations_Delete",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      },
+      "put": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Put-Activation",
+            "description": "Create a new activation.",
+            "defaultParameterSet": "Activations_Put",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      },
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Activation",
+            "description": "Return product name.",
+            "defaultParameterSet": "Activations_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/Registrations": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Registration",
+            "description": "Return all registrations.",
+            "defaultParameterSet": "Registrations_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/Registrations/{registrationName}": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Registration",
+            "description": "Return product name.",
+            "defaultParameterSet": "Registrations_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/activations": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Activation",
+            "description": "Return product name.",
+            "defaultParameterSet": "Activations_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/products": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Product",
+            "description": "Return product name.",
+            "defaultParameterSet": "Products_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/products/{productName}": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-Product",
+            "description": "Return product name.",
+            "defaultParameterSet": "Products_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/publishedProducts": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-PublishedProduct",
+            "description": "Return product name.",
+            "defaultParameterSet": "PublishedProducts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.AzureBridge.Admin/publishedProducts/{productName}": {
+      "get": {
+        "x-ps-cmdlet-infos": [
+          {
+            "name": "Get-PublishedProduct",
+            "description": "Return product name.",
+            "defaultParameterSet": "PublishedProducts_List",
+            "generateCommand": true
+          }
+        ],
+        "parameters": {
+          
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ProvisioningState": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProvisioningStateObject",
+          "description": "The provisioning state of the resource.",
+          "defaultParameterSet": "ProvisioningState",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "DownloadedProductResourcesPage": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-DownloadedProductResourcesPageObject",
+          "description": "Holds an array of downloaded products and the URI to the next page.",
+          "defaultParameterSet": "DownloadedProductResourcesPage",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "Array of downloaded products."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ProductResourcesPage": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductResourcesPageObject",
+          "description": "Holds an array of products and the next link.",
+          "defaultParameterSet": "ProductResourcesPage",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of products."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ProductLink": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductLinkObject",
+          "description": "Link to a product.",
+          "defaultParameterSet": "ProductLink",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "displayName": {
+          "x-ps-parameter-info": {
+            "name": "DisplayName",
+            "description": "Displayed name of product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "uri": {
+          "x-ps-parameter-info": {
+            "name": "Uri",
+            "description": "URI to product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "Product": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductObject",
+          "description": "Properties for a product.",
+          "defaultParameterSet": "Product",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "links": {
+          "x-ps-parameter-info": {
+            "name": "Links",
+            "description": "Gallery item identity."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "privacyPolicy": {
+          "x-ps-parameter-info": {
+            "name": "PrivacyPolicy",
+            "description": "Privacy policy of the product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "vmExtensionType": {
+          "x-ps-parameter-info": {
+            "name": "VmExtensionType",
+            "description": "Extension type of the VM."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "legalTerms": {
+          "x-ps-parameter-info": {
+            "name": "LegalTerms",
+            "description": "Legal terms for the product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ActivationResource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ActivationResourceObject",
+          "description": "Published product resource.",
+          "defaultParameterSet": "ActivationResource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "DownloadedProduct": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-DownloadedProductObject",
+          "description": "Properties for aggregate usage.",
+          "defaultParameterSet": "DownloadedProduct",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "links": {
+          "x-ps-parameter-info": {
+            "name": "Links",
+            "description": "Gallery item identity."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "privacyPolicy": {
+          "x-ps-parameter-info": {
+            "name": "PrivacyPolicy",
+            "description": "Privacy policy of the product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "vmExtensionType": {
+          "x-ps-parameter-info": {
+            "name": "VmExtensionType",
+            "description": "Extension type of the VM."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "legalTerms": {
+          "x-ps-parameter-info": {
+            "name": "LegalTerms",
+            "description": "Legal terms for the product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ActivationResourcesPage": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ActivationResourcesPageObject",
+          "description": "Holds an array of activation resources and the next link.",
+          "defaultParameterSet": "ActivationResourcesPage",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of activation resources."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ProductBase": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductBaseObject",
+          "description": "Base object for all product classes.",
+          "defaultParameterSet": "ProductBase",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "offer": {
+          "x-ps-parameter-info": {
+            "name": "Offer",
+            "description": "Offer name."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "publisherDisplayName": {
+          "x-ps-parameter-info": {
+            "name": "PublisherDisplayName",
+            "description": "Name of publisher."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "displayName": {
+          "x-ps-parameter-info": {
+            "name": "DisplayName",
+            "description": "Name displayed for the product."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "offerVersion": {
+          "x-ps-parameter-info": {
+            "name": "OfferVersion",
+            "description": "Offer version."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        },
+        "publisherIdentifier": {
+          "x-ps-parameter-info": {
+            "name": "PublisherIdentifier",
+            "description": "Publisher identifier."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 4,
+            "width": 10
+          }
+        },
+        "productKind": {
+          "x-ps-parameter-info": {
+            "name": "ProductKind",
+            "description": "The kind. E.g. VirtualMachineProductProperties.ProductKind or WebApp, SolutionTemplate."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "galleryItemIdentity": {
+          "x-ps-parameter-info": {
+            "name": "GalleryItemIdentity",
+            "description": "Gallery item identity."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "description": {
+          "x-ps-parameter-info": {
+            "name": "Description",
+            "description": "Description of the product."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "productProperties": {
+          "x-ps-parameter-info": {
+            "name": "ProductProperties",
+            "description": "the product properties. At the moment only VirtualMachineProductProperties is allowed."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "payloadLength": {
+          "x-ps-parameter-info": {
+            "name": "PayloadLength",
+            "description": "Size in bytes."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "billingPartNumber": {
+          "x-ps-parameter-info": {
+            "name": "BillingPartNumber",
+            "description": "Billing part number."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "iconUris": {
+          "x-ps-parameter-info": {
+            "name": "IconUris",
+            "description": "Information about gallery icons. Deprecated."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "sku": {
+          "x-ps-parameter-info": {
+            "name": "Sku",
+            "description": "Product SKU."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "PublishedProductResource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-PublishedProductResourceObject",
+          "description": "Published product resource.",
+          "defaultParameterSet": "PublishedProductResource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "PublishedProduct": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-PublishedProductObject",
+          "description": "Properties for a product.",
+          "defaultParameterSet": "PublishedProduct",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "galleryPackageBlobSasUri": {
+          "x-ps-parameter-info": {
+            "name": "GalleryPackageBlobSasUri",
+            "description": "Extension type of the VM."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "productName": {
+          "x-ps-parameter-info": {
+            "name": "ProductName",
+            "description": "Resource name (is used in URI when calling platform image repository)."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "vmExtensionType": {
+          "x-ps-parameter-info": {
+            "name": "VmExtensionType",
+            "description": "Extension type of the VM."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "links": {
+          "x-ps-parameter-info": {
+            "name": "Links",
+            "description": "Gallery item identity."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "provisioningState": {
+          "x-ps-parameter-info": {
+            "name": "ProvisioningState",
+            "description": "Provisioning state of the resource."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        }
+      }
+    },
+    "PublishedProductResourcesPage": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-PublishedProductResourcesPageObject",
+          "description": "Holds an array of products and the next link.",
+          "defaultParameterSet": "PublishedProductResourcesPage",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of products."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "RegistrationResource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-RegistrationResourceObject",
+          "description": "Registration resource.",
+          "defaultParameterSet": "RegistrationResource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "Activation": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ActivationObject",
+          "description": "Holds properties related to activation.",
+          "defaultParameterSet": "Activation",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "provisioningState": {
+          "x-ps-parameter-info": {
+            "name": "ProvisioningState",
+            "description": "Provisioning state of the resource."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "expiration": {
+          "x-ps-parameter-info": {
+            "name": "Expiration",
+            "description": "The activation expiration."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "azureRegistrationResourceIdentifier": {
+          "x-ps-parameter-info": {
+            "name": "AzureRegistrationResourceIdentifier",
+            "description": "Azure registration resource identifier."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        },
+        "marketplaceSyndicationEnabled": {
+          "x-ps-parameter-info": {
+            "name": "MarketplaceSyndicationEnabled",
+            "description": "Value indicating whether the marketplace syndication feature is enabled."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 3,
+            "width": 10
+          }
+        },
+        "usageReportingEnabled": {
+          "x-ps-parameter-info": {
+            "name": "UsageReportingEnabled",
+            "description": "Value indicating whether the usage reporting feature is enabled."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 4,
+            "width": 10
+          }
+        },
+        "displayName": {
+          "x-ps-parameter-info": {
+            "name": "DisplayName",
+            "description": "Name displayed for the product."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "DownloadedProductResource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-DownloadedProductResourceObject",
+          "description": "Downloaded product resource.",
+          "defaultParameterSet": "DownloadedProductResource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "ProductResource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductResourceObject",
+          "description": "Product resource.",
+          "defaultParameterSet": "ProductResource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "RegistrationResourcesPage": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-RegistrationResourcesPageObject",
+          "description": "Holds an array of products and the next link.",
+          "defaultParameterSet": "RegistrationResourcesPage",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "value": {
+          "x-ps-parameter-info": {
+            "name": "Value",
+            "description": "List of Registrations."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "nextLink": {
+          "x-ps-parameter-info": {
+            "name": "NextLink",
+            "description": "URI to the next page."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "Registration": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-RegistrationObject",
+          "description": "Properties for a registration.",
+          "defaultParameterSet": "Registration",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "provisioningState": {
+          "x-ps-parameter-info": {
+            "name": "ProvisioningState",
+            "description": "Provisioning state of the resource"
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "galleryItemUri": {
+          "x-ps-parameter-info": {
+            "name": "GalleryItemUri",
+            "description": "Gallery item URI."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        }
+      }
+    },
+    "ProductLinks": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ProductLinksObject",
+          "description": "List of product links.",
+          "defaultParameterSet": "ProductLinks",
+          "generateCommand": false,
+          "generateOutputFormat": false
+        }
+      ],
+      "properties": {
+        
+      }
+    },
+    "Resource": {
+      "x-ps-cmdlet-infos": [
+        {
+          "name": "New-ResourceObject",
+          "description": "Base Resource Object",
+          "defaultParameterSet": "Resource",
+          "generateCommand": true,
+          "generateOutputFormat": true
+        }
+      ],
+      "properties": {
+        "tags": {
+          "x-ps-parameter-info": {
+            "name": "Tags",
+            "description": "List of key value pairs."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "name": {
+          "x-ps-parameter-info": {
+            "name": "Name",
+            "description": "Name of the resource."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 0,
+            "width": 10
+          }
+        },
+        "id": {
+          "x-ps-parameter-info": {
+            "name": "Id",
+            "description": "URI of the resource."
+          },
+          "x-ps-output-format-info": {
+            "include": false,
+            "position": -1,
+            "width": 10
+          }
+        },
+        "type": {
+          "x-ps-parameter-info": {
+            "name": "Type",
+            "description": "Type of resource."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 1,
+            "width": 10
+          }
+        },
+        "location": {
+          "x-ps-parameter-info": {
+            "name": "Location",
+            "description": "Location where resource is location."
+          },
+          "x-ps-output-format-info": {
+            "include": true,
+            "position": 2,
+            "width": 10
+          }
+        }
+      }
+    }
+  },
+  "parameters": {
+    "SubscriptionIdParameter": {
+      "x-ps-parameter-info": {
+        "name": "SubscriptionId",
+        "description": "Subscription credentials which uniquely identify Microsoft Azure subscription.The subscription ID forms part of the URI for every service call.",
+        "flatten": false
+      }
+    },
+    "ProductNameParameter": {
+      "x-ps-parameter-info": {
+        "name": "ProductName",
+        "description": "Name of the product.",
+        "flatten": false
+      }
+    },
+    "ApiVersionParameter": {
+      "x-ps-parameter-info": {
+        "name": "Apiversion",
+        "description": "Client Api Version.",
+        "flatten": false
+      }
+    },
+    "ActivationNameParameter": {
+      "x-ps-parameter-info": {
+        "name": "ActivationName",
+        "description": "Name of the activation.",
+        "flatten": false
+      }
+    },
+    "ActivationParameter": {
+      "x-ps-parameter-info": {
+        "name": "Activation",
+        "description": "new activation.",
+        "flatten": false
+      }
+    },
+    "RegistrationNameParameter": {
+      "x-ps-parameter-info": {
+        "name": "RegistrationName",
+        "description": "Name of the registration.",
+        "flatten": false
+      }
+    }
+  }
+}

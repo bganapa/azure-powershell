@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{06B6D2CF-7B0B-40BC-857B-E89001B5FABB}</ProjectGuid>
+    <ProjectGuid>{CDBCF50E-2BEC-41DD-A9BE-32BFE87B0751}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Azs.AzureBridge.Admin.Tests</RootNamespace>
