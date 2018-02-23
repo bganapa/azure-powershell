@@ -31,7 +31,7 @@ param(
     [System.String]$Location,
     
     [ValidateNotNullOrEmpty()]
-    [System.String]$PSSwaggerLocation = $null,
+    [System.String]$PSSwaggerLocation = "D:\github\psswagger",
     
     [switch]$Admin,
 
@@ -47,10 +47,10 @@ param(
     [System.Version]$Version = "0.1.0",
 
     [ValidateNotNullOrEmpty()]
-    [System.String]$GithubAccount = "Azure",
+    [System.String]$GithubAccount = "bganapa",
 
     [ValidateNotNullOrEmpty()]
-    [System.String]$GithubBranch = "current",
+    [System.String]$GithubBranch = "stack-admin",
 
     [ValidateNotNullOrEmpty()]
     [System.String]
@@ -64,7 +64,7 @@ param(
 )
 
 if($GenerateSwagger) {
-    $file="https://github.com/$GithubAccount/azure-rest-api-specs/blob/$GithubBranch/specification/azsadmin/resource-manager/$RPName/readme.md"
+    $file="https://github.com/$GithubAccount/azure-rest-api-specs/blob/$GithubBranch/specification/azsadmin/resource-manager/subscriptions_/readme.md"
     Invoke-Expression "& autorest $file --version=latest --output-artifact=swagger-document.json --output-folder=$Location"
 }
 
@@ -113,5 +113,4 @@ New-PSSwaggerModule `
     -UseAzureCsharpGenerator `
     -Header MICROSOFT_MIT_NO_CODEGEN `
     -Verbose `
-    -CopyUtilityModuleToOutput `
-    -Debug
+    -CopyUtilityModuleToOutput

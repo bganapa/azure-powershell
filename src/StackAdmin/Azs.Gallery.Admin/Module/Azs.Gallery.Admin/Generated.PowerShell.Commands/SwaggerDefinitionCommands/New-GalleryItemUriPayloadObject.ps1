@@ -22,14 +22,7 @@ function New-GalleryItemUriPayloadObject
         $GalleryItemUri
     )
     
-    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Gallery.Admin.Models.GalleryItemUriPayload
-
-    $PSBoundParameters.GetEnumerator() | ForEach-Object { 
-        if(Get-Member -InputObject $Object -Name $_.Key -MemberType Property)
-        {
-            $Object.$($_.Key) = $_.Value
-        }
-    }
+    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Gallery.Admin.Models.GalleryItemUriPayload -ArgumentList @($galleryItemUri)
 
     if(Get-Member -InputObject $Object -Name Validate -MemberType Method)
     {

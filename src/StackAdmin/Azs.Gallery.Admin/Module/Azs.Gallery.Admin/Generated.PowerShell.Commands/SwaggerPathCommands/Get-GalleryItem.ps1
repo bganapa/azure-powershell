@@ -54,7 +54,35 @@ function Get-GalleryItem
 
     $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
 
+$filterInfos = @(
+@{
+    'Type' = 'powershellWildcard'
+    'Value' = $
+    'Property' = 'Name' 
+})
+$applicableFilters = Get-ApplicableFilters -Filters $filterInfos
+if ($applicableFilters | Where-Object { $_.Strict }) {
+    Write-Verbose -Message 'Performing server-side call ''Get-GalleryItem -'''
+    $serverSideCall_params = @{
 
+}
+
+$serverSideResults = Get-GalleryItem @serverSideCall_params
+foreach ($serverSideResult in $serverSideResults) {
+    $valid = $true
+    foreach ($applicableFilter in $applicableFilters) {
+        if (-not (Test-FilteredResult -Result $serverSideResult -Filter $applicableFilter.Filter)) {
+            $valid = $false
+            break
+        }
+    }
+
+    if ($valid) {
+        $serverSideResult
+    }
+}
+return
+}
     if ('GalleryItems_List' -eq $PsCmdlet.ParameterSetName) {
         Write-Verbose -Message 'Performing operation ListWithHttpMessagesAsync on $GalleryAdminClient.'
         $TaskResult = $GalleryAdminClient.GalleryItems.ListWithHttpMessagesAsync()
