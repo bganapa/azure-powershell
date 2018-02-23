@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License. See License.txt in the project root for license information.
+-->
+
+<Configuration>
+    <ViewDefinitions>
+        <View>
+            <Name>Microsoft.AzureStack.Management.Gallery.Admin.Models.Product</Name>
+            <ViewSelectedBy>
+                <TypeName>Microsoft.AzureStack.Management.Gallery.Admin.Models.Product</TypeName>
+            </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader/>
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>PrivacyPolicyUri</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>PrivacyPolicy</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>LegalTermsUri</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>PricingDetailsUri</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>PublisherDisplayName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>LegalTerms</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>DisplayName</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+            </TableControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>

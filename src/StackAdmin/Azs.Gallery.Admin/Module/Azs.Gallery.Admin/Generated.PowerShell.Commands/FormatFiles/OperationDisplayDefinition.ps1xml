@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License. See License.txt in the project root for license information.
+-->
+
+<Configuration>
+    <ViewDefinitions>
+        <View>
+            <Name>Microsoft.AzureStack.Management.Gallery.Admin.Models.OperationDisplayDefinition</Name>
+            <ViewSelectedBy>
+                <TypeName>Microsoft.AzureStack.Management.Gallery.Admin.Models.OperationDisplayDefinition</TypeName>
+            </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                    <TableColumnHeader>
+                        <Width>30</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>30</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>30</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader/>
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>Operation</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Description</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Resource</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>Provider</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+            </TableControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>

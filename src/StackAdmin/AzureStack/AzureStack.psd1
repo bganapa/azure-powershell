@@ -51,6 +51,7 @@ RequiredModules = @(@{ModuleName="AzureRM.Profile"; RequiredVersion="3.4.0"},
   @{ModuleName="Azs.Fabric.Admin"; RequiredVersion="0.1.0"},
   @{ModuleName="Azs.Storage.Admin"; RequiredVersion="0.1.0"},
   @{ModuleName="Azs.Backup.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Gallery.Admin"; RequiredVersion="0.1.0"},
   @{ModuleName="Azs.InfrastructureInsights.Admin"; RequiredVersion="0.1.0"})
 
 # Assemblies that must be loaded prior to importing this module

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License. See License.txt in the project root for license information.
+-->
+
+<Configuration>
+    <ViewDefinitions>
+        <View>
+            <Name>Microsoft.AzureStack.Management.Gallery.Admin.Models.ImageGroup</Name>
+            <ViewSelectedBy>
+                <TypeName>Microsoft.AzureStack.Management.Gallery.Admin.Models.ImageGroup</TypeName>
+            </ViewSelectedBy>
+            <TableControl>
+                <TableHeaders>
+                    <TableColumnHeader/>
+                </TableHeaders>
+                <TableRowEntries>
+                    <TableRowEntry>
+                        <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>Context</PropertyName>
+                            </TableColumnItem>
+                        </TableColumnItems>
+                    </TableRowEntry>
+                </TableRowEntries>
+            </TableControl>
+        </View>
+    </ViewDefinitions>
+</Configuration>
