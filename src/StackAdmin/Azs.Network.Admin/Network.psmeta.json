@@ -39,7 +39,7 @@
       "delete": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Remove-AzsQuota",
+            "name": "Remove-AzsNetworkQuota",
             "description": "Delete a quota by name.",
             "defaultParameterSet": "Quotas_Delete",
             "generateCommand": true
@@ -52,13 +52,13 @@
       "put": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Set-AzsQuota",
+            "name": "Set-AzsNetworkQuota",
             "description": "Create or update a quota.",
             "defaultParameterSet": "Quotas_CreateOrUpdate",
             "generateCommand": true
           },
           {
-            "name": "New-AzsQuota",
+            "name": "New-AzsNetworkQuota",
             "description": "Create or update a quota.",
             "defaultParameterSet": "Quotas_CreateOrUpdate",
             "generateCommand": true
@@ -71,7 +71,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsQuota",
+            "name": "Get-AzsNetworkQuota",
             "description": "Get a quota by name.",
             "defaultParameterSet": "Quotas_List",
             "generateCommand": true
@@ -86,7 +86,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsQuota",
+            "name": "Get-AzsNetworkQuota",
             "description": "List all quotas.",
             "defaultParameterSet": "Quotas_List",
             "generateCommand": true
@@ -699,7 +699,7 @@
     "QuotaProperties": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaPropertiesObject",
+          "name": "New-AzsNetworkQuotaPropertiesObject",
           "description": "Properties of a quota.",
           "defaultParameterSet": "QuotaProperties",
           "generateCommand": true,
@@ -863,7 +863,7 @@
     "Quota": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaObject",
+          "name": "New-AzsNetworkQuotaObject",
           "description": "Network quota resource.",
           "defaultParameterSet": "Quota",
           "generateCommand": true,
@@ -877,7 +877,7 @@
     "QuotaList": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaListObject",
+          "name": "New-AzsNetworkQuotaListObject",
           "description": "A pageable list of network quotas.",
           "defaultParameterSet": "QuotaList",
           "generateCommand": true,

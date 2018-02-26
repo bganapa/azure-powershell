@@ -157,7 +157,7 @@
       "delete": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Remove-AzsSubscription",
+            "name": "Remove-AzsUserSubscription",
             "description": "Get the list of subscriptions.",
             "defaultParameterSet": "Subscriptions_Delete",
             "generateCommand": true
@@ -170,13 +170,13 @@
       "put": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Set-AzsSubscription",
+            "name": "Set-AzsUserSubscription",
             "description": "Get the list of subscriptions.",
             "defaultParameterSet": "Subscriptions_CreateOrUpdate",
             "generateCommand": true
           },
           {
-            "name": "New-AzsSubscription",
+            "name": "New-AzsUserSubscription",
             "description": "Get the list of subscriptions.",
             "defaultParameterSet": "Subscriptions_CreateOrUpdate",
             "generateCommand": true
@@ -189,7 +189,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsSubscription",
+            "name": "Get-AzsUserSubscription",
             "description": "Get a specified subscription.",
             "defaultParameterSet": "Subscriptions_List",
             "generateCommand": true
@@ -388,7 +388,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsQuota",
+            "name": "Get-AzsSubscriptionsQuota",
             "description": "Get the list of quotas at a location.",
             "defaultParameterSet": "Quotas_List",
             "generateCommand": true
@@ -403,7 +403,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsQuota",
+            "name": "Get-AzsSubscriptionsQuota",
             "description": "Gets a quota by name.",
             "defaultParameterSet": "Quotas_List",
             "generateCommand": true
@@ -448,7 +448,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsOfferAll",
+            "name": "Get-AzsManagedOffer",
             "description": "Get the list of offers.",
             "defaultParameterSet": "Offers_ListAll",
             "generateCommand": true
@@ -600,7 +600,7 @@
       "get": {
         "x-ps-cmdlet-infos": [
           {
-            "name": "Get-AzsSubscription",
+            "name": "Get-AzsUserSubscription",
             "description": "Get the list of subscriptions.",
             "defaultParameterSet": "Subscriptions_List",
             "generateCommand": true
@@ -1435,7 +1435,7 @@
     "QuotaList": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaListObject",
+          "name": "New-AzsSubscriptionsQuotaListObject",
           "description": "List of quotas.",
           "defaultParameterSet": "QuotaList",
           "generateCommand": true,
@@ -1679,7 +1679,7 @@
     "Quota": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaObject",
+          "name": "New-AzsSubscriptionsQuotaObject",
           "description": "Quotas for DelegatedProviders.",
           "defaultParameterSet": "Quota",
           "generateCommand": true,
@@ -1988,7 +1988,7 @@
     "QuotaProperties": {
       "x-ps-cmdlet-infos": [
         {
-          "name": "New-AzsQuotaPropertiesObject",
+          "name": "New-AzsSubscriptionsQuotaPropertiesObject",
           "description": "Quotas for DelegatedProviders.",
           "defaultParameterSet": "QuotaProperties",
           "generateCommand": true,
