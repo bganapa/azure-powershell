@@ -21,12 +21,13 @@ using System.Text;
 using Microsoft.Azure.Commands.Common.Authentication;
 using Microsoft.Azure.Commands.ResourceManager.Common.Tags;
 using Microsoft.Azure.Commands.Resources.Models.Authorization;
-using Microsoft.Azure.Management.Authorization.Models;
+//using Microsoft.Azure.Management.Authorization.Models;
 using Microsoft.WindowsAzure.Commands.Utilities.Common;
 using Newtonsoft.Json;
 using Microsoft.WindowsAzure.Commands.Common;
 using Microsoft.Azure.Management.ResourceManager.Models;
 using Microsoft.Azure.Commands.Resources.Models;
+using Microsoft.Azure.Management.Authorization.Version2015_07_01.Models;
 #if !NETSTANDARD
 using Microsoft.Azure.Commands.Resources.Models.Gallery;
 #endif
