@@ -17,6 +17,8 @@ param(
     [switch]$IsNetCore
 )
 
+Import-Module AzureRM.Profile -Force
+
 # All admin modules
 $All = @(
     "Azs.AzureBridge.Admin",

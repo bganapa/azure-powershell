@@ -43,6 +43,7 @@ param(
     [Parameter(Mandatory = $false, Position = 0)]
     [switch]$IsNetCore,
     [Parameter(Mandatory = $false, Position = 1)]
+    [ValidateSet("Debug", "Release")]
     [string]$BuildConfig,
     [Parameter(Mandatory = $false, Position = 2)]
     [string]$Scope = 'All',
@@ -56,6 +57,12 @@ param(
     [ValidateSet("Latest", "Stack")]
     [string]$Profile = "Latest"
 )
+
+<#################################################
+#
+#               Helper functions
+#
+#################################################>
 
 <#
 .SYNOPSIS Write out to a file using UTF-8 without BOM.
@@ -112,6 +119,12 @@ function Get-Directories {
         Write-Output -InputObject $packageFolder, $resourceManagerRootFolder
     }
 }
+
+<#################################################
+#
+#               Get module functions
+#
+#################################################>
 
 <#
 .SYNOPSIS Get the list of rollup modules.  Currently AzureRM, for Stack and Azure, or AzureStack.
@@ -283,6 +296,67 @@ function Get-ClientModules {
 }
 
 <#
+.SYNOPSIS Get the modules to publish.
+
+.PARAMETER BuildConfig
+The build configuration, either Release or Debug
+
+.PARAMETER Scope
+The module scope, either All, Storage, or Stack.
+
+.PARAMETER PublishToLocal
+$true if publishing locally only, $false otherwise
+
+.PARAMETER Profile
+Either Latest or Stack
+
+.PARAMETER IsNetCore
+If the modules are built using Net Core.
+
+#>
+function Get-AllModules {
+    [CmdletBinding()]
+    param(
+        [ValidateNotNullOrEmpty()]
+        [String]$BuildConfig,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$Scope,
+
+        [switch]$PublishLocal,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$Profile,
+
+        [switch]$IsNetCore
+    )
+
+    Write-Host "Getting client modules"
+    $clientModules = Get-ClientModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -PublishLocal:$PublishLocal -IsNetCore:$isNetCore
+    Write-Host " "
+
+    Write-Host "Getting admin modules"
+    $adminModules = Get-AdminModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -IsNetCore:$isNetCore
+    Write-Host " "
+
+    Write-Host "Getting rollup modules"
+    $rollupModules = Get-RollupModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -IsNetCore:$isNetCore
+    Write-Host " "
+
+    return @{
+        ClientModules = $clientModules;
+        AdminModules  = $adminModules;
+        RollUpModules = $rollUpModules
+    }
+}
+
+<#################################################
+#
+#       Create and update nuget functions.
+#
+#################################################>
+
+<#
 .SYNOPSIS Overwrite the Author,CompanyName and Copyright to be Microsoft.
 
 .PARAMETER Path
@@ -297,7 +371,6 @@ function Set-CopyrightInfo {
     )
     Update-ModuleManifest -Path $Path -Author "Microsoft" -Copyright "Microsoft @$(Get-Date -Format yyyy)" -CompanyName "Microsoft"
 }
-
 
 <#
 .SYNOPSIS Remove the RequiredModules and NestedModules psd1 properties with empty array.
@@ -371,6 +444,96 @@ function Update-NugetPackage {
         &$NugetExe pack $modulePath -OutputDirectory $TempRepoPath
     }
 }
+
+<#
+.SYNOPSIS Add given modules to local repository.
+
+.PARAMETER ModulePaths
+List of paths to modules.
+
+.PARAMETER TempRepo
+Name of local temporary repository.
+
+.PARAMETER TempRepoPath
+path to local temporary repository.
+
+.PARAMETER NugetExe
+Path to nuget executable.
+
+#>
+function Add-Modules {
+    [CmdletBinding()]
+    param(
+        [String[]]$ModulePaths,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepo,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepoPath,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$NugetExe
+    )
+    PROCESS {
+        foreach ($modulePath in $ModulePaths) {
+            Write-Output $modulePath
+            $module = Get-Item -Path $modulePath
+            Write-Output "Updating $module module from $modulePath"
+            Add-Module -Path $modulePath -TempRepo $TempRepo -TempRepoPath $TempRepoPath -NugetExe $NugetExe
+            Write-Output "Updated $module module"
+        }
+    }
+}
+
+<#
+.SYNOPSIS Add all modules to local repo.
+
+.PARAMETER ModulePaths
+A hash table of Modules types and paths.
+
+.PARAMETER TempRepo
+The name of the temporary repository.
+
+.PARAMETER TempRepoPath
+Path to the temporary reposityroy.
+
+.PARAMETER NugetExe
+Location of nuget executable.
+
+#>
+function Add-AllModules {
+    [CmdletBinding()]
+    param(
+        $ModulePaths,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepo,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepoPath,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$NugetExe
+    )
+
+    $Keys = @('ClientModules', 'AdminModules', 'RollupModules')
+    Write-Output "adding modules to local repo"
+    foreach ($module in $Keys) {
+        $modulePath = $Modules[$module]
+        Write-Output "Adding $module modules to local repo"
+        Add-Modules -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePath $modulePath -NugetExe $NugetExe
+        Write-Output " "
+    }
+    Write-Output " "
+}
+
+<#################################################
+#
+#           Publish module functions.
+#
+#################################################>
+
 
 <#
 
@@ -517,144 +680,6 @@ function Publish-PowershellModule {
 }
 
 <#
-.SYNOPSIS Add given modules to local repository.
-
-.PARAMETER ModulePaths
-List of paths to modules.
-
-.PARAMETER TempRepo
-Name of local temporary repository.
-
-.PARAMETER TempRepoPath
-path to local temporary repository.
-
-.PARAMETER NugetExe
-Path to nuget executable.
-
-#>
-function Add-Modules {
-    [CmdletBinding()]
-    param(
-        [String[]]$ModulePaths,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$TempRepo,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$TempRepoPath,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$NugetExe
-    )
-    PROCESS {
-        foreach ($modulePath in $ModulePaths) {
-            Write-Output $modulePath
-            $module = Get-Item -Path $modulePath
-            Write-Output "Updating $module module from $modulePath"
-            Add-Module -Path $modulePath -TempRepo $TempRepo -TempRepoPath $TempRepoPath -NugetExe $NugetExe
-            Write-Output "Updated $module module"
-        }
-    }
-}
-
-<#
-.SYNOPSIS Get the modules to publish.
-
-.PARAMETER BuildConfig
-The build configuration, either Release or Debug
-
-.PARAMETER Scope
-The module scope, either All, Storage, or Stack.
-
-.PARAMETER PublishToLocal
-$true if publishing locally only, $false otherwise
-
-.PARAMETER Profile
-Either Latest or Stack
-
-.PARAMETER IsNetCore
-If the modules are built using Net Core.
-
-#>
-function Get-AllModules {
-    [CmdletBinding()]
-    param(
-        [ValidateNotNullOrEmpty()]
-        [String]$BuildConfig,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$Scope,
-
-        [switch]$PublishLocal,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$Profile,
-
-        [switch]$IsNetCore
-    )
-
-    Write-Host "Getting client modules"
-    $clientModules = Get-ClientModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -PublishLocal:$PublishLocal -IsNetCore:$isNetCore
-    Write-Host " "
-
-    Write-Host "Getting admin modules"
-    $adminModules = Get-AdminModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -IsNetCore:$isNetCore
-    Write-Host " "
-
-    Write-Host "Getting rollup modules"
-    $rollupModules = Get-RollupModules -BuildConfig $BuildConfig -Profile $Profile -Scope $Scope -IsNetCore:$isNetCore
-    Write-Host " "
-
-    return @{
-        ClientModules = $clientModules;
-        AdminModules  = $adminModules;
-        RollUpModules = $rollUpModules
-    }
-}
-
-<#
-.SYNOPSIS Add all modules to local repo.
-
-.PARAMETER ModulePaths
-A hash table of Modules types and paths.
-
-.PARAMETER TempRepo
-The name of the temporary repository.
-
-.PARAMETER TempRepoPath
-Path to the temporary reposityroy.
-
-.PARAMETER NugetExe
-Location of nuget executable.
-
-#>
-function Add-AllModules {
-    [CmdletBinding()]
-    param(
-        $ModulePaths,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$TempRepo,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$TempRepoPath,
-
-        [ValidateNotNullOrEmpty()]
-        [String]$NugetExe
-    )
-
-    $Keys = @('ClientModules', 'AdminModules', 'RollupModules')
-    Write-Output "adding modules to local repo"
-    foreach ($module in $Keys) {
-        $modulePath = $Modules[$module]
-        Write-Output "Adding $module modules to local repo"
-        Add-Modules -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePath $modulePath -NugetExe $NugetExe
-        Write-Output " "
-    }
-    Write-Output " "
-}
-
-<#
 .SYNOPSIS Publish the nugets to PSGallery
 
 .PARAMETER ApiKey
@@ -705,6 +730,12 @@ function Publish-AllModules {
     }
 }
 
+<###################################
+#
+#           Setup/Execute
+#
+###################################>
+
 
 if ([string]::IsNullOrEmpty($buildConfig)) {
     Write-Verbose "Setting build configuration to 'Release'"
@@ -726,22 +757,23 @@ if ([string]::IsNullOrEmpty($nugetExe)) {
     $nugetExe = "$PSScriptRoot\nuget.exe"
 }
 
-Write-Host "Publishing $Scope package(and its dependencies)"
+Write-Host "Publishing $Scope package (and its dependencies)"
 Get-PackageProvider -Name NuGet -Force
 
+# NOTE: Can only be Azure or Azure Stack, not both.
 $packageFolder = "$PSScriptRoot\..\src\Package"
 if ($Profile -eq "Stack") {
     $packageFolder = "$PSScriptRoot\..\src\Stack"
 }
 
+# Set temporary repo location
 $PublishLocal = test-path $repositoryLocation
-[string]$tempRepoPath = "$PSScriptRoot\..\src\package"
+[string]$tempRepoPath = "$PSScriptRoot\..\src\Package"
 if ($PublishLocal) {
     if ($Profile -eq "Stack") {
-        $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "stack")
+        $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Stack")
     } else {
-        $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "package")
-
+        $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Package")
     }
 }
 
