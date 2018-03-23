@@ -2,10 +2,10 @@
 
 # Define parameters.
 param(
-    [string] $RootPath = "$PSScriptRoot\..\src", 
-    [string] $OutputFile = "groupMapping.json", 
-    [string] $WarningFile = "groupMappingWarnings.json", 
-    [string] $RulesFile = "CreateMappings_rules.json" 
+    [string] $RootPath = "$PSScriptRoot\..\src",
+    [string] $OutputFile = "groupMapping.json",
+    [string] $WarningFile = "groupMappingWarnings.json",
+    [string] $RulesFile = "CreateMappings_rules.json"
 );
 
 # Load rules file from JSON.
@@ -16,7 +16,7 @@ $results = @{};
 $warnings = @();
 
 # Find all cmdlet names by help file names in the repository.
-$cmdlets = Get-ChildItem $RootPath -Recurse | Where-Object { $_.FullName -cmatch ".*\\help\\.*-.*.md" };
+$cmdlets = Get-ChildItem $RootPath -Recurse -Exclude "*StackAdmin*" | Where-Object { $_.FullName -cmatch ".*\\help\\.*-.*.md" };
 
 $cmdlets | ForEach-Object {
     $cmdletPath = Split-Path $_.FullName -Parent;
@@ -31,7 +31,7 @@ $cmdlets | ForEach-Object {
     # Look for the best match.
     if(
         # Did not find a match on the folder, but found a match on the cmdlet.
-        (($matchedRule -eq $null) -and ($possibleBetterMatch -ne $null)) -or 
+        (($matchedRule -eq $null) -and ($possibleBetterMatch -ne $null)) -or
         # Found a match on the module path, but found a better match for the cmdlet (`group` field agrees).
         (($matchedRule.Group -ne $null) -and ($matchedRule.Group -eq $possibleBetterMatch.Group)))
     {
