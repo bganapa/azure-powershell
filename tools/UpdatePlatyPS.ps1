@@ -58,13 +58,15 @@ function Start-Tests {
 
     # Number of failures we have seen
     [int]$Failures = 0
+    $profileModule = Get-ChildItem -Path $rootFolder -Directory -Filter Azs.*
+
     $adminModules = Get-ChildItem -Path $rootFolder -Directory -Filter Azs.*
     foreach ($module in $adminModules) {
         $testDir = $module.FullName + "\Module"
         $module = $module.FullName | Split-Path -Leaf
         if ( $module -in $Scheduled ) {
             Push-Location $testDir | Out-Null
-            try {
+<#            try {
                 Import-Module ".\$module" -Force | Out-Null
                 if(Test-Path "..\Help") {
                     Write-Host "updating $module..."
@@ -80,7 +82,7 @@ function Start-Tests {
                 $Failures += 1
                 Write-Error "Pester Test failure, $_"
                 break
-            }
+            }#>
             Pop-Location | Out-Null
         }
     }
