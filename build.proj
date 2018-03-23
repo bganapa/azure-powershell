@@ -54,7 +54,7 @@
     <NetCore Condition=" $(NetCore) != 'true' " >false</NetCore>
     <SkipHelp Condition =" '$(SkipHelp)' != 'true' ">false</SkipHelp>
     <BuildTasksPath>$(LibraryToolsFolder)\BuildPackagesTask\Microsoft.Azure.Build.Tasks\bin\$(Configuration)</BuildTasksPath>
-    <Stack Condition = "'$(Scope)' == '' or '$(Scope)' == 'all' or '$(Scope)' == 'Stack' ">true</Stack>
+    <Stack Condition = "'$(Scope)' == 'Stack' ">true</Stack>
     <Latest Condition = "'$(Scope)' == '' or '$(Scope)' != 'Stack'">true</Latest>
   </PropertyGroup>
   <ItemGroup>
