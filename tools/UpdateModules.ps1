@@ -78,7 +78,7 @@ function New-ModulePsm1 {
             }
         }
 
-        # Grab the template nad replace with information.
+        # Grab the template and replace with information.
         $template = Get-Content -Path $TemplatePath
         $template = $template -replace "%MODULE-NAME%", $file.BaseName
         $template = $template -replace "%DATE%", [string](Get-Date)
