@@ -101,7 +101,7 @@ function Get-Directories {
     param
     (
         [String]$BuildConfig,
-        [Stirng]$Profile,
+        [String]$Profile,
         [switch]$IsNetCore
     )
 
@@ -718,6 +718,7 @@ function Publish-AllModules {
         [switch]$PublishLocal
     )
     if (!$PublishLocal) {
+        exit 1
         foreach ($module in $ModulePaths.Keys) {
             $paths = $Modules[$module]
             foreach ($modulePath in $paths) {
@@ -775,7 +776,12 @@ if ($PublishLocal) {
     } else {
         $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Package")
     }
+} else {
+    Write-Output "Publishing to $repositoryLocation!"
+    exit 1
 }
+Write-Output "Not publishing!"
+exit
 
 $tempRepoName = ([System.Guid]::NewGuid()).ToString()
 $repo = Get-PSRepository | Where-Object { $_.SourceLocation -eq $tempRepoPath }
