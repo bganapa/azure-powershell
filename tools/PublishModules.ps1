@@ -40,6 +40,7 @@ Either Latest or Stack.
 #>
 
 param(
+    [CmdletBinding()]
     [Parameter(Mandatory = $false, Position = 0)]
     [switch]$IsNetCore,
     [Parameter(Mandatory = $false, Position = 1)]

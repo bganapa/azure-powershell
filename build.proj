@@ -630,7 +630,7 @@
           ContinueOnError="false" 
           Condition="'$(Latest)' == 'true'"/>
 
-    <Exec Command="$(PowerShellCommandPrefix) &quot;$(LibraryToolsFolder)\UpdatePlatyPS.ps1 -IsNetCore:$$(NetCore) &quot;"
+    <Exec Command="$(PowerShellCommandPrefix) &quot;$(LibraryToolsFolder)\UpdatePlatyPS.ps1 &quot;"
           ContinueOnError="false"
           Condition=" '$(Stack)' == 'true' "/>
 
