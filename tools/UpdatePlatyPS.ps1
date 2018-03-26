@@ -20,7 +20,7 @@
 param()
 
 
-Import-Module AzureRM.Profile -Force
+#Import-Module AzureRM.Profile -Force
 
 # All admin modules
 $All = @(
@@ -99,4 +99,4 @@ function Update-Help {
 }
 
 write-Host "Updating markdown modules..."
-exit (Update-Help -BuildConfig $BuildConfig)
+#exit (Update-Help -BuildConfig $BuildConfig)
