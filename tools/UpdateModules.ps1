@@ -39,7 +39,6 @@ param(
 )
 
 <#
-
 .SYNOPSIS Creates a new psm1 root module if one does not exist.
 
 .PARAMETER ModulePath
@@ -177,7 +176,7 @@ function Get-Cmdlets {
         $dllPath = Join-Path -Path $ModulePath -ChildPath $module
         $Assembly = [Reflection.Assembly]::LoadFrom($dllPath)
         $dllCmdlets = $Assembly.GetTypes() | Where-Object {$_.CustomAttributes.AttributeType.Name -contains "CmdletAttribute"}
-        $cmdlets += $dllCmdlets        
+        $cmdlets += $dllCmdlets
     }
     return $cmdlets
 }
@@ -355,15 +354,25 @@ function Update-Azure {
         [ValidateNotNullOrEmpty()]
         [ValidateSet('Debug', 'Release')]
         [String]$BuildConfig
-    )    
+    )
+
+    $packageFolder = "$PSScriptRoot\..\src\Package"
+    $resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager\AzureResourceManager"
     $resourceManagerModules = Get-ChildItem -Path $resourceManagerRootFolder -Directory
 
-    # Publish AzureStorage, if needed.
+    # Publish AzureProfile
+    if (($scope -eq 'All')) {
+        Write-Host "Updating profile module"
+        New-ModulePsm1 -ModulePath "$ResourceManagerRootFolder\AzureRM.Profile" -TemplatePath $script:TemplateLocation -IsRMModule
+        Write-Host "Updated profile module"
+    }
+
+    # Publish AzureStorage
     if (($scope -eq 'All') -or ($scope -eq 'AzureStorage')) {
         $modulePath = "$packageFolder\$buildConfig\Storage\Azure.Storage"
         # Publish AzureStorage module
         Write-Host "Updating AzureStorage module from $modulePath"
-        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation
+        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation -IsRMModule $false
     }
 
     # Publish ServiceManagement, if needed.
@@ -371,7 +380,7 @@ function Update-Azure {
         $modulePath = "$packageFolder\$buildConfig\ServiceManagement\Azure"
         # Publish Azure module
         Write-Host "Updating ServiceManagement(aka Azure) module from $modulePath"
-        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
     }
 
     # Publish all of the modules, if specified.
@@ -382,7 +391,7 @@ function Update-Azure {
             if (($module.Name -ne "AzureRM.Profile") -and ($module.Name -ne "Azure.Storage")) {
                 $modulePath = $module.FullName
                 Write-Host "Updating $module module from $modulePath"
-                New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation -IsRMModule
+                New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation -IsRMModule
                 Write-Host "Updated $module module"
             }
         }
@@ -393,7 +402,7 @@ function Update-Azure {
         $modulePath = Join-Path $resourceManagerRootFolder "AzureRM.$scope"
         if (Test-Path $modulePath) {
             Write-Host "Updating $scope module from $modulePath"
-            New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+            New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
             Write-Host "Updated $scope module"
         } else {
             Write-Error "Can not find module with name $scope to publish"
@@ -404,9 +413,9 @@ function Update-Azure {
         # Update AzureRM module
         $modulePath = "$PSScriptRoot\AzureRM"
         Write-Host "Updating AzureRM module from $modulePath"
-        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
         Write-Host "Updated Azure module"
-    }    
+    }
 }
 
 <#
@@ -414,7 +423,9 @@ function Update-Azure {
 #>
 function Update-Stack {
     [CmdletBinding()]
-    param()
+    param(
+        [String]$BuildConfig
+    )
 
     # Overwrite defaults
     $packageFolder = "$PSScriptRoot\..\src\Stack"
@@ -424,13 +435,13 @@ function Update-Stack {
     # AzureRM Rollup module
     $modulePath = "$PSScriptRoot\..\src\StackAdmin\AzureRM"
     Write-Host "Updating AzureRM module from $modulePath"
-    New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+    New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
     Write-Host "Updated AzureRM module"
 
     # Azure Stack Admin Rollup module
     $modulePath = "$PSScriptRoot\..\src\StackAdmin\AzureStack"
     Write-Host "Updating AzureStack module from $modulePath"
-    New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+    New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
     Write-Host "Updated AzureStack module"
 
 }
@@ -442,10 +453,14 @@ function Update-Netcore {
     [CmdletBinding()]
     param()
 
+    $packageFolder = "$PSScriptRoot\..\src\Package"
+    $resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager\AzureResourceManager"
+    $resourceManagerModules = Get-ChildItem -Path $resourceManagerRootFolder -Directory
+
     # Publish the Netcore modules and rollup module, if specified.
     if ($scope -eq 'AzureRM.Netcore') {
         Write-Host "Updating profile module"
-        New-ModulePsm1 -ModulePath "$resourceManagerRootFolder\AzureRM.Profile.Netcore" -TemplatePath $templateLocation -IsRMModule
+        New-ModulePsm1 -ModulePath "$resourceManagerRootFolder\AzureRM.Profile.Netcore" -TemplatePath $script:TemplateLocation -IsRMModule
         Write-Host "Updated profile module"
 
         $env:PSModulePath += "$([IO.Path]::PathSeparator)$resourceManagerRootFolder\AzureRM.Profile.Netcore";
@@ -454,45 +469,38 @@ function Update-Netcore {
             if (($module.Name -ne "AzureRM.Profile.Netcore")) {
                 $modulePath = $module.FullName
                 Write-Host "Updating $module module from $modulePath"
-                New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation -IsRMModule
+                New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation -IsRMModule
                 Write-Host "Updated $module module"
             }
         }
 
         $modulePath = "$PSScriptRoot\AzureRM.Netcore"
         Write-Host "Updating AzureRM.Netcore module from $modulePath"
-        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation 
+        New-ModulePsm1 -ModulePath $modulePath -TemplatePath $script:TemplateLocation
         Write-Host "Updated AzureRM.Netcore module"
     }
 
 }
 
-$packageFolder = "$PSScriptRoot\..\src\Package"
-$resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager\AzureResourceManager"
+<################################################
+#  Main
+#################################################>
 
-if ([string]::IsNullOrEmpty($buildConfig)) {
-    Write-Verbose "Setting build configuration to 'Release'"
-    $buildConfig = "Release"
-}
+
+<#
+    Constants
+#>
+$script:TemplateLocation = "$PSScriptRoot\AzureRM.Example.psm1"
 
 if ([string]::IsNullOrEmpty($scope)) {
     Write-Verbose "Default scope to all"
     $scope = 'All'
 }
 
-Write-Host "Updating $scope package(and its dependencies)"
-
-$templateLocation = "$PSScriptRoot\AzureRM.Example.psm1"
-
-# If we publish 'All', publish AzureRM.Profile first, because it is the common dependency.
-if (($scope -eq 'All') -or ($scope -eq 'Stack')) {
-    Write-Host "Updating profile module"
-    New-ModulePsm1 -ModulePath "$resourceManagerRootFolder\AzureRM.Profile" -TemplatePath $templateLocation -IsRMModule
-    Write-Host "Updated profile module"
-}
+Write-Host "Updating $scope package (and its dependencies)"
 
 if ($Profile -eq 'Stack') {
-    Update-Stack
+    Update-Stack -BuildConfig $BuildConfig
 } elseif ($Scope -eq 'AzureRM.NetCore') {
     Update-Netcore
 } else {
