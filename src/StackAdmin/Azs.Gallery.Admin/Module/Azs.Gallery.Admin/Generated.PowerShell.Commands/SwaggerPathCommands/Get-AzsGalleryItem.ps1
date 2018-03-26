@@ -19,7 +19,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
 .Example
     # Get a gallery item by name.
-    Get-AzsGalleryItem -GalleryItemName 'microsoft.vmss.1.3.6'
+    Get-AzsGalleryItem -Name 'microsoft.vmss.1.3.6'
 #>
 function Get-AzsGalleryItem {
     [OutputType([Microsoft.AzureStack.Management.Gallery.Admin.Models.GalleryItem])]
