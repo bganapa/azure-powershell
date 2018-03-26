@@ -58,7 +58,7 @@ RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '4.4.0'; }
                @{ModuleName = 'AzureRM.KeyVault'; RequiredVersion = '4.2.0'; },
                @{ModuleName = 'AzureRM.Network'; RequiredVersion = '1.0.5.4'; },
                @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '5.3.0.1'; },
-               @{ModuleName = 'AzureRM.Storage'; RequiredVersion = '1.0.5.4'; },
+               @{ModuleName = 'AzureRM.Storage'; RequiredVersion = '1.1.0.1'; },
                @{ModuleName = 'AzureRM.Tags'; RequiredVersion = '4.0.0'; },
                @{ModuleName = 'AzureRM.UsageAggregates'; RequiredVersion = '4.0.1'; })
 
