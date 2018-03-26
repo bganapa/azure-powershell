@@ -12,10 +12,15 @@
 # limitations under the License.
 # ----------------------------------------------------------------------------------
 
-param(
-    [Parameter(Mandatory = $false, Position = 0)]
-    [switch]$IsNetCore
-)
+#Requires -Modules platyPS
+
+<#
+.SYNOPSIS Creates or updates markdown files for Azure Stack admin modules.
+#>
+param()
+
+
+Import-Module AzureRM.Profile -Force
 
 # All admin modules
 $All = @(
@@ -45,10 +50,14 @@ foreach ($module in $Scheduled) {
         throw "The module '$module' is not in All."
     }
 }
-function Start-Tests {
-    param(
-        [switch]$IsNetCore
-    )
+
+<#
+.SYNOPSIS Creates or updates markdown files
+
+#>
+function Update-Help {
+    [CmdletBinding()]
+    param()
     # Create test output
     $TestFolder = "$($PSSCriptRoot)\..\testresults"
     New-Item -Path $TestFolder -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
@@ -68,7 +77,7 @@ function Start-Tests {
             Push-Location $testDir | Out-Null
 <#            try {
                 Import-Module ".\$module" -Force | Out-Null
-                if(Test-Path "..\Help") {
+                if (Test-Path "..\Help") {
                     Write-Host "updating $module..."
                     Update-MarkdownHelpModule -Path ..\Help -RefreshModulePage -AlphabeticParamsOrder
                     Write-Host "done..."
@@ -90,4 +99,4 @@ function Start-Tests {
 }
 
 write-Host "Updating markdown modules..."
-exit (Start-Tests -BuildConfig $BuildConfig -IsNetCore:$IsNetCore)
+exit (Update-Help -BuildConfig $BuildConfig)
