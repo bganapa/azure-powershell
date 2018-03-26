@@ -259,7 +259,7 @@ function Get-ClientModules {
         # Azure non-resource modules not using NetCore
         if (-not $IsNetCore) {
 
-            if (($Scope -eq 'All') -or ($Scope -eq 'AzureStorage')) {
+            if (($Scope -eq 'All') -or ($Scope -eq 'AzureStorage') -or ($Scope -eq 'Stack')) {
                 $targets += "$packageFolder\$buildConfig\Storage\Azure.Storage"
             }
 
@@ -418,7 +418,7 @@ Path to the Nuget executable.
 function Update-NugetPackage {
     [CmdletBinding()]
     param(
-        [string]$BasePath,
+        [string]$TempRepoPath,
         [string]$ModuleName,
         [string]$DirPath,
         [string]$NugetExe
@@ -769,7 +769,7 @@ if ($Profile -eq "Stack") {
 
 # Set temporary repo location
 $PublishLocal = test-path $repositoryLocation
-[string]$tempRepoPath = "$PSScriptRoot\..\src\Package"
+[string]$tempRepoPath = $packageFolder
 if ($PublishLocal) {
     if ($Profile -eq "Stack") {
         $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Stack")
