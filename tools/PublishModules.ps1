@@ -759,7 +759,9 @@ if ([string]::IsNullOrEmpty($nugetExe)) {
 }
 
 Write-Host "Publishing $Scope package (and its dependencies)"
+
 Get-PackageProvider -Name NuGet -Force
+Write-Host " "
 
 # NOTE: Can only be Azure or Azure Stack, not both.
 $packageFolder = "$PSScriptRoot\..\src\Package"
@@ -769,9 +771,9 @@ if ($Profile -eq "Stack") {
 
 # Set temporary repo location
 $PublishLocal = test-path $repositoryLocation
-[string]$tempRepoPath = $packageFolder
+[string]$tempRepoPath = "$packageFolder"
 if ($PublishLocal) {
-    if ($Profile -eq "Stack") {
+    if ($Profile -eq 'Stack') {
         $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Stack")
     } else {
         $tempRepoPath = (Join-Path $repositoryLocation -ChildPath "Package")
