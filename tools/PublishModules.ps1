@@ -759,9 +759,7 @@ if ([string]::IsNullOrEmpty($nugetExe)) {
 }
 
 Write-Host "Publishing $Scope package (and its dependencies)"
-
 Get-PackageProvider -Name NuGet -Force
-Write-Host " "
 
 # NOTE: Can only be Azure or Azure Stack, not both.
 $packageFolder = "$PSScriptRoot\..\src\Package"
