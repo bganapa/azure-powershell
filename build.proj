@@ -63,7 +63,7 @@
     <BuildOutputDirectory>$(PublishDirectory)\Build</BuildOutputDirectory>
     <TestOutputDirectory>$(PublishDirectory)\TestResults</TestOutputDirectory>
     <BuildInParallel Condition="'$(BuildInParallel)' == ''">true</BuildInParallel>
-    <NuGetPublishingSource Condition=" '$(NuGetPublishingSource)' == '' ">http://psget/PSGallery/api/v2/</NuGetPublishingSource>
+    <NuGetPublishingSource Condition=" '$(NuGetPublishingSource)' == '' ">$(LibrarySourceFolder)</NuGetPublishingSource>
     <Scope Condition=" $(Scope) == '' " >all</Scope>
     <NetCore Condition=" $(NetCore) != 'true' " >false</NetCore>
     <BuildTasksPath>$(LibraryToolsFolder)\BuildPackagesTask\Microsoft.Azure.Build.Tasks\bin\$(Configuration)</BuildTasksPath>
@@ -629,11 +629,6 @@
     <Exec Command="$(PowerShellCommandPrefix) &quot;Set-Variable -Name ProgressPreference -Value 'SilentlyContinue';. $(LibraryToolsFolder)\GenerateHelp.ps1 -ValidateMarkdownHelp -GenerateMamlHelp -BuildConfig $(Configuration) &quot;"
           ContinueOnError="false" 
           Condition="'$(Latest)' == 'true'"/>
-
-    <Exec Command="$(PowerShellCommandPrefix) &quot;$(LibraryToolsFolder)\UpdatePlatyPS.ps1 &quot;"
-          ContinueOnError="false"
-          Condition=" '$(Stack)' == 'true' "/>
-
   </Target>
 
 
