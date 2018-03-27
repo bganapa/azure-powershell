@@ -57,7 +57,9 @@ foreach ($module in $Scheduled) {
 #>
 function Update-Help {
     [CmdletBinding()]
-    param()
+    param(
+        [string]$BuildConfig
+    )
     # Create test output
     $TestFolder = "$($PSSCriptRoot)\..\testresults"
     New-Item -Path $TestFolder -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
