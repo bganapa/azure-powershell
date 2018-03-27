@@ -158,11 +158,13 @@ function Get-RollupModules {
             if ($Profile -eq "Stack") {
                 $targets += "$PSScriptRoot\..\src\StackAdmin\AzureRM"
                 $targets += "$PSScriptRoot\..\src\StackAdmin\AzureStack"
-            }
-
-            if ($IsNetCore) {
-                # For .NetCore publish AzureRM.Netcore
-                $targets += "$PSScriptRoot\AzureRM.Netcore"
+            } else {
+                if ($IsNetCore) {
+                    # For .NetCore publish AzureRM.Netcore
+                    $targets += "$PSScriptRoot\AzureRM.Netcore"
+                } else {
+                    $targets += "$PSScriptRoot\tools\AzureRM"                
+                }
             }
         }
         Write-Output -InputObject $targets
@@ -355,21 +357,6 @@ function Get-AllModules {
 #
 #################################################>
 
-<#
-.SYNOPSIS Overwrite the Author,CompanyName and Copyright to be Microsoft.
-
-.PARAMETER Path
-Path to the psd1 file.
-
-#>
-function Set-CopyrightInfo {
-
-    [CmdletBinding()]
-    param(
-        [string]$Path
-    )
-    Update-ModuleManifest -Path $Path -Author "Microsoft" -Copyright "Microsoft @$(Get-Date -Format yyyy)" -CompanyName "Microsoft"
-}
 
 <#
 .SYNOPSIS Remove the RequiredModules and NestedModules psd1 properties with empty array.
@@ -614,9 +601,6 @@ function Add-Module {
 
             Write-Output "Expanding $zipPath"
             Expand-Archive $zipPath -DestinationPath $dirPath
-
-            Write-Output "Setting copyright information for $unzippedManifest"
-            Set-CopyrightInfo -Path $unzippedManifest
 
             Write-Output "Removing module manifest dependencies for $unzippedManifest"
             Remove-ModuleDependencies -Path (Join-Path $TempRepoPath $unzippedManifest)

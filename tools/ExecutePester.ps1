@@ -51,7 +51,7 @@ function Start-Tests {
         [switch]$IsNetCore
     )
     # Create test output
-    $TestFolder = "$($PSSCriptRoot)\..\testresults"
+    $TestFolder = "$($PSSCriptRoot)\..\src\stack\"
     New-Item -Path $TestFolder -ItemType Directory -Force -ErrorAction SilentlyContinue | Out-Null
 
     # Root folder where modules are located
