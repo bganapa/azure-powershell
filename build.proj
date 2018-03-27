@@ -144,11 +144,11 @@
     <OnPremiseBuild Condition=" ! Exists($(OnPremiseBuildTasks)) ">false</OnPremiseBuild>
   </PropertyGroup>
 
-  <UsingTask  Condition=" $(OnPremiseBuild) " 
-              TaskName="CodeSigningTask" 
+  <UsingTask  Condition=" $(OnPremiseBuild) "
+              TaskName="CodeSigningTask"
               AssemblyFile="$(CIToolsPath)\Microsoft.WindowsAzure.Tools.Build.Tasks.OnPremise.dll" />
-  <UsingTask  Condition=" $(OnPremiseBuild) " 
-              TaskName="CorporateValidation" 
+  <UsingTask  Condition=" $(OnPremiseBuild) "
+              TaskName="CorporateValidation"
               AssemblyFile="$(CIToolsPath)\Microsoft.WindowsAzure.Tools.Build.Tasks.OnPremise.dll" />
   <Import     Condition=" $(OnPremiseBuild) "
               Project="$(CIToolsPath)\Microsoft.WindowsAzure.Build.OnPremise.msbuild" />
@@ -252,9 +252,9 @@
 
     <!-- Creating build output directory -->
     <MakeDir Directories="$(PackageDirectory)" />
-    
+
     <!-- Create mapping -->
-    <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\CreateMappings.ps1 -RootPath $(LibrarySourceFolder) -OutputFile $(PackageDirectory)\groupMapping.json -WarningFile $(PackageDirectory)\groupMappingWarnings.json -RulesFile $(LibraryToolsFolder)\CreateMappings_rules.json &quot;" 
+    <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\CreateMappings.ps1 -RootPath $(LibrarySourceFolder) -OutputFile $(PackageDirectory)\groupMapping.json -WarningFile $(PackageDirectory)\groupMappingWarnings.json -RulesFile $(LibraryToolsFolder)\CreateMappings_rules.json &quot;"
           ContinueOnError="false"
           Condition="'$(Latest)' == 'true' and '$(SkipMappings)' == 'false' "/>
 
@@ -268,7 +268,7 @@
 
     <!-- Create and update help files as needed -->
     <CallTarget Targets="GenerateHelp" />
-    
+
     <!-- Update modules -->
     <CallTarget Targets="UpdateModules" />
 
@@ -316,7 +316,7 @@
 
     <!-- Static Analysis -->
     <Message Importance="high" Text="Running Static Analyser" />
-    <CallTarget targets="DependencyAnalysis" 
+    <CallTarget targets="DependencyAnalysis"
                 ContinueOnError="ErrorAndContinue" />
     <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\CleanupBuild.ps1 -BuildConfig $(Configuration) &quot;" />
 
@@ -324,9 +324,9 @@
 
 
 
-  <!-- 
-    Build .Net Core Cmdlets 
-    Fully self contained 
+  <!--
+    Build .Net Core Cmdlets
+    Fully self contained
   -->
   <Target Name="BuildNetCore">
     <Message Importance="high" Text="Building Cmdlets..." />
@@ -389,7 +389,7 @@
 
     <!-- Update module manifests. -->
     <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\UpdateModules.ps1 -BuildConfig $(Configuration) -Scope AzureRM.Netcore -Profile Latest &quot; "
-          Condition="'$(Latest)' == 'true' and '$(CodeSign)' == 'false'" 
+          Condition="'$(Latest)' == 'true'"
           ContinueOnError="false" />
 
     <CallTarget Targets="GenerateHelp"/>
@@ -470,7 +470,8 @@
         ContinueOnError="false"
         Condition="!$(DelaySign) and '@(DelaySignedAssembliesToSign)' != ''"/>
 
-    <CallTarget Targets="UpdateModules" />
+    <CallTarget Targets="UpdateModules"
+                Condition="'$(NetCore)' == 'false'"/>
 
 
     <!-- Copying shortcut to be signed -->
@@ -556,7 +557,7 @@
 
     <Message Importance="high" Text="running dependency analysis..." />
     <Error Condition="1 == 1 or 'Should not be here'" />
-    
+
     <MSBuild
         Projects="@(StaticAnalysis)"
         Targets="Build"
@@ -567,7 +568,7 @@
     <Exec Command="$(MSBuildProjectDirectory)\src\Package\StaticAnalysis.exe $(MSBuildProjectDirectory)\src\Package\$(Configuration) $(MSBuildProjectDirectory)\src\Package true $(SkipHelp)"
           Condition="'$(Latest)' == 'true'"/>
     <Exec Command="$(MSBuildProjectDirectory)\src\Package\StaticAnalysis.exe $(MSBuildProjectDirectory)\src\Stack\$(Configuration) $(MSBuildProjectDirectory)\src\Stack"
-          Condition="'$(Stack)' == 'true'" 
+          Condition="'$(Stack)' == 'true'"
           ContinueOnError="True"/>
   </Target>
 
@@ -627,7 +628,7 @@
     Condition="'$(SkipHelp)' == 'false' ">
 
     <Exec Command="$(PowerShellCommandPrefix) &quot;Set-Variable -Name ProgressPreference -Value 'SilentlyContinue';. $(LibraryToolsFolder)\GenerateHelp.ps1 -ValidateMarkdownHelp -GenerateMamlHelp -BuildConfig $(Configuration) &quot;"
-          ContinueOnError="false" 
+          ContinueOnError="false"
           Condition="'$(Latest)' == 'true'"/>
 
     <Exec Command="$(PowerShellCommandPrefix) &quot;$(LibraryToolsFolder)\UpdatePlatyPS.ps1 &quot;"

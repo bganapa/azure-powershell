@@ -108,15 +108,13 @@ function Get-Directories {
 
     PROCESS {
         $packageFolder = "$PSScriptRoot\..\src\Package"
+
         if ($Profile -eq "Stack") {
             $packageFolder = "$PSScriptRoot\..\src\Stack"
         }
 
-        if ($isNetCore) {
-            $resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager"
-        } else {
-            $resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager\AzureResourceManager"
-        }
+        $resourceManagerRootFolder = "$packageFolder\$buildConfig\ResourceManager\AzureResourceManager"
+
         Write-Output -InputObject $packageFolder, $resourceManagerRootFolder
     }
 }
