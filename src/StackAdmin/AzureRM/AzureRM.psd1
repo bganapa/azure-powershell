@@ -51,11 +51,11 @@ CLRVersion = '4.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '4.4.0'; },
+RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '4.5.0'; },
                @{ModuleName = 'Azure.Storage'; RequiredVersion = '1.0.5.4'; },
                @{ModuleName = 'AzureRM.Compute'; RequiredVersion = '1.2.3.4'; },
                @{ModuleName = 'AzureRM.Dns'; RequiredVersion = '4.1.1'; },
-               @{ModuleName = 'AzureRM.KeyVault'; RequiredVersion = '4.2.0'; },
+               @{ModuleName = 'AzureRM.KeyVault'; RequiredVersion = '4.2.1'; },
                @{ModuleName = 'AzureRM.Network'; RequiredVersion = '1.0.5.4'; },
                @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '5.3.0.1'; },
                @{ModuleName = 'AzureRM.Storage'; RequiredVersion = '1.1.0.1'; },
