@@ -230,7 +230,7 @@
     <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\UpdateModules.ps1 -BuildConfig $(Configuration) -Scope $(Scope) &quot;"
           Condition="'$(CodeSign)' == 'false'"/>
 
-    <Exec ContinueOnError="false"
+    <Exec ContinueOnError="true"
           Command="$(PowerShellCommandPrefix) &quot; . $(LibraryToolsFolder)\NewHelpIndex.ps1 -OutputFile $(AzurePackageFolder)\index.json -BuildConfig $(Configuration) &quot;"
           Condition=" '$(SkipHelp)' == 'false' and ('$(Scope)' == 'all' or '$(Scope)' == 'Latest')"/>
 
