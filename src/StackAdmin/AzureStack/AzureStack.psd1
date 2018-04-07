@@ -52,17 +52,18 @@ ProcessorArchitecture = 'None'
 # Modules that must be imported into the global environment prior to importing this module  
 RequiredModules = @(@{ModuleName="AzureRM.Profile"; ModuleVersion="4.6.0"},
   @{ModuleName="Azs.AzureBridge.Admin"; RequiredVersion="0.1.0"},  
-  @{ModuleName=".\Azs.Backup.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Commerce.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Compute.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Fabric.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Gallery.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.InfrastructureInsights.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.KeyVault.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Network.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Storage.Admin"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Subscriptions"; RequiredVersion="0.1.0"},
-  @{ModuleName=".\Azs.Subscriptions.Admin"; RequiredVersion="0.1.0"})
+  @{ModuleName="Azs.Backup.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Commerce.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Compute.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Fabric.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Gallery.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.InfrastructureInsights.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.KeyVault.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Network.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Storage.Admin"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Subscriptions"; RequiredVersion="0.1.0"},
+  @{ModuleName="Azs.Subscriptions.Admin"; RequiredVersion="0.1.0"})
+
 # Assemblies that must be loaded prior to importing this module  
 RequiredAssemblies = @()  
   
