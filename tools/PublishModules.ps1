@@ -457,6 +457,65 @@ function Add-Modules {
 }
 
 <#
+.SYNOPSIS 
+Save the packages from PsGallery to local repo path
+This is typically used in a scenario where we are intending to use the existing publshed version of the module as a dependency 
+Checks whether the module is already published in the local temp repo, if not downloads from the PSGallery
+This is used only for the rollup modules AzureRm or AzureStack at the moment
+
+.PARAMETER ModulePaths
+List of paths to modules.
+
+.PARAMETER TempRepo
+Name of local temporary repository.
+
+.PARAMETER TempRepoPath
+path to local temporary repository.
+
+#>
+function Save-PackagesFromPsGallery {
+    [CmdletBinding()]
+    param(
+        [String[]]$ModulePaths,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepo,
+
+        [ValidateNotNullOrEmpty()]
+        [String]$TempRepoPath
+    )
+    PROCESS {
+        foreach ($modulePath in $ModulePaths) {
+            Write-Output $modulePath
+            $module = (Get-Item -Path $modulePath).Name
+            $moduleManifest = $module + ".psd1"
+            
+            Write-Output "Verifying $module has all the dependencies in the repo $TempRepo"
+
+            $psDataFile = Import-PowershellDataFile (Join-Path $modulePath -ChildPath $moduleManifest)
+
+            $psDataFile.RequiredModules | ForEach-Object {
+                # Only check for the modules that specifies = required exact dependency version
+                if($_.RequiredVersion)
+                {
+                    if (Find-Module -Name $_.ModuleName -RequiredVersion $_.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue)
+                    {
+                        Write-Output "Required dependency $_.ModuleName, $_.RequiredVersion found in the repo $TempRepo"
+                    } else {
+                        Write-Warning "Required dependency $_.ModuleName, $_.RequiredVersion not found in the repo $TempRepo"
+                        Write-Output "Downloading the package from PsGallery to the path $TempRepoPath"
+                        # We try to download the package from the PsGallery as we are likely intending to use the existing version of the module.
+                        # If the module not found in psgallery, the following commnad would fail and hence publish to local repo process would fail as well
+                        Save-Package -Name $_.ModuleName -RequiredVersion $_.RequiredVersion -ProviderName Nuget -Path $TempRepoPath -Source https://www.powershellgallery.com/api/v2 
+                        Write-Output "Downloaded the package sucessfully"
+                    }
+                }
+            }
+        }
+    }
+}
+
+<#
 .SYNOPSIS Add all modules to local repo.
 
 .PARAMETER ModulePaths
@@ -487,7 +546,7 @@ function Add-AllModules {
         [String]$NugetExe
     )
 
-    $Keys = @('ClientModules', 'AdminModules', 'RollupModules')
+    $Keys = @('ClientModules', 'AdminModules')
     Write-Output "adding modules to local repo"
     foreach ($module in $Keys) {
         $modulePath = $Modules[$module]
@@ -495,6 +554,12 @@ function Add-AllModules {
         Add-Modules -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePath $modulePath -NugetExe $NugetExe
         Write-Output " "
     }
+
+    Write-Output "Adding rollup modules to local repo"
+    $modulePath = $Modules['RollupModules']
+    Save-PackagesFromPsGallery -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePaths $modulePath
+    Add-Modules -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePath $modulePath -NugetExe $NugetExe
+
     Write-Output " "
 }
 
