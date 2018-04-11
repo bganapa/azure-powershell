@@ -494,19 +494,19 @@ function Save-PackagesFromPsGallery {
 
             $psDataFile = Import-PowershellDataFile (Join-Path $modulePath -ChildPath $moduleManifest)
 
-            $psDataFile.RequiredModules | ForEach-Object {
+            foreach($module in $psDataFile.RequiredModules) {
                 # Only check for the modules that specifies = required exact dependency version
-                if($_.RequiredVersion)
+                if($module.RequiredVersion)
                 {
-                    if (Find-Module -Name $_.ModuleName -RequiredVersion $_.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue)
+                    if (Find-Module -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue)
                     {
-                        Write-Output "Required dependency $_.ModuleName, $_.RequiredVersion found in the repo $TempRepo"
+                        Write-Output "Required dependency $($module.ModuleName), $($module.RequiredVersion) found in the repo $TempRepo"
                     } else {
-                        Write-Warning "Required dependency $_.ModuleName, $_.RequiredVersion not found in the repo $TempRepo"
+                        Write-Warning "Required dependency $($module.ModuleName), $($module.RequiredVersion) not found in the repo $TempRepo"
                         Write-Output "Downloading the package from PsGallery to the path $TempRepoPath"
                         # We try to download the package from the PsGallery as we are likely intending to use the existing version of the module.
                         # If the module not found in psgallery, the following commnad would fail and hence publish to local repo process would fail as well
-                        Save-Package -Name $_.ModuleName -RequiredVersion $_.RequiredVersion -ProviderName Nuget -Path $TempRepoPath -Source https://www.powershellgallery.com/api/v2 
+                        Save-Package -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -ProviderName Nuget -Path $TempRepoPath -Source https://www.powershellgallery.com/api/v2 
                         Write-Output "Downloaded the package sucessfully"
                     }
                 }
