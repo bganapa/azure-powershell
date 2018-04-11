@@ -485,6 +485,9 @@ function Save-PackagesFromPsGallery {
         [String]$TempRepoPath
     )
     PROCESS {
+
+        $PSVersionTable
+
         foreach ($modulePath in $ModulePaths) {
             Write-Output $modulePath
             $moduleName = (Get-Item -Path $modulePath).Name
@@ -493,12 +496,16 @@ function Save-PackagesFromPsGallery {
             Write-Output "Verifying $module has all the dependencies in the repo $TempRepo"
 
             $psDataFile = Import-PowershellDataFile (Join-Path $modulePath -ChildPath $moduleManifest)
+            
+            $psDataFile
+            $psDataFile.RequiredModules
 
             foreach($module in $psDataFile.RequiredModules) {
                 
-                $module | Get-Member
-                $PSVersionTable
+                $module
 
+                $module.GetType()
+                
                 # Only check for the modules that specifies = required exact dependency version
                 if($module.Keys -contains "RequiredVersion")
                 {
