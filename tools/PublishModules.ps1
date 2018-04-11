@@ -487,30 +487,33 @@ function Save-PackagesFromPsGallery {
     PROCESS {
         foreach ($modulePath in $ModulePaths) {
             Write-Output $modulePath
-            $module = (Get-Item -Path $modulePath).Name
-            $moduleManifest = $module + ".psd1"
+            $moduleName = (Get-Item -Path $modulePath).Name
+            $moduleManifest = $moduleName + ".psd1"
             
             Write-Output "Verifying $module has all the dependencies in the repo $TempRepo"
 
             $psDataFile = Import-PowershellDataFile (Join-Path $modulePath -ChildPath $moduleManifest)
 
             foreach($module in $psDataFile.RequiredModules) {
+                
+                $module | Get-Member
+                $PSVersionTable
+
                 # Only check for the modules that specifies = required exact dependency version
-                if($module.RequiredVersion)
+                if($module.Keys -contains "RequiredVersion")
                 {
-					Write-Output "Module Name : $($module.ModuleName)"
-					Get-Command Find-Module
-					$result = Find-Module -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue
+					Write-Output "Module Name : $($module["ModuleName"])"
+					$result = Find-Module -Name $module["ModuleName"] -RequiredVersion $module["RequiredVersion"] -Repository $TempRepo -ErrorAction SilentlyContinue
 					Write-Output $result
                     if ($result)
                     {
-                        Write-Output "Required dependency $($module.ModuleName), $($module.RequiredVersion) found in the repo $TempRepo"
+                        Write-Output "Required dependency $($module["ModuleName"]), $($module["RequiredVersion"]) found in the repo $TempRepo"
                     } else {
-                        Write-Warning "Required dependency $($module.ModuleName), $($module.RequiredVersion) not found in the repo $TempRepo"
+                        Write-Warning "Required dependency $($module["ModuleName"]), $($module["RequiredVersion"]) not found in the repo $TempRepo"
                         Write-Output "Downloading the package from PsGallery to the path $TempRepoPath"
                         # We try to download the package from the PsGallery as we are likely intending to use the existing version of the module.
                         # If the module not found in psgallery, the following commnad would fail and hence publish to local repo process would fail as well
-                        Save-Package -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -ProviderName Nuget -Path $TempRepoPath -Source https://www.powershellgallery.com/api/v2 
+                        Save-Package -Name $module["ModuleName"] -RequiredVersion $module["RequiredVersion"] -ProviderName Nuget -Path $TempRepoPath -Source https://www.powershellgallery.com/api/v2 
                         Write-Output "Downloaded the package sucessfully"
                     }
                 }
