@@ -571,7 +571,7 @@ function Add-AllModules {
 
     Write-Output "Adding rollup modules to local repo"
     $modulePath = $Modules['RollupModules']
-    Save-PackagesFromPsGallery -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePaths $modulePath
+    #Save-PackagesFromPsGallery -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePaths $modulePath
     Add-Modules -TempRepo $TempRepo -TempRepoPath $TempRepoPath -ModulePath $modulePath -NugetExe $NugetExe
 
     Write-Output " "
