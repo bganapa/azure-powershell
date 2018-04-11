@@ -498,7 +498,11 @@ function Save-PackagesFromPsGallery {
                 # Only check for the modules that specifies = required exact dependency version
                 if($module.RequiredVersion)
                 {
-                    if (Find-Module -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue)
+					Write-Output "Module Name : $($module.ModuleName)"
+					Get-Command Find-Module
+					$result = Find-Module -Name $module.ModuleName -RequiredVersion $module.RequiredVersion -Repository $TempRepo -ErrorAction SilentlyContinue
+					Write-Output $result
+                    if ($result)
                     {
                         Write-Output "Required dependency $($module.ModuleName), $($module.RequiredVersion) found in the repo $TempRepo"
                     } else {
