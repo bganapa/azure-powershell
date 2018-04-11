@@ -31,6 +31,7 @@ function Start-AzsReclaimStorageCapacity {
     param(
         [Parameter(Mandatory = $false)]
         [ValidateLength(1, 90)]
+        [ValidateNotNullOrEmpty()]
         [System.String]
         $ResourceGroupName,
 
@@ -71,6 +72,10 @@ function Start-AzsReclaimStorageCapacity {
             }
         }
 
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+            $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
+        }
+
         $NewServiceClient_params = @{
             FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
         }
@@ -84,10 +89,6 @@ function Start-AzsReclaimStorageCapacity {
         }
 
         $StorageAdminClient = New-ServiceClient @NewServiceClient_params
-
-        if ($ResourceGroupName -eq $null) {
-            $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
-        }
 
         Write-Verbose -Message 'Performing operation StartGarbageCollectionWithHttpMessagesAsync on $StorageAdminClient.'
         $TaskResult = $StorageAdminClient.Farms.StartGarbageCollectionWithHttpMessagesAsync($ResourceGroupName, $FarmName)

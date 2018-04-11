@@ -57,7 +57,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function Set-AzsNetworkQuota {
     [OutputType([Microsoft.AzureStack.Management.Network.Admin.Models.Quota])]
-    [CmdletBinding(DefaultParameterSetName = 'Quotas')]
+    [CmdletBinding(DefaultParameterSetName = 'Quotas', SupportsShouldProcess = $true)]
     param(
         [Parameter(Mandatory = $true, ParameterSetName = 'Quotas')]
         [ValidateNotNullOrEmpty()]
@@ -104,7 +104,11 @@ function Set-AzsNetworkQuota {
         [Parameter(Mandatory = $true, ValueFromPipeline = $true, ParameterSetName = 'InputObject')]
         [ValidateNotNullOrEmpty()]
         [Microsoft.AzureStack.Management.Network.Admin.Models.Quota]
-        $InputObject
+        $InputObject,
+
+        [Parameter(Mandatory = $false)]
+        [switch]
+        $Force
     )
 
     Begin {
@@ -145,7 +149,8 @@ function Set-AzsNetworkQuota {
 
             if ('ResourceId' -eq $PsCmdlet.ParameterSetName) {
                 $GetArmResourceIdParameterValue_params['Id'] = $ResourceId
-            } else {
+            }
+            else {
                 $GetArmResourceIdParameterValue_params['Id'] = $InputObject.Id
                 $Quota = $InputObject
             }
@@ -153,42 +158,49 @@ function Set-AzsNetworkQuota {
 
             $Location = $ArmResourceIdParameterValues['location']
             $Name = $ArmResourceIdParameterValues['resourceName']
-        } elseif (-not $PSBoundParameters.ContainsKey('Location')) {
+        }
+        elseif (-not $PSBoundParameters.ContainsKey('Location')) {
             $Location = (Get-AzureRMLocation).Location
         }
 
-        if ('Quotas' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
+        if ($PSCmdlet.ShouldProcess("$Name" , "Create or update network quota")) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create or update network quota?", "Performing operation CreateOrUpdateWithHttpMessagesAsync on $Name."))) {
 
-            if ($Quota -eq $null) {
-                $Quota = Get-AzsNetworkQuota -Location $Location -Name $Name
-            }
+                if ('Quotas' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
 
-            $flattenedParameters = @(
-                'MaxNicsPerSubscription', 'MaxPublicIpsPerSubscription',
-                'MaxVirtualNetworkGatewayConnectionsPerSubscription', 'MaxVnetsPerSubscription',
-                'MaxVirtualNetworkGatewaysPerSubscription', 'MaxSecurityGroupsPerSubscription',
-                'MaxLoadBalancersPerSubscription')
-            # Update the Quota object
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $Quota.$($_) = $PSBoundParameters[$_]
+                    if ($Quota -eq $null) {
+                        $Quota = Get-AzsNetworkQuota -Location $Location -Name $Name
+                    }
+
+                    $flattenedParameters = @(
+                        'MaxNicsPerSubscription', 'MaxPublicIpsPerSubscription',
+                        'MaxVirtualNetworkGatewayConnectionsPerSubscription', 'MaxVnetsPerSubscription',
+                        'MaxVirtualNetworkGatewaysPerSubscription', 'MaxSecurityGroupsPerSubscription',
+                        'MaxLoadBalancersPerSubscription')
+                    # Update the Quota object
+                    $flattenedParameters | ForEach-Object {
+                        if ($PSBoundParameters.ContainsKey($_)) {
+                            $Quota.$($_) = $PSBoundParameters[$_]
+                        }
+                    }
+
+                    Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
+                    $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
+                }
+                else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+
+                    Get-TaskResult @GetTaskResult_params
+
                 }
             }
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
-            $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
-
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
-            }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

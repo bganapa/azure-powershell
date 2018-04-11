@@ -114,11 +114,10 @@ function Start-AzsScaleUnitNode {
 
         $FabricAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if($Location -eq $null) {
+        if ([String]::IsNullOrEmpty($Location)) {
             $Location = (Get-AzureRMLocation).Location
         }
-
-        if($ResourceGroupName -eq $null) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $ResourceGroupName = "System.$Location"
         }
 

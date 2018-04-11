@@ -65,10 +65,10 @@ Description = 'Update Admin Client'
 # ScriptsToProcess = @()
 
 # Type files (.ps1xml) to be loaded when importing this module
-# TypesToProcess = @()
+TypesToProcess = @('Generated.PowerShell.Commands\FormatFiles\Azs.Update.Admin.Type.ps1xml')
 
 # Format files (.ps1xml) to be loaded when importing this module
-# FormatsToProcess =
+FormatsToProcess = @('Generated.PowerShell.Commands\FormatFiles\Azs.Update.Admin.Format.ps1xml')
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
 NestedModules = @()

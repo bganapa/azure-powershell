@@ -110,7 +110,7 @@ function Restore-AzsStorageAccount {
 
         $StorageAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if ($ResourceGroupName -eq $null) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
         }
 

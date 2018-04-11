@@ -144,9 +144,7 @@ function Set-AzsComputeQuota {
 
         $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
 
-
-
-        if ( -not $PSBoundParameters.ContainsKey('Location')) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $Location = (Get-AzureRMLocation).Location
         }
 

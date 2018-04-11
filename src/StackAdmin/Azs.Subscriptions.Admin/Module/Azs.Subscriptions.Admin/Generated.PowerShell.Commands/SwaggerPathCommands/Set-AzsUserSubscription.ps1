@@ -106,6 +106,7 @@ function Set-AzsUserSubscription {
         $ResourceId,
 
         [Parameter(Mandatory = $true, ValueFromPipeline = $true, ParameterSetName = 'InputObject')]
+        [Alias('Subscription')]
         [Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Subscription]
         $InputObject
     )

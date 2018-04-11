@@ -64,11 +64,11 @@ Licensed under the MIT License. See License.txt in the project root for license 
     # Script files (.ps1) that are run in the caller's environment prior to importing this module.
     # ScriptsToProcess = @()
 
-    # Type files (.ps1xml) to be loaded when importing this module
-    # TypesToProcess = @()
+	# Type files (.ps1xml) to be loaded when importing this module
+	TypesToProcess = @('Generated.PowerShell.Commands\FormatFiles\Azs.Subscriptions.Admin.Type.ps1xml')
 
-    # Format files (.ps1xml) to be loaded when importing this module
-    # FormatsToProcess =  @()
+	# Format files (.ps1xml) to be loaded when importing this module
+	FormatsToProcess = @('Generated.PowerShell.Commands\FormatFiles\Azs.Subscriptions.Admin.Format.ps1xml')
 
     # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
     NestedModules     = @()

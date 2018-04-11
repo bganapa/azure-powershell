@@ -209,7 +209,8 @@ InModuleScope Azs.Network.Admin {
                 -MaxNicsPerSubscription 4 `
                 -MaxSecurityGroupsPerSubscription 2 `
                 -Name $Name `
-                -Location local
+                -Location local `
+                -Force
         }
 
         function DeleteQuota {
@@ -249,7 +250,7 @@ InModuleScope Azs.Network.Admin {
             $location = "local"
             $quotaName = "TestQuotaForRemoval"
 
-            $created = New-AzsNetworkQuota -Name $quotaName -Location $location
+            $created = New-AzsNetworkQuota -Name $quotaName -Location $location -Force
             $quota = Get-AzsNetworkQuota -Name $quotaName -Location $location
 
             $quota   | Should Not be $null
@@ -269,7 +270,7 @@ InModuleScope Azs.Network.Admin {
             $location = "local"
             $quotaName = "TestQuotaForUpdate"
 
-            $quota = New-AzsNetworkQuota -Name $quotaName -Location $location
+            $quota = New-AzsNetworkQuota -Name $quotaName -Location $location -Force
             $created = Get-AzsNetworkQuota -Name $quotaName -Location $location
 
             $quota   | Should Not be $null
@@ -278,7 +279,7 @@ InModuleScope Azs.Network.Admin {
             AssertQuotasAreSame -expected $quota -found $created
 
             # Post update
-            $updatedQuota = Set-AzsNetworkQuota -Name $quotaName -Location $location -MaxNicsPerSubscription 8
+            $updatedQuota = Set-AzsNetworkQuota -Name $quotaName -Location $location -MaxNicsPerSubscription 8 -Force
             $getUpdatedQuota = Get-AzsNetworkQuota -Name $quotaName -Location $location
             AssertQuotasAreSame -expected $updatedQuota -found $getUpdatedQuota
 

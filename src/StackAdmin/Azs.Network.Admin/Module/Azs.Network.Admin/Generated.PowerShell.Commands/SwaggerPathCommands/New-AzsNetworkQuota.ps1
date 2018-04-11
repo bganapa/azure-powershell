@@ -50,7 +50,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsNetworkQuota {
     [OutputType([Microsoft.AzureStack.Management.Network.Admin.Models.Quota])]
-    [CmdletBinding(DefaultParameterSetName = 'Quotas_CreateOrUpdate')]
+    [CmdletBinding(DefaultParameterSetName = 'Quotas_CreateOrUpdate', SupportsShouldProcess = $true)]
     param(
         [Parameter(Mandatory = $true, ParameterSetName = 'Quotas_CreateOrUpdate')]
         [ValidateNotNullOrEmpty()]
@@ -92,7 +92,11 @@ function New-AzsNetworkQuota {
         [Parameter(Mandatory = $false, DontShow = $true)]
         [ValidateSet('None', 'Prepare', 'Commit', 'Abort')]
         [string]
-        $MigrationPhase = 'Prepare'
+        $MigrationPhase = 'Prepare',
+
+        [Parameter(Mandatory = $false)]
+        [switch]
+        $Force
     )
 
     Begin {
@@ -141,22 +145,26 @@ function New-AzsNetworkQuota {
         }
         $Quota = New-QuotaObject @utilityCmdParams
 
-        if ('Quotas_CreateOrUpdate' -eq $PsCmdlet.ParameterSetName) {
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
-            $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
+        if ($PSCmdlet.ShouldProcess("$Name" , "Create new network quota")) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create new network quota?", "Performing operation CreateOrUpdateWithHttpMessagesAsync on $Name."))) {
+                if ('Quotas_CreateOrUpdate' -eq $PsCmdlet.ParameterSetName) {
+                    Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
+                    $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
+                }
+                else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
 
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+                    Get-TaskResult @GetTaskResult_params
+                }
             }
-            Get-TaskResult @GetTaskResult_params
         }
     }
-
     End {
         if ($tracerObject) {
             $global:DebugPreference = $oldDebugPreference
