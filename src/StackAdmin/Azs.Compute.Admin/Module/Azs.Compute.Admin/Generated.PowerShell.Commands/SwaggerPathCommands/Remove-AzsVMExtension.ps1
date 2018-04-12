@@ -28,6 +28,9 @@ Changes may cause incorrect behavior and will be lost if the code is regenerated
 .PARAMETER ResourceId
     The resource id.
 
+.PARAMETER Force
+    Don't ask for confirmation.
+
 .EXAMPLE
 
     PS C:\> Remove-AzsVMExtension -Publisher "Microsoft" -Type "MicroExtension" -Version "0.1.0"
@@ -83,20 +86,6 @@ function Remove-AzsVMExtension {
 
         $ErrorActionPreference = 'Stop'
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
-        }
-
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
-
         if ('ResourceId' -eq $PsCmdlet.ParameterSetName) {
             $GetArmResourceIdParameterValue_params = @{
                 IdTemplate = '/subscriptions/{subscriptionId}/providers/Microsoft.Compute.Admin/locations/{locationName}/artifactTypes/VMExtension/publishers/{publisher}/types/{type}/versions/{version}'
@@ -109,12 +98,28 @@ function Remove-AzsVMExtension {
             $publisher = $ArmResourceIdParameterValues['publisher']
             $type = $ArmResourceIdParameterValues['type']
             $version = $ArmResourceIdParameterValues['version']
-        } elseif ( -not $PSBoundParameters.ContainsKey('Location')) {
-            $Location = (Get-AzureRMLocation).Location
         }
 
         if ($PSCmdlet.ShouldProcess("$Publisher" , "Delete the VM extension")) {
             if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Delete the VM extension?", "Performing operation DeleteWithHttpMessagesAsync on $Publisher."))) {
+
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
+                }
+
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
+
+                $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
+
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
 
                 if ('Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
                     Write-Verbose -Message 'Performing operation DeleteWithHttpMessagesAsync on $ComputeAdminClient.'

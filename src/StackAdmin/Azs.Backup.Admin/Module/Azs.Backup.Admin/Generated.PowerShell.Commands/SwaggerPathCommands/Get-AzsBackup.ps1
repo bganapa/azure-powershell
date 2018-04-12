@@ -22,6 +22,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .PARAMETER ResourceGroupName
     Name of the resource group.
 
+.PARAMETER ParentResource
+    Passing a backup location will return the list of all backups at that backup location.
+
 .EXAMPLE
 
     PS C:\> Get-AzsBackup
@@ -61,17 +64,17 @@ function Get-AzsBackup {
         [System.String]
         $ResourceGroupName,
 
-        [Parameter(Mandatory = $true, ValueFromPipeline = $true, ParameterSetName = 'ParentObject')]
+        [Parameter(Mandatory = $true, ValueFromPipeline = $true, ParameterSetName = 'ParentResource')]
         [ValidateNotNullOrEmpty()]
         [Microsoft.AzureStack.Management.Backup.Admin.Models.BackupLocation]
-        $ParentObject,
+        $ParentResource,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'ParentObject')]
+        [Parameter(Mandatory = $false, ParameterSetName = 'ParentResource')]
         [Parameter(Mandatory = $false, ParameterSetName = 'List')]
         [int]
         $Top = -1,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'ParentObject')]
+        [Parameter(Mandatory = $false, ParameterSetName = 'ParentResource')]
         [Parameter(Mandatory = $false, ParameterSetName = 'List')]
         [int]
         $Skip = -1
@@ -105,7 +108,6 @@ function Get-AzsBackup {
         }
 
         $BackupAdminClient = New-ServiceClient @NewServiceClient_params
-
         if ('ResourceId' -eq $PsCmdlet.ParameterSetName) {
             $GetArmResourceIdParameterValue_params = @{
                 IdTemplate = '/subscriptions/{subscriptionId}/resourcegroups/{resourceGroup}/providers/Microsoft.Backup.Admin/backupLocations/{location}/backups/{backup}'
@@ -116,30 +118,29 @@ function Get-AzsBackup {
             $ResourceGroupName = $ArmResourceIdParameterValues['resourceGroup']
             $Location = $ArmResourceIdParameterValues['location']
             $Name = $ArmResourceIdParameterValues['backup']
-        } else {
-            if (-not $PSBoundParameters.ContainsKey('Location')) {
-                $Location = (Get-AzureRMLocation).Location
-            }
-
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
-                $ResourceGroupName = "System.$Location"
-            }
-        }
-
-        if ('ParentObject' -eq $PsCmdlet.ParameterSetName) {
+        } elseif ('ParentResource' -eq $PsCmdlet.ParameterSetName) {
 
             $GetArmResourceIdParameterValue_params = @{
                 IdTemplate = '/subscriptions/{subscriptionId}/resourcegroups/{resourceGroup}/providers/Microsoft.Backup.Admin/backupLocations/{location}'
             }
 
-            $GetArmResourceIdParameterValue_params['Id'] = $ParentObject.Id
+            $GetArmResourceIdParameterValue_params['Id'] = $ParentResource.Id
 
             $ArmResourceIdParameterValues = Get-ArmResourceIdParameterValue @GetArmResourceIdParameterValue_params
             $ResourceGroupName = $ArmResourceIdParameterValues['resourceGroup']
             $Location = $ArmResourceIdParameterValues['location']
+        } else {
+
+            if ([String]::IsNullOrEmpty($Location)) {
+                $Location = (Get-AzureRMLocation).Location
+            }
+
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+                $ResourceGroupName = "System.$Location"
+            }
         }
 
-        if ('List' -eq $PsCmdlet.ParameterSetName -or 'ParentObject' -eq $PsCmdlet.ParameterSetName) {
+        if ('List' -eq $PsCmdlet.ParameterSetName -or 'ParentResource' -eq $PsCmdlet.ParameterSetName) {
             Write-Verbose -Message 'Performing operation ListWithHttpMessagesAsync on $BackupAdminClient.'
             $TaskResult = $BackupAdminClient.Backups.ListWithHttpMessagesAsync($ResourceGroupName, $Location)
         } elseif ('Get' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {

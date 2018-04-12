@@ -31,32 +31,31 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .EXAMPLE
     Add-AzsPlanToOffer -PlanLinkType Addon -Offer offer1 -PlanName plan1 -ResourceGroupName rg1 -MaxAcquisitionCount 2
 #>
-function Add-AzsPlanToOffer
-{
-    [CmdletBinding(DefaultParameterSetName='Offers_Link', SupportsShouldProcess = $true)]
-    param(    
-        [Parameter(Mandatory = $true, ParameterSetName = 'Offers_Link')]
+function Add-AzsPlanToOffer {
+    [CmdletBinding(SupportsShouldProcess = $true)]
+    param(
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $PlanName,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Offers_Link')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $OfferName,
-    
-        [Parameter(Mandatory = $true, ParameterSetName = 'Offers_Link')]
+
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [ValidateLength(1, 90)]
         [System.String]
         $ResourceGroupName,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Offers_Link')]
+        [Parameter(Mandatory = $false)]
         [ValidateSet('None', 'Base', 'Addon')]
         [string]
         $PlanLinkType,
-    
-        [Parameter(Mandatory = $false, ParameterSetName = 'Offers_Link')]
+
+        [Parameter(Mandatory = $false)]
         [int64]
         $MaxAcquisitionCount,
 
@@ -65,70 +64,63 @@ function Add-AzsPlanToOffer
         $Force
     )
 
-    Begin 
-    {
-	    Initialize-PSSwaggerDependencies -Azure
+    Begin {
+        Initialize-PSSwaggerDependencies -Azure
         $tracerObject = $null
         if (('continue' -eq $DebugPreference) -or ('inquire' -eq $DebugPreference)) {
             $oldDebugPreference = $global:DebugPreference
-			$global:DebugPreference = "continue"
+            $global:DebugPreference = "continue"
             $tracerObject = New-PSSwaggerClientTracing
             Register-PSSwaggerClientTracing -TracerObject $tracerObject
         }
-	}
+    }
 
     Process {
-    
-    $ErrorActionPreference = 'Stop'
 
-    $NewServiceClient_params = @{
-        FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-    }
+        $ErrorActionPreference = 'Stop'
 
-    $GlobalParameterHashtable = @{}
-    $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-     
-    $GlobalParameterHashtable['SubscriptionId'] = $null
-    if($PSBoundParameters.ContainsKey('SubscriptionId')) {
-        $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-    }
+        if ($PSCmdlet.ShouldProcess("$PlanLink" , "Connect plan to offer")) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Connect the plan to the offer?", "Performing operation LinkWithHttpMessagesAsync on $PlanLink."))) {
 
-    $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+                }
 
-        
-    $flattenedParameters = @('PlanName', 'PlanLinkType', 'MaxAcquisitionCount')
-    $utilityCmdParams = @{}
-    $flattenedParameters | ForEach-Object {
-        if($PSBoundParameters.ContainsKey($_)) {
-            $utilityCmdParams[$_] = $PSBoundParameters[$_]
-        }
-    }
-    $PlanLink = New-PlanLinkDefinitionObject @utilityCmdParams
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-    if ($PSCmdlet.ShouldProcess("$PlanLink" , "Connect plan to offer")) {
-        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Connect the plan to the offer?", "Performing operation LinkWithHttpMessagesAsync on $PlanLink."))) {
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
 
-            if ('Offers_Link' -eq $PsCmdlet.ParameterSetName) {
+                $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+
+
+                $flattenedParameters = @('PlanName', 'PlanLinkType', 'MaxAcquisitionCount')
+                $utilityCmdParams = @{}
+                $flattenedParameters | ForEach-Object {
+                    if ($PSBoundParameters.ContainsKey($_)) {
+                        $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                    }
+                }
+                $PlanLink = New-PlanLinkDefinitionObject @utilityCmdParams
+
                 Write-Verbose -Message 'Performing operation LinkWithHttpMessagesAsync on $SubscriptionsAdminClient.'
                 $TaskResult = $SubscriptionsAdminClient.Offers.LinkWithHttpMessagesAsync($ResourceGroupName, $OfferName, $PlanLink)
-            } else {
-                Write-Verbose -Message 'Failed to map parameter set to operation method.'
-                throw 'Module failed to find operation to execute.'
-            }
 
-            if ($TaskResult) {
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
-                }
-                    
-                Get-TaskResult @GetTaskResult_params
-                
-                if ($TaskResult.IsFaulted -ne $true)
-                {
-                    Get-AzsPlan -ResourceGroupName $ResourceGroupName -Name $PlanName
-                }
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
 
-            }
+                    Get-TaskResult @GetTaskResult_params
+
+                    if ($TaskResult.IsFaulted -ne $true) {
+                        Get-AzsPlan -ResourceGroupName $ResourceGroupName -Name $PlanName
+                    }
+
+                }
             }
         }
     }

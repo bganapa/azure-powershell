@@ -31,6 +31,9 @@ Changes may cause incorrect behavior and will be lost if the code is regenerated
 .PARAMETER ResourceId
     The resource id.
 
+.PARAMETER Force
+    Don't ask for confirmation.
+
 .EXAMPLE
 
     PS C:\> Remove-AzsPlatformImage -Publisher Test -Offer UbuntuServer -Version 1.0.0 -Sku 16.04-LTS
@@ -88,22 +91,7 @@ function Remove-AzsPlatformImage {
     }
 
     Process {
-
         $ErrorActionPreference = 'Stop'
-
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
-        }
-
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
 
         if ('ResourceId' -eq $PsCmdlet.ParameterSetName) {
             $GetArmResourceIdParameterValue_params = @{
@@ -118,12 +106,28 @@ function Remove-AzsPlatformImage {
             $offer = $ArmResourceIdParameterValues['offer']
             $sku = $ArmResourceIdParameterValues['sku']
             $version = $ArmResourceIdParameterValues['version']
-        } elseif ( -not $PSBoundParameters.ContainsKey('Location')) {
-            $Location = (Get-AzureRMLocation).Location
         }
 
         if ($PSCmdlet.ShouldProcess("$sku" , "Delete platform image")) {
             if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Delete platform image?", "Performing operation DeleteWithHttpMessagesAsync on $sku."))) {
+
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
+                }
+
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
+
+                $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
+
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
 
                 if ('Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
                     Write-Verbose -Message 'Performing operation DeleteWithHttpMessagesAsync on $ComputeAdminClient.'

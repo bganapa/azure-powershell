@@ -16,6 +16,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .PARAMETER FarmName
     Farm Id.
 
+.PARAMETER AsJob
+    Run asynchronous as a job and return the job object.
+
 .PARAMETER Force
     Do not ask for confirmation.
 
@@ -68,72 +71,69 @@ function Start-AzsReclaimStorageCapacity {
         # Should process
         if ($PSCmdlet.ShouldProcess("$FarmName" , "Start garbage collection")) {
             if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Start garbage collection?", "Performing operation StartGarbageCollectionWithHttpMessagesAsync on $FarmName."))) {
-                return
-            }
-        }
 
-        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
-            $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
-        }
-
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
-        }
-
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $StorageAdminClient = New-ServiceClient @NewServiceClient_params
-
-        Write-Verbose -Message 'Performing operation StartGarbageCollectionWithHttpMessagesAsync on $StorageAdminClient.'
-        $TaskResult = $StorageAdminClient.Farms.StartGarbageCollectionWithHttpMessagesAsync($ResourceGroupName, $FarmName)
-
-        Write-Verbose -Message "Waiting for the operation to complete."
-
-        $PSSwaggerJobScriptBlock = {
-            [CmdletBinding()]
-            param(
-                [Parameter(Mandatory = $true)]
-                [System.Threading.Tasks.Task]
-                $TaskResult,
-
-                [Parameter(Mandatory = $true)]
-                [string]
-                $TaskHelperFilePath
-            )
-            if ($TaskResult) {
-                . $TaskHelperFilePath
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
+                if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+                    $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
                 }
 
-                Get-TaskResult @GetTaskResult_params
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
+                }
 
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
+
+                $StorageAdminClient = New-ServiceClient @NewServiceClient_params
+
+                Write-Verbose -Message 'Performing operation StartGarbageCollectionWithHttpMessagesAsync on $StorageAdminClient.'
+                $TaskResult = $StorageAdminClient.Farms.StartGarbageCollectionWithHttpMessagesAsync($ResourceGroupName, $FarmName)
+
+                Write-Verbose -Message "Waiting for the operation to complete."
+
+                $PSSwaggerJobScriptBlock = {
+                    [CmdletBinding()]
+                    param(
+                        [Parameter(Mandatory = $true)]
+                        [System.Threading.Tasks.Task]
+                        $TaskResult,
+
+                        [Parameter(Mandatory = $true)]
+                        [string]
+                        $TaskHelperFilePath
+                    )
+                    if ($TaskResult) {
+                        . $TaskHelperFilePath
+                        $GetTaskResult_params = @{
+                            TaskResult = $TaskResult
+                        }
+                        Get-TaskResult @GetTaskResult_params
+                    }
+                }
+
+                $PSCommonParameters = Get-PSCommonParameter -CallerPSBoundParameters $PSBoundParameters
+                $TaskHelperFilePath = Join-Path -Path $ExecutionContext.SessionState.Module.ModuleBase -ChildPath 'Get-TaskResult.ps1'
+                if (-not $AsJob.IsPresent) {
+                    Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
+                        -ArgumentList $TaskResult, $TaskHelperFilePath `
+                        @PSCommonParameters
+                } else {
+                    $ScriptBlockParameters = New-Object -TypeName 'System.Collections.Generic.Dictionary[string,object]'
+                    $ScriptBlockParameters['TaskResult'] = $TaskResult
+                    $ScriptBlockParameters['AsJob'] = $true
+                    $ScriptBlockParameters['TaskHelperFilePath'] = $TaskHelperFilePath
+                    $PSCommonParameters.GetEnumerator() | ForEach-Object { $ScriptBlockParameters[$_.Name] = $_.Value }
+
+                    Start-PSSwaggerJobHelper -ScriptBlock $PSSwaggerJobScriptBlock `
+                        -CallerPSBoundParameters $ScriptBlockParameters `
+                        -CallerPSCmdlet $PSCmdlet `
+                        @PSCommonParameters
+                }
             }
-        }
-
-        $PSCommonParameters = Get-PSCommonParameter -CallerPSBoundParameters $PSBoundParameters
-        $TaskHelperFilePath = Join-Path -Path $ExecutionContext.SessionState.Module.ModuleBase -ChildPath 'Get-TaskResult.ps1'
-        if (-not $AsJob.IsPresent) {
-            Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
-                -ArgumentList $TaskResult, $TaskHelperFilePath `
-                @PSCommonParameters
-        } else {
-            $ScriptBlockParameters = New-Object -TypeName 'System.Collections.Generic.Dictionary[string,object]'
-            $ScriptBlockParameters['TaskResult'] = $TaskResult
-            $ScriptBlockParameters['AsJob'] = $true
-            $ScriptBlockParameters['TaskHelperFilePath'] = $TaskHelperFilePath
-            $PSCommonParameters.GetEnumerator() | ForEach-Object { $ScriptBlockParameters[$_.Name] = $_.Value }
-
-            Start-PSSwaggerJobHelper -ScriptBlock $PSSwaggerJobScriptBlock `
-                -CallerPSBoundParameters $ScriptBlockParameters `
-                -CallerPSCmdlet $PSCmdlet `
-                @PSCommonParameters
         }
     }
 

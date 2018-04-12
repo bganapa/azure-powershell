@@ -119,7 +119,6 @@ function Get-AzsAzureBridgeDownloadedProduct {
             $Name = $ArmResourceIdParameterValues['productName']
         }
 
-
         if ('List' -eq $PsCmdlet.ParameterSetName) {
             Write-Verbose -Message 'Performing operation ListWithHttpMessagesAsync on $AzureBridgeAdminClient.'
             $TaskResult = $AzureBridgeAdminClient.DownloadedProducts.ListWithHttpMessagesAsync($ResourceGroupName, $ActivationName)

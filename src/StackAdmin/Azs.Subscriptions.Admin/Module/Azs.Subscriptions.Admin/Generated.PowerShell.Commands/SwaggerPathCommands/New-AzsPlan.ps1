@@ -46,47 +46,47 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsPlan {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Plan])]
-    [CmdletBinding(DefaultParameterSetName = 'Create')]
+    [CmdletBinding(SupportsShouldProcess = $true)]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $Name,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateLength(1, 90)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $ResourceGroupName,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $DisplayName,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string[]]
         $QuotaIds,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [string]
         $Description,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [string[]]
         $SkuIds,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [string]
         $ExternalReferenceId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [string]
-        [Alias("ArmLocation")]        
+        [Alias("ArmLocation")]
         $Location,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [int64]
         $SubscriptionCount
     )
@@ -107,57 +107,55 @@ function New-AzsPlan {
         $ErrorActionPreference = 'Stop'
 
         if ($PSBoundParameters.ContainsKey('Location')) {
-            if( $MyInvocation.Line -match "\s-ArmLocation\s")
-            {
+            if ( $MyInvocation.Line -match "\s-ArmLocation\s") {
                 Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
             }
         }
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-        }
+        if ($PSCmdlet.ShouldProcess("$Name" , "Create a plan")) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a plan?", "Performing operation create plan with name $Name."))) {
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+                }
 
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
 
-        if (-not $PSBoundParameters.ContainsKey('Location')) {
-            $Location = (Get-AzureRMLocation).Location
-            $PSBoundParameters.Add("Location", $Location)
-        }
+                $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
 
-        $flattenedParameters = @('Description', 'Id', 'Type', 'SkuIds', 'Tags', 'ExternalReferenceId', 'DisplayName', 'Name', 'Location', 'QuotaIds', 'SubscriptionCount')
-        $utilityCmdParams = @{}
-        $flattenedParameters | ForEach-Object {
-            if ($PSBoundParameters.ContainsKey($_)) {
-                $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                    $PSBoundParameters.Add("Location", $Location)
+                }
+
+                $flattenedParameters = @('Description', 'Id', 'Type', 'SkuIds', 'Tags', 'ExternalReferenceId', 'DisplayName', 'Name', 'Location', 'QuotaIds', 'SubscriptionCount')
+                $utilityCmdParams = @{}
+                $flattenedParameters | ForEach-Object {
+                    if ($PSBoundParameters.ContainsKey($_)) {
+                        $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                    }
+                }
+                $NewPlan = New-PlanObject @utilityCmdParams
+
+                $Plan = $Name
+
+                Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+                $TaskResult = $SubscriptionsAdminClient.Plans.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Plan, $NewPlan)
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+
+                    Get-TaskResult @GetTaskResult_params
+                }
             }
-        }
-        $NewPlan = New-PlanObject @utilityCmdParams
-
-        $Plan = $Name
-
-        if ('Create' -eq $PsCmdlet.ParameterSetName) {
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-            $TaskResult = $SubscriptionsAdminClient.Plans.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Plan, $NewPlan)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
-
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
-            }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

@@ -43,7 +43,6 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsIpPool {
     [OutputType([Microsoft.AzureStack.Management.Fabric.Admin.Models.ProvisioningState])]
-    [CmdletBinding(SupportsShouldProcess=$true)]
     param(
         [Parameter(Mandatory = $false)]
         [string]
@@ -98,86 +97,83 @@ function New-AzsIpPool {
 
         $ErrorActionPreference = 'Stop'
 
-        if ($PSCmdlet.ShouldProcess("$Name" , "Add IP pool")) {
-            if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Add IP pool?", "Performing operation add IP pool for $Name"))) {
-                return;
+        if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Add IP pool?", "Performing operation add IP pool for $Name")) {
+
+            $NewServiceClient_params = @{
+                FullClientTypeName = 'Microsoft.AzureStack.Management.Fabric.Admin.FabricAdminClient'
             }
-        }
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Fabric.Admin.FabricAdminClient'
-        }
+            $GlobalParameterHashtable = @{}
+            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $FabricAdminClient = New-ServiceClient @NewServiceClient_params
-
-        if ([String]::IsNullOrEmpty($Location)) {
-            $Location = (Get-AzureRMLocation).Location
-        }
-        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
-            $ResourceGroupName = "System.$Location"
-        }
-
-        $flattenedParameters = @('NumberOfIpAddressesInTransition', 'StartIpAddress', 'Tags', 'AddressPrefix', 'NumberOfIpAddresses', 'Location', 'EndIpAddress', 'NumberOfAllocatedIpAddresses')
-        $utilityCmdParams = @{}
-        $flattenedParameters | ForEach-Object {
-            if ($PSBoundParameters.ContainsKey($_)) {
-                $utilityCmdParams[$_] = $PSBoundParameters[$_]
+            $GlobalParameterHashtable['SubscriptionId'] = $null
+            if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
             }
-        }
-        $Pool = New-IpPoolObject @utilityCmdParams
 
-        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $FabricAdminClient.'
-        $TaskResult = $FabricAdminClient.IpPools.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Location, $Name, $Pool)
+            $FabricAdminClient = New-ServiceClient @NewServiceClient_params
 
-        Write-Verbose -Message "Waiting for the operation to complete."
+            if ([String]::IsNullOrEmpty($Location)) {
+                $Location = (Get-AzureRMLocation).Location
+            }
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+                $ResourceGroupName = "System.$Location"
+            }
 
-        $PSSwaggerJobScriptBlock = {
-            [CmdletBinding()]
-            param(
-                [Parameter(Mandatory = $true)]
-                [System.Threading.Tasks.Task]
-                $TaskResult,
-
-                [Parameter(Mandatory = $true)]
-                [string]
-                $TaskHelperFilePath
-            )
-            if ($TaskResult) {
-                . $TaskHelperFilePath
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
+            $flattenedParameters = @('NumberOfIpAddressesInTransition', 'StartIpAddress', 'Tags', 'AddressPrefix', 'NumberOfIpAddresses', 'Location', 'EndIpAddress', 'NumberOfAllocatedIpAddresses')
+            $utilityCmdParams = @{}
+            $flattenedParameters | ForEach-Object {
+                if ($PSBoundParameters.ContainsKey($_)) {
+                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
                 }
-
-                Get-TaskResult @GetTaskResult_params
-
             }
-        }
+            $Pool = New-IpPoolObject @utilityCmdParams
 
-        $PSCommonParameters = Get-PSCommonParameter -CallerPSBoundParameters $PSBoundParameters
-        $TaskHelperFilePath = Join-Path -Path $ExecutionContext.SessionState.Module.ModuleBase -ChildPath 'Get-TaskResult.ps1'
-        if (-not $AsJob.IsPresent) {
-            Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
-                -ArgumentList $TaskResult, $TaskHelperFilePath `
-                @PSCommonParameters
-        } else {
-            $ScriptBlockParameters = New-Object -TypeName 'System.Collections.Generic.Dictionary[string,object]'
-            $ScriptBlockParameters['TaskResult'] = $TaskResult
-            $ScriptBlockParameters['AsJob'] = $true
-            $ScriptBlockParameters['TaskHelperFilePath'] = $TaskHelperFilePath
-            $PSCommonParameters.GetEnumerator() | ForEach-Object { $ScriptBlockParameters[$_.Name] = $_.Value }
+            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $FabricAdminClient.'
+            $TaskResult = $FabricAdminClient.IpPools.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Location, $Name, $Pool)
 
-            Start-PSSwaggerJobHelper -ScriptBlock $PSSwaggerJobScriptBlock `
-                -CallerPSBoundParameters $ScriptBlockParameters `
-                -CallerPSCmdlet $PSCmdlet `
-                @PSCommonParameters
+            Write-Verbose -Message "Waiting for the operation to complete."
+
+            $PSSwaggerJobScriptBlock = {
+                [CmdletBinding()]
+                param(
+                    [Parameter(Mandatory = $true)]
+                    [System.Threading.Tasks.Task]
+                    $TaskResult,
+
+                    [Parameter(Mandatory = $true)]
+                    [string]
+                    $TaskHelperFilePath
+                )
+                if ($TaskResult) {
+                    . $TaskHelperFilePath
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+
+                    Get-TaskResult @GetTaskResult_params
+
+                }
+            }
+
+            $PSCommonParameters = Get-PSCommonParameter -CallerPSBoundParameters $PSBoundParameters
+            $TaskHelperFilePath = Join-Path -Path $ExecutionContext.SessionState.Module.ModuleBase -ChildPath 'Get-TaskResult.ps1'
+            if (-not $AsJob.IsPresent) {
+                Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
+                    -ArgumentList $TaskResult, $TaskHelperFilePath `
+                    @PSCommonParameters
+            } else {
+                $ScriptBlockParameters = New-Object -TypeName 'System.Collections.Generic.Dictionary[string,object]'
+                $ScriptBlockParameters['TaskResult'] = $TaskResult
+                $ScriptBlockParameters['AsJob'] = $true
+                $ScriptBlockParameters['TaskHelperFilePath'] = $TaskHelperFilePath
+                $PSCommonParameters.GetEnumerator() | ForEach-Object { $ScriptBlockParameters[$_.Name] = $_.Value }
+
+                Start-PSSwaggerJobHelper -ScriptBlock $PSSwaggerJobScriptBlock `
+                    -CallerPSBoundParameters $ScriptBlockParameters `
+                    -CallerPSCmdlet $PSCmdlet `
+                    @PSCommonParameters
+            }
         }
     }
 

@@ -27,19 +27,19 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
 #>
 function Get-AzsReclaimStorageCapacityStatus {
-    [CmdletBinding(DefaultParameterSetName = 'GetGarbageCollectionState')]
+    [CmdletBinding()]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'GetGarbageCollectionState')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $FarmName,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'GetGarbageCollectionState')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $JobId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'GetGarbageCollectionState')]
+        [Parameter(Mandatory = $false)]
         [ValidateLength(1, 90)]
         [System.String]
         $ResourceGroupName
@@ -57,7 +57,6 @@ function Get-AzsReclaimStorageCapacityStatus {
     }
 
     Process {
-
         $ErrorActionPreference = 'Stop'
 
         $NewServiceClient_params = @{
@@ -74,25 +73,18 @@ function Get-AzsReclaimStorageCapacityStatus {
 
         $StorageAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $ResourceGroupName = "System.$((Get-AzureRmLocation).Location)"
         }
 
-        if ('GetGarbageCollectionState' -eq $PsCmdlet.ParameterSetName) {
-            Write-Verbose -Message 'Performing operation GetGarbageCollectionStateWithHttpMessagesAsync on $StorageAdminClient.'
-            $TaskResult = $StorageAdminClient.Farms.GetGarbageCollectionStateWithHttpMessagesAsync($ResourceGroupName, $FarmName, $JobId)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
+        Write-Verbose -Message 'Performing operation GetGarbageCollectionStateWithHttpMessagesAsync on $StorageAdminClient.'
+        $TaskResult = $StorageAdminClient.Farms.GetGarbageCollectionStateWithHttpMessagesAsync($ResourceGroupName, $FarmName, $JobId)
 
         if ($TaskResult) {
             $GetTaskResult_params = @{
                 TaskResult = $TaskResult
             }
-
             Get-TaskResult @GetTaskResult_params
-
         }
     }
 

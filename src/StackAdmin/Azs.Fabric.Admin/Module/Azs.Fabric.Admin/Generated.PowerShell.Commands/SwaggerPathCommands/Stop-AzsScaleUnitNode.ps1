@@ -25,6 +25,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .PARAMETER Shutdown
     If set gracefully shutdown the scale unit node; otherwise hard power off the scale unit node.
 
+.PARAMETER AsJob
+    Run asynchronous as a job and return the job object.
+
 .PARAMETER Force
     Don't ask for confirmation.
 
@@ -42,7 +45,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
 #>
 function Stop-AzsScaleUnitNode {
-    [CmdletBinding(DefaultParameterSetName = 'Stop', SupportsShouldProcess=$true)]
+    [CmdletBinding(DefaultParameterSetName = 'Stop', SupportsShouldProcess = $true)]
     param(
         [Parameter(Mandatory = $true, ParameterSetName = 'Stop')]
         [ValidateNotNullOrEmpty()]
@@ -96,22 +99,21 @@ function Stop-AzsScaleUnitNode {
         }
 
         if ($PSCmdlet.ShouldProcess("$Name" , "Stop scale unit node")) {
-            if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Stop scale unit node?", "Performing operation stop for scale unit node $Name"))) {
-                return;
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Stop scale unit node?", "Performing operation stop for scale unit node $Name")) {
+
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
+                if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+                    $ResourceGroupName = "System.$Location"
+                }
+
+                if ($Shutdown) {
+                    Submit-AzsScaleUnitNodeShutdown -Name $Name -ResourceGroupName $ResourceGroupName -Location $Location -AsJob:$AsJob
+                } else {
+                    Submit-AzsScaleUnitNodeForceShutdown -Name $Name -ResourceGroupName $ResourceGroupName -Location $Location -AsJob:$AsJob
+                }
             }
-        }
-
-        if ([String]::IsNullOrEmpty($Location)) {
-            $Location = (Get-AzureRMLocation).Location
-        }
-        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
-            $ResourceGroupName = "System.$Location"
-        }
-
-        if($Shutdown) {
-            Submit-AzsScaleUnitNodeShutdown -Name $Name -ResourceGroupName $ResourceGroupName -Location $Location -AsJob:$AsJob
-        } else {
-            Submit-AzsScaleUnitNodeForceShutdown -Name $Name -ResourceGroupName $ResourceGroupName -Location $Location -AsJob:$AsJob
         }
     }
 

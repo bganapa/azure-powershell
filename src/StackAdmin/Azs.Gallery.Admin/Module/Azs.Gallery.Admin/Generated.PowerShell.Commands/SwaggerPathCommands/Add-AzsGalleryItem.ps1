@@ -13,6 +13,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .PARAMETER GalleryItemUri
     The URI to the gallery item JSON file.
 
+.PARAMETER Force
+    Don't ask for confirmation.
+
 .EXAMPLE
 
     Add-AzsGalleryItem -GalleryItemUri 'http://galleryitemuri'
@@ -21,12 +24,16 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function Add-AzsGalleryItem {
     [OutputType([Microsoft.AzureStack.Management.Gallery.Admin.Models.GalleryItem])]
-    [CmdletBinding(DefaultParameterSetName = 'Create')]
+    [CmdletBinding(SupportsShouldProcess = $true)]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create', Position = 0 )]
+        [Parameter(Mandatory = $true, Position = 0 )]
         [ValidateNotNullOrEmpty()]
         [System.String]
-        $GalleryItemUri
+        $GalleryItemUri,
+
+        [Parameter(Mandatory = $true, Position = 0 )]
+        [switch]
+        $Force
     )
 
     Begin {
@@ -44,39 +51,43 @@ function Add-AzsGalleryItem {
 
         $ErrorActionPreference = 'Stop'
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Gallery.Admin.GalleryAdminClient'
-        }
+        if ($PSCmdlet.ShouldProcess("$GalleryItemUri" , "Add Gallery item")) {
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Add Gallery item?", "Performing operation add gallery item from $GalleryItemUriUri")) {
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Gallery.Admin.GalleryAdminClient'
+                }
 
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
 
-        if ('Create' -eq $PsCmdlet.ParameterSetName) {
-            Write-Verbose -Message 'Performing operation CreateWithHttpMessagesAsync on $GalleryAdminClient.'
-            $TaskResult = $GalleryAdminClient.GalleryItems.CreateWithHttpMessagesAsync($(if ($PSBoundParameters.ContainsKey('GalleryItemUri')) {
-                        $GalleryItemUri
-                    } else {
-                        [NullString]::Value
-                    }))
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
+                $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
+                if ('Create' -eq $PsCmdlet.ParameterSetName) {
+                    Write-Verbose -Message 'Performing operation CreateWithHttpMessagesAsync on $GalleryAdminClient.'
+                    $TaskResult = $GalleryAdminClient.GalleryItems.CreateWithHttpMessagesAsync($(if ($PSBoundParameters.ContainsKey('GalleryItemUri')) {
+                                $GalleryItemUri
+                            } else {
+                                [NullString]::Value
+                            }))
+                } else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+
+                    Get-TaskResult @GetTaskResult_params
+                }
             }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

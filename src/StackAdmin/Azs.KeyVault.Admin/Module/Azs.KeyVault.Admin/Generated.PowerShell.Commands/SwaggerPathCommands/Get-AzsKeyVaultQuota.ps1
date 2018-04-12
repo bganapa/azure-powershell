@@ -57,7 +57,7 @@ function Get-AzsKeyVaultQuota {
 
         $KeyVaultAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if (-not $PSBoundParameters.ContainsKey('Location')) {
+        if ([String]::IsNullOrEmpty($Location)) {
             $Location = (Get-AzureRMLocation).Location
         }
 

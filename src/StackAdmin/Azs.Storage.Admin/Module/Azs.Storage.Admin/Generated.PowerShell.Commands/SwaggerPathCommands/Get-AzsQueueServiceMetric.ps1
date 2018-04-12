@@ -81,7 +81,7 @@ function Get-AzsQueueServiceMetric {
 
         $StorageAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $location = (Get-AzureRmLocation).Location
             $ResourceGroupName = "System.$Location"
         }

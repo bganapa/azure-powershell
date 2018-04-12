@@ -132,10 +132,10 @@ function Get-AzsIpPool {
             $location = $ArmResourceIdParameterValues['location']
             $Name = $ArmResourceIdParameterValues['ipPool']
         } else {
-            if (-not $PSBoundParameters.ContainsKey('Location')) {
+            if ([String]::IsNullOrEmpty($Location)) {
                 $Location = (Get-AzureRMLocation).Location
             }
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $ResourceGroupName = "System.$Location"
             }
         }

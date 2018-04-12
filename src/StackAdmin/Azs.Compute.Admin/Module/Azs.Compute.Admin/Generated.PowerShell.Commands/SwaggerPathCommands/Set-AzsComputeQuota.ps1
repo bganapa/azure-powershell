@@ -103,7 +103,6 @@ function Set-AzsComputeQuota {
     }
 
     Process {
-
         $ErrorActionPreference = 'Stop'
 
         $NewQuota = $null
@@ -125,55 +124,53 @@ function Set-AzsComputeQuota {
         }
 
         if ($PSCmdlet.ShouldProcess("$Name" , "Update compute quota")) {
-            if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Update compute quota?", "Performing operation Update on $Name."))) {
-                return;
-            }
-        }
+            if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Update compute quota?", "Performing operation Update on $Name.")) {
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
+                }
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Compute.Admin.ComputeAdminClient'
-        }
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
 
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
+                $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
 
-        $ComputeAdminClient = New-ServiceClient @NewServiceClient_params
+                if ([String]::IsNullOrEmpty($ResourceGroupName)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
 
-        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
-            $Location = (Get-AzureRMLocation).Location
-        }
+                if ('Update' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
 
-        if ('Update' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
+                    if ($NewQuota -eq $null) {
+                        $NewQuota = Get-AzsComputeQuota -Location $Location -Name $Name
+                    }
 
-            if ($NewQuota -eq $null) {
-                $NewQuota = Get-AzsComputeQuota -Location $Location -Name $Name
-            }
+                    # Update the Quota object from anything passed in
+                    $flattenedParameters = @('AvailabilitySetCount', 'CoresLimit', 'VmScaleSetCount', 'VirtualMachineCount' )
+                    $flattenedParameters | ForEach-Object {
+                        if ($PSBoundParameters.ContainsKey($_)) {
+                            $NewQuota.$($_) = $PSBoundParameters[$_]
+                        }
+                    }
 
-            # Update the Quota object from anything passed in
-            $flattenedParameters = @('AvailabilitySetCount', 'CoresLimit', 'VmScaleSetCount', 'VirtualMachineCount' )
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $NewQuota.$($_) = $PSBoundParameters[$_]
+                    Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $ComputeAdminClient.'
+                    $TaskResult = $ComputeAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $NewQuota)
+                } else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+                    Get-TaskResult @GetTaskResult_params
                 }
             }
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $ComputeAdminClient.'
-            $TaskResult = $ComputeAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $NewQuota)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
-
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
-            }
-            Get-TaskResult @GetTaskResult_params
         }
     }
 

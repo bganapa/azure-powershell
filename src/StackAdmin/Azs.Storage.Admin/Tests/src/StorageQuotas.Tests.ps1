@@ -105,7 +105,7 @@ InModuleScope Azs.Storage.Admin {
             $global:TestName = 'TestGetStorageQuota'
 
             $quotas = Get-AzsStorageQuota -Location $global:Location
-            $quota = Get-AzsStorageQuota -Location $global:Location -QuotaName (Select-Name $quotas[0].Name)
+            $quota = Get-AzsStorageQuota -Location $global:Location -Name (Select-Name $quotas[0].Name)
             ValidateStorageQuota -storageQuota $quota
             AssertAreEqual -expected $quotas[0] -found $quota
         }
@@ -115,7 +115,7 @@ InModuleScope Azs.Storage.Admin {
 
             $quotas = Get-AzsStorageQuota -Location $global:Location
             foreach ($quota in $quotas) {
-                $result = Get-AzsStorageQuota -Location $global:Location -QuotaName (Select-Name $quota.Name)
+                $result = Get-AzsStorageQuota -Location $global:Location -Name (Select-Name $quota.Name)
                 ValidateStorageQuota -storageQuota $quota
                 AssertAreEqual -expected $quota -found $result
             }
@@ -125,14 +125,14 @@ InModuleScope Azs.Storage.Admin {
             $global:TestName = 'TestCreateStorageQuota'
 
             $name = "TestCreateQuota"
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
-            $quota = New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 100 -Location $global:Location -QuotaName $name
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
+            $quota = New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 100 -Location $global:Location -Name $name
             $quota      |    Should Not Be $null
             $quota.CapacityInGb | Should Be 1000
             $quota.NumberOfStorageAccounts | Should Be 100
-            $result = Get-AzsStorageQuota -Location $global:Location -QuotaName $name
+            $result = Get-AzsStorageQuota -Location $global:Location -Name $name
             ValidateStorageQuota -storageQuota $result
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
         }
 
         # Recorded test sessions cannot deal with two PUTs on the same URIs but with different bodies.
@@ -140,30 +140,30 @@ InModuleScope Azs.Storage.Admin {
             $global:TestName = 'TestUpdateStorageQuota'
 
             $name = "TestUpdateQuota"
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
-            $quota = New-AzsStorageQuota -CapacityInGb 50 -NumberOfStorageAccounts 100 -Location $global:Location -QuotaName $name
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
+            $quota = New-AzsStorageQuota -CapacityInGb 50 -NumberOfStorageAccounts 100 -Location $global:Location -Name $name
             $quota                          |    Should Not Be $null
             $quota.CapacityInGb             | Should Be 50
             $quota.NumberOfStorageAccounts  | Should Be 100
 
-            $updated = Set-AzsStorageQuota -CapacityInGb 123 -NumberOfStorageAccounts 10 -Location local -QuotaName $name
+            $updated = Set-AzsStorageQuota -CapacityInGb 123 -NumberOfStorageAccounts 10 -Location local -Name $name
             ValidateStorageQuota -storageQuota $updated
             $updated.CapacityInGb               | Should Be 123
             $updated.NumberOfStorageAccounts    | Should Be 10
 
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
         }
 
         It "TestDeleteStorageQuota" {
             $global:TestName = 'TestDeleteStorageQuota'
 
             $name = "TestDeleteQuota"
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
-            $quota = New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 50 -Location $global:Location -QuotaName $name
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
+            $quota = New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 50 -Location $global:Location -Name $name
             $quota      |    Should Not Be $null
             $quota.CapacityInGb | Should Be 1000
             $quota.NumberOfStorageAccounts | Should Be 50
-            Remove-AzsStorageQuota -Location $global:Location -QuotaName $name -Force
+            Remove-AzsStorageQuota -Location $global:Location -Name $name -Force
         }
     }
 }

@@ -10,7 +10,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .DESCRIPTION
     Returns the list of all alerts in a given location.
 
-.PARAMETER AlertId
+.PARAMETER Name
     The alert identifier.
 
 .PARAMETER Location
@@ -130,10 +130,10 @@ function Get-AzsAlert {
             $Location = $ArmResourceIdParameterValues['region']
             $AlertId = $ArmResourceIdParameterValues['alertName']
         } else {
-            if (-not $PSBoundParameters.ContainsKey('Location')) {
+            if ([String]::IsNullOrEmpty($Location)) {
                 $Location = (Get-AzureRMLocation).Location
             }
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $ResourceGroupName = "System.$Location"
             }
         }

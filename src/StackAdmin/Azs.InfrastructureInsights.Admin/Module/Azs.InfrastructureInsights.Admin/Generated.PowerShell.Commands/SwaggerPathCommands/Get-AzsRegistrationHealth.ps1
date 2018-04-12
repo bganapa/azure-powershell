@@ -23,7 +23,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     resourceGroupName.
 
 .PARAMETER Name
-    Resource registration id.
+    The resource name of the health object which corresponds to the resource registration id.
 
 .PARAMETER ResourceId
     The resource id.
@@ -142,10 +142,10 @@ function Get-AzsRegistrationHealth {
             $serviceRegistrationId = $ArmResourceIdParameterValues['serviceRegistrationId']
             $resourceRegistrationId = $ArmResourceIdParameterValues['resourceRegistrationId']
         } else {
-            if (-not $PSBoundParameters.ContainsKey('Location')) {
+            if ([String]::IsNullOrEmpty($Location)) {
                 $Location = (Get-AzureRMLocation).Location
             }
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $ResourceGroupName = "System.$Location"
             }
         }

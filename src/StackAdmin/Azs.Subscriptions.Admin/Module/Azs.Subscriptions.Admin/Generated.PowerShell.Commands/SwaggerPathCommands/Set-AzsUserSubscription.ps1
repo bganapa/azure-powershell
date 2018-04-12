@@ -54,7 +54,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function Set-AzsUserSubscription {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Subscription])]
-    [CmdletBinding(DefaultParameterSetName = 'Set')]
+    [CmdletBinding(DefaultParameterSetName = 'Set', SupportsShouldProcess = $true)]
     param(
         [Parameter(Mandatory = $true, ParameterSetName = 'Set')]
         [ValidateNotNullOrEmpty()]
@@ -127,8 +127,7 @@ function Set-AzsUserSubscription {
         $ErrorActionPreference = 'Stop'
 
         if ($PSBoundParameters.ContainsKey('Location')) {
-            if( $MyInvocation.Line -match "\s-ArmLocation\s")
-            {
+            if ( $MyInvocation.Line -match "\s-ArmLocation\s") {
                 Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
             }
         }
@@ -151,46 +150,52 @@ function Set-AzsUserSubscription {
             $SubscriptionId = $ArmResourceIdParameterValues['targetSubscriptionId']
         }
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-        }
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+        if ($PSCmdlet.ShouldProcess("$Name" , "Update offer")) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Update offer?", "Performing operation update for offer $Name."))) {
 
-        if (-not $PSBoundParameters.ContainsKey('Location')) {
-            $Location = (Get-AzureRMLocation).Location
-        }
 
-        if ( 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName -or 'Set' -eq $PsCmdlet.ParameterSetName ) {
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+                }
 
-            if ( $updatedSubscription -eq $null ) {
-                $updatedSubscription = Get-AzsUserSubscription | Where-Object { $_.SubscriptionId -eq $SubscriptionId }
-            }
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+                $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
 
-            $flattenedParameters = @('TenantId', 'SubscriptionId', 'DisplayName', 'DelegatedProviderSubscriptionId', 'Owner', 'RoutingResourceManagerType', 'ExternalReferenceId', 'State', 'Location', 'OfferId')
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $updatedSubscription.$($_) = $PSBoundParameters[$_]
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
+
+                if ( 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName -or 'Set' -eq $PsCmdlet.ParameterSetName ) {
+
+                    if ( $updatedSubscription -eq $null ) {
+                        $updatedSubscription = Get-AzsUserSubscription | Where-Object { $_.SubscriptionId -eq $SubscriptionId }
+                    }
+
+                    $flattenedParameters = @('TenantId', 'SubscriptionId', 'DisplayName', 'DelegatedProviderSubscriptionId', 'Owner', 'RoutingResourceManagerType', 'ExternalReferenceId', 'State', 'Location', 'OfferId')
+                    $flattenedParameters | ForEach-Object {
+                        if ($PSBoundParameters.ContainsKey($_)) {
+                            $updatedSubscription[$_] = $PSBoundParameters[$_]
+                        }
+                    }
+
+                    Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+                    $TaskResult = $SubscriptionsAdminClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $updatedSubscription)
+
+                } else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+
+                    Get-TaskResult @GetTaskResult_params
                 }
             }
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-            $TaskResult = $SubscriptionsAdminClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $updatedSubscription)
-
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
-
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
-            }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

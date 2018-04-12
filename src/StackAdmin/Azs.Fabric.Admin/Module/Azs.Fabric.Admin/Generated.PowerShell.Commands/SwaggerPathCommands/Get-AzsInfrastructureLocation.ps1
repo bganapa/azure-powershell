@@ -123,12 +123,12 @@ function Get-AzsInfrastructureLocation {
             $ResourceGroupName = $ArmResourceIdParameterValues['resourceGroupName']
             $Location = $ArmResourceIdParameterValues['location']
         } elseif ('List' -eq $PsCmdlet.ParameterSetName) {
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $Location = (Get-AzureRmLocation).Location
                 $ResourceGroupName = "System.$Location"
             }
         } else {
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $ResourceGroupName = "System.$Location"
             }
         }

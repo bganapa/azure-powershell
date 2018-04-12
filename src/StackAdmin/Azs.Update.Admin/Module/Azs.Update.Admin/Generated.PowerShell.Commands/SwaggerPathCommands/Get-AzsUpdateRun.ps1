@@ -38,7 +38,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 	PS C:\> Get-AzsUpdateRun -DisplayName Microsoft1.0.180302.1
 
     Get a list of all attempts to apply a specific update.
-	
+
 #>
 function Get-AzsUpdateRun {
     [OutputType([Microsoft.AzureStack.Management.Update.Admin.Models.UpdateRun])]
@@ -111,7 +111,7 @@ function Get-AzsUpdateRun {
         if ( -not $PSBoundParameters.ContainsKey('Location')) {
             $Location = (Get-AzureRMLocation).Location
         }
-        if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+        if ([String]::IsNullOrEmpty($ResourceGroupName)) {
             $ResourceGroupName = "System.$Location"
         }
 
@@ -131,10 +131,10 @@ function Get-AzsUpdateRun {
             $DisplayName = $ArmResourceIdParameterValues['update']
             $Name = $ArmResourceIdParameterValues['runId']
         } else {
-            if (-not $PSBoundParameters.ContainsKey('Location')) {
+            if ([String]::IsNullOrEmpty($Location)) {
                 $Location = (Get-AzureRmLocation).Location
             }
-            if (-not $PSBoundParameters.ContainsKey('ResourceGroupName')) {
+            if ([String]::IsNullOrEmpty($ResourceGroupName)) {
                 $ResourceGroupName = "System.$Location"
             }
         }

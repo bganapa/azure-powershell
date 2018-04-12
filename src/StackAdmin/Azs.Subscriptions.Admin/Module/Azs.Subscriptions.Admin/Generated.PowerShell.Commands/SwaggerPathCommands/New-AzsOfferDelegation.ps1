@@ -34,32 +34,33 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsOfferDelegation {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.OfferDelegation])]
-    [CmdletBinding(DefaultParameterSetName = 'Create')]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $Name,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $OfferName,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $SubscriptionId,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $true)]
         [ValidateLength(1, 90)]
         [ValidateNotNullOrEmpty()]
         [System.String]
         $ResourceGroupName,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Create')]
+        [Parameter(Mandatory = $false)]
         [string]
-        $Location
+        $Location,
+
+        [swtich]$Force
     )
 
     Begin {
@@ -77,51 +78,40 @@ function New-AzsOfferDelegation {
 
         $ErrorActionPreference = 'Stop'
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-        }
+        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a delegated offer?", "Performing operation create delegated offer with name $Name."))) {
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        #$GlobalParameterHashtable['SubscriptionId'] = $null
-        #if($PSBoundParameters.ContainsKey('SubscriptionId')) {
-        #    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        #}
-
-        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
-
-        if (-not $PSBoundParameters.ContainsKey('Location')) {
-            $Location = (Get-AzureRMLocation).Location
-            $PSBoundParameters.Add("Location", $Location)
-        }
-
-        $flattenedParameters = @('SubscriptionId', 'Location')
-        $utilityCmdParams = @{}
-        $flattenedParameters | ForEach-Object {
-            if ($PSBoundParameters.ContainsKey($_)) {
-                $utilityCmdParams[$_] = $PSBoundParameters[$_]
+            $NewServiceClient_params = @{
+                FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
             }
-        }
-        $NewOfferDelegation = New-OfferDelegationObject @utilityCmdParams
 
-        $OfferDelegationName = $Name
+            $GlobalParameterHashtable = @{}
+            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        if ('Create' -eq $PsCmdlet.ParameterSetName) {
+            $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+
+            if ([String]::IsNullOrEmpty($Location)) {
+                $Location = (Get-AzureRMLocation).Location
+                $PSBoundParameters.Add("Location", $Location)
+            }
+
+            $flattenedParameters = @('SubscriptionId', 'Location')
+            $utilityCmdParams = @{}
+            $flattenedParameters | ForEach-Object {
+                if ($PSBoundParameters.ContainsKey($_)) {
+                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                }
+            }
+            $NewOfferDelegation = New-OfferDelegationObject @utilityCmdParams
+
             Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-            $TaskResult = $SubscriptionsAdminClient.OfferDelegations.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $OfferName, $OfferDelegationName, $NewOfferDelegation)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
+            $TaskResult = $SubscriptionsAdminClient.OfferDelegations.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $OfferName, $Name, $NewOfferDelegation)
 
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
+            if ($TaskResult) {
+                $GetTaskResult_params = @{
+                    TaskResult = $TaskResult
+                }
+                Get-TaskResult @GetTaskResult_params
             }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

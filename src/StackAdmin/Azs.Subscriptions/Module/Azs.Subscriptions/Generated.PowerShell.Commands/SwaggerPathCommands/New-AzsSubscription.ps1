@@ -43,111 +43,105 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
     Create a subscription.
 #>
-function New-AzsSubscription
-{
+function New-AzsSubscription {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Models.Subscription])]
-    [CmdletBinding(DefaultParameterSetName='Subscriptions_CreateOrUpdate')]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $OfferId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $DisplayName,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $TenantId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $SubscriptionId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [ValidateSet('NotDefined', 'Enabled', 'Warned', 'PastDue', 'Disabled', 'Deleted')]
         [string]
         $State,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
-        [Alias("ArmLocation")]        
-        $Location
+        [Alias("ArmLocation")]
+        $Location,
+
+        [Parameter(Mandatory = $false)]
+        [switch]$Force
     )
 
-    Begin
-    {
-	    Initialize-PSSwaggerDependencies -Azure
+    Begin {
+        Initialize-PSSwaggerDependencies -Azure
         $tracerObject = $null
         if (('continue' -eq $DebugPreference) -or ('inquire' -eq $DebugPreference)) {
             $oldDebugPreference = $global:DebugPreference
-			$global:DebugPreference = "continue"
+            $global:DebugPreference = "continue"
             $tracerObject = New-PSSwaggerClientTracing
             Register-PSSwaggerClientTracing -TracerObject $tracerObject
         }
-	}
+    }
 
     Process {
 
-    $ErrorActionPreference = 'Stop'
+        $ErrorActionPreference = 'Stop'
 
-    if ($PSBoundParameters.ContainsKey('Location')) {
-        if( $MyInvocation.Line -match "\s-ArmLocation\s")
-        {
-            Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
-        }
-    }
-
-    $NewServiceClient_params = @{
-        FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.SubscriptionsManagementClient'
-    }
-
-    $GlobalParameterHashtable = @{}
-    $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-    $SubscriptionsManagementClient = New-ServiceClient @NewServiceClient_params
-
-    if (-not $PSBoundParameters.ContainsKey('State'))
-    {
-         $State = "Enabled"
-         $PSBoundParameters.Add("State", $State)
-    }
-
-    if (-not ($PSBoundParameters.ContainsKey('SubscriptionId')))
-    {
-         $SubscriptionId = [Guid]::NewGuid().ToString()
-         $PSBoundParameters.Add("SubscriptionId", $SubscriptionId)
-    }
-
-
-    $flattenedParameters = @('OfferId', 'Id', 'SubscriptionId', 'State', 'TenantId', 'DisplayName')
-    $utilityCmdParams = @{}
-    $flattenedParameters | ForEach-Object {
-        if($PSBoundParameters.ContainsKey($_)) {
-            $utilityCmdParams[$_] = $PSBoundParameters[$_]
-        }
-    }
-    $NewSubscription = New-SubscriptionObject @utilityCmdParams
-
-
-
-    if ('Subscriptions_CreateOrUpdate' -eq $PsCmdlet.ParameterSetName) {
-        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsManagementClient.'
-        $TaskResult = $SubscriptionsManagementClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $NewSubscription)
-    } else {
-        Write-Verbose -Message 'Failed to map parameter set to operation method.'
-        throw 'Module failed to find operation to execute.'
-    }
-
-    if ($TaskResult) {
-        $GetTaskResult_params = @{
-            TaskResult = $TaskResult
+        if ($PSBoundParameters.ContainsKey('Location')) {
+            if ( $MyInvocation.Line -match "\s-ArmLocation\s") {
+                Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
+            }
         }
 
-        Get-TaskResult @GetTaskResult_params
+        # Should process
+        if ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a new subscription?", "Performing operation create subscription with name $SubscriptionId.")) {
 
-    }
+            $NewServiceClient_params = @{
+                FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.SubscriptionsManagementClient'
+            }
+
+            $GlobalParameterHashtable = @{}
+            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+            $SubscriptionsManagementClient = New-ServiceClient @NewServiceClient_params
+
+            if (-not $PSBoundParameters.ContainsKey('State')) {
+                $State = "Enabled"
+                $PSBoundParameters.Add("State", $State)
+            }
+
+            if (-not ($PSBoundParameters.ContainsKey('SubscriptionId'))) {
+                $SubscriptionId = [Guid]::NewGuid().ToString()
+                $PSBoundParameters.Add("SubscriptionId", $SubscriptionId)
+            }
+
+
+            $flattenedParameters = @('OfferId', 'Id', 'SubscriptionId', 'State', 'TenantId', 'DisplayName')
+            $utilityCmdParams = @{}
+            $flattenedParameters | ForEach-Object {
+                if ($PSBoundParameters.ContainsKey($_)) {
+                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                }
+            }
+            $NewSubscription = New-SubscriptionObject @utilityCmdParams
+
+            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsManagementClient.'
+            $TaskResult = $SubscriptionsManagementClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $NewSubscription)
+
+            if ($TaskResult) {
+                $GetTaskResult_params = @{
+                    TaskResult = $TaskResult
+                }
+
+                Get-TaskResult @GetTaskResult_params
+
+            }
+        }
     }
 
     End {

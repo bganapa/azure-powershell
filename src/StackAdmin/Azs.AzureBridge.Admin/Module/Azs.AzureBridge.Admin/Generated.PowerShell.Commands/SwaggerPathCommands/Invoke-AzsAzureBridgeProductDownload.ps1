@@ -77,20 +77,6 @@ function Invoke-AzsAzureBridgeProductDownload {
 
         $ErrorActionPreference = 'Stop'
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.AzureBridge.Admin.AzureBridgeAdminClient'
-        }
-
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $AzureBridgeAdminClient = New-ServiceClient @NewServiceClient_params
-
         if ('ResourceId' -eq $PsCmdlet.ParameterSetName) {
             $GetArmResourceIdParameterValue_params = @{
                 IdTemplate = '/subscriptions/{subscriptionId}/resourcegroups/{resourceGroup}/providers/Microsoft.AzureBridge.Admin/activations/{activationName}/Products/{productName}'
@@ -104,13 +90,26 @@ function Invoke-AzsAzureBridgeProductDownload {
         }
 
         if ($PSCmdlet.ShouldProcess("$ProductName" , "Start product download")) {
-            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Start the product download?", "Performing operation DownloadWithHttpMessagesAsync on $ProductName."))) {
+            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Start the product download?", "Performing operation download $ProductName."))) {
+
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.AzureBridge.Admin.AzureBridgeAdminClient'
+                }
+
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
+
+                $AzureBridgeAdminClient = New-ServiceClient @NewServiceClient_params
 
                 if ('Products_Download' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
                     Write-Verbose -Message 'Performing operation DownloadWithHttpMessagesAsync on $AzureBridgeAdminClient.'
                     $TaskResult = $AzureBridgeAdminClient.Products.DownloadWithHttpMessagesAsync($ResourceGroupName, $ActivationName, $ProductName)
-                }
-                else {
+                } else {
                     Write-Verbose -Message 'Failed to map parameter set to operation method.'
                     throw 'Module failed to find operation to execute.'
                 }
@@ -152,8 +151,7 @@ function Invoke-AzsAzureBridgeProductDownload {
                         -CallerPSBoundParameters $ScriptBlockParameters `
                         -CallerPSCmdlet $PSCmdlet `
                         @PSCommonParameters
-                }
-                else {
+                } else {
                     Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
                         -ArgumentList $TaskResult, $TaskHelperFilePath `
                         @PSCommonParameters

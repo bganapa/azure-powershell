@@ -56,22 +56,7 @@ function Remove-AzsGalleryItem {
     }
 
     Process {
-
         $ErrorActionPreference = 'Stop'
-
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Gallery.Admin.GalleryAdminClient'
-        }
-
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
-
-        $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
 
         if ($PSCmdlet.ParameterSetName -eq "ResourceId") {
             $GetArmResourceIdParameterValue_params = @{
@@ -85,6 +70,20 @@ function Remove-AzsGalleryItem {
 
         if ($PSCmdlet.ShouldProcess("$Name" , "Delete the gallery item")) {
             if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Delete the Gallery Item?", "Performing operation delete gallery item on $Name."))) {
+
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Gallery.Admin.GalleryAdminClient'
+                }
+
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
+
+                $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
 
                 if ('Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
                     Write-Verbose -Message 'Performing operation DeleteWithHttpMessagesAsync on $GalleryAdminClient.'

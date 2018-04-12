@@ -50,125 +50,111 @@ Licensed under the MIT License. See License.txt in the project root for license 
     Creates a new user subscription
 
 #>
-function New-AzsUserSubscription
-{
+function New-AzsUserSubscription {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Subscription])]
-    [CmdletBinding(DefaultParameterSetName='Subscriptions_CreateOrUpdate')]
     param(
-        [Parameter(Mandatory = $true, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $Owner,
 
-        [Parameter(Mandatory = $true, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
         [string]
         $OfferId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $TenantId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $DisplayName,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $DelegatedProviderSubscriptionId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [ValidateSet('Default', 'Admin')]
         [string]
         $RoutingResourceManagerType,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [string]
         $ExternalReferenceId,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [ValidateSet('NotDefined', 'Enabled', 'Warned', 'PastDue', 'Disabled', 'Deleted')]
         [string]
         $State,
 
-        [Parameter(Mandatory = $false, ParameterSetName = 'Subscriptions_CreateOrUpdate')]
+        [Parameter(Mandatory = $false)]
         [System.String]
         $SubscriptionId
     )
 
-    Begin
-    {
-	    Initialize-PSSwaggerDependencies -Azure
+    Begin {
+        Initialize-PSSwaggerDependencies -Azure
         $tracerObject = $null
         if (('continue' -eq $DebugPreference) -or ('inquire' -eq $DebugPreference)) {
             $oldDebugPreference = $global:DebugPreference
-			$global:DebugPreference = "continue"
+            $global:DebugPreference = "continue"
             $tracerObject = New-PSSwaggerClientTracing
             Register-PSSwaggerClientTracing -TracerObject $tracerObject
         }
-	}
+    }
 
     Process {
 
-    $ErrorActionPreference = 'Stop'
+        $ErrorActionPreference = 'Stop'
 
-    $NewServiceClient_params = @{
-        FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-    }
+        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a subscription?", "Performing operation create subscriptions with owner $Owner."))) {
 
-    $GlobalParameterHashtable = @{}
-    $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+            $NewServiceClient_params = @{
+                FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+            }
 
-    #$GlobalParameterHashtable['SubscriptionId'] = $null
-    #if($PSBoundParameters.ContainsKey('SubscriptionId')) {
-    #    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-    #}
+            $GlobalParameterHashtable = @{}
+            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-    $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+            $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
 
-    if (-not $PSBoundParameters.ContainsKey('RoutingResourceManagerType'))
-    {
-         $RoutingResourceManagerType = "Default"
-         $PSBoundParameters.Add("RoutingResourceManagerType", $RoutingResourceManagerType)
-    }
+            if (-not $PSBoundParameters.ContainsKey('RoutingResourceManagerType')) {
+                $RoutingResourceManagerType = "Default"
+                $PSBoundParameters.Add("RoutingResourceManagerType", $RoutingResourceManagerType)
+            }
 
-    if (-not $PSBoundParameters.ContainsKey('State'))
-    {
-         $State = "Enabled"
-         $PSBoundParameters.Add("State", $State)
-    }
+            if (-not $PSBoundParameters.ContainsKey('State')) {
+                $State = "Enabled"
+                $PSBoundParameters.Add("State", $State)
+            }
 
-    if (-not ($PSBoundParameters.ContainsKey('SubscriptionId')))
-    {
-         $SubscriptionId = [Guid]::NewGuid().ToString()
-         $PSBoundParameters.Add("SubscriptionId", $SubscriptionId)
-    }
+            if (-not ($PSBoundParameters.ContainsKey('SubscriptionId'))) {
+                $SubscriptionId = [Guid]::NewGuid().ToString()
+                $PSBoundParameters.Add("SubscriptionId", $SubscriptionId)
+            }
 
-    $flattenedParameters = @('TenantId', 'SubscriptionId', 'DisplayName', 'DelegatedProviderSubscriptionId', 'Owner', 'RoutingResourceManagerType', 'ExternalReferenceId', 'State', 'OfferId')
-    $utilityCmdParams = @{}
-    $flattenedParameters | ForEach-Object {
-        if($PSBoundParameters.ContainsKey($_)) {
-            $utilityCmdParams[$_] = $PSBoundParameters[$_]
+            $flattenedParameters = @('TenantId', 'SubscriptionId', 'DisplayName', 'DelegatedProviderSubscriptionId', 'Owner', 'RoutingResourceManagerType', 'ExternalReferenceId', 'State', 'OfferId')
+            $utilityCmdParams = @{}
+            $flattenedParameters | ForEach-Object {
+                if ($PSBoundParameters.ContainsKey($_)) {
+                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
+                }
+            }
+            $NewSubscription = New-SubscriptionObject @utilityCmdParams
+
+            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+            $TaskResult = $SubscriptionsAdminClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $NewSubscription)
+
+            if ($TaskResult) {
+                $GetTaskResult_params = @{
+                    TaskResult = $TaskResult
+                }
+
+                Get-TaskResult @GetTaskResult_params
+            }
         }
-    }
-    $NewSubscription = New-SubscriptionObject @utilityCmdParams
-
-    if ('Subscriptions_CreateOrUpdate' -eq $PsCmdlet.ParameterSetName) {
-        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-        $TaskResult = $SubscriptionsAdminClient.Subscriptions.CreateOrUpdateWithHttpMessagesAsync($SubscriptionId, $NewSubscription)
-    } else {
-        Write-Verbose -Message 'Failed to map parameter set to operation method.'
-        throw 'Module failed to find operation to execute.'
-    }
-
-    if ($TaskResult) {
-        $GetTaskResult_params = @{
-            TaskResult = $TaskResult
-        }
-
-        Get-TaskResult @GetTaskResult_params
-
-    }
     }
 
     End {

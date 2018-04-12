@@ -10,7 +10,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .DESCRIPTION
     Create or update an existing storage quota.
 
-.PARAMETER QuotaName
+.PARAMETER Name
     The name of the storage quota.
 
 .PARAMETER CapacityInGb
@@ -33,7 +33,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
 .EXAMPLE
 
-    PS C:\> Set-AzsStorageQuota -QuotaName 'TestUpdateStorageQuota' -CapacityInGb 123 -NumberOfStorageAccounts 10 
+    PS C:\> Set-AzsStorageQuota -Name 'TestUpdateStorageQuota' -CapacityInGb 123 -NumberOfStorageAccounts 10
 
     Update an existing storage quota.
 #>
@@ -45,7 +45,7 @@ function Set-AzsStorageQuota {
         [Parameter(Mandatory = $true, ParameterSetName = 'Update')]
         [ValidateNotNullOrEmpty()]
         [System.String]
-        $QuotaName,
+        $Name,
 
         [Parameter(Mandatory = $false)]
         [int32]
@@ -103,63 +103,60 @@ function Set-AzsStorageQuota {
             $ArmResourceIdParameterValues = Get-ArmResourceIdParameterValue @GetArmResourceIdParameterValue_params
             $location = $ArmResourceIdParameterValues['location']
 
-            $QuotaName = $ArmResourceIdParameterValues['quotaName']
+            $Name = $ArmResourceIdParameterValues['quotaName']
         }
 
         # Should process
-        if ($PSCmdlet.ShouldProcess("$QuotaName" , "Restore the storage account")) {
-            if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Restore the storage account?", "Performing operation UndeleteWithHttpMessagesAsync on $AccountId."))) {
-                return
-            }
-        }
+        if ($PSCmdlet.ShouldProcess("$Name" , "Restore the storage account")) {
+            if (-not ($Force.IsPresent -or $PSCmdlet.ShouldContinue("Restore the storage account?", "Performing operation UndeleteWithHttpMessagesAsync on $Name."))) {
 
-        $NewServiceClient_params = @{
-            FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
-        }
+                $NewServiceClient_params = @{
+                    FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
+                }
 
-        $GlobalParameterHashtable = @{}
-        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+                $GlobalParameterHashtable = @{}
+                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-        $GlobalParameterHashtable['SubscriptionId'] = $null
-        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-        }
+                $GlobalParameterHashtable['SubscriptionId'] = $null
+                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+                }
 
-        $StorageAdminClient = New-ServiceClient @NewServiceClient_params
+                $StorageAdminClient = New-ServiceClient @NewServiceClient_params
 
-        if ([String]::IsNullOrEmpty($Location)) {
-            $Location = (Get-AzureRMLocation).Location
-        }
+                if ([String]::IsNullOrEmpty($Location)) {
+                    $Location = (Get-AzureRMLocation).Location
+                }
 
-        if ('Update' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
+                if ('Update' -eq $PsCmdlet.ParameterSetName -or 'InputObject' -eq $PsCmdlet.ParameterSetName -or 'ResourceId' -eq $PsCmdlet.ParameterSetName) {
 
-            # Get quota if not set
-            if ($Quota -eq $null) {
-                $Quota = Get-AzsStorageQuota -Location $Location -QuotaName $QuotaName
-            }
+                    # Get quota if not set
+                    if ($Quota -eq $null) {
+                        $Quota = Get-AzsStorageQuota -Location $Location -Name $Name
+                    }
 
-            # Update the Quota object
-            $flattenedParameters = @('CapacityInGb', 'NumberOfStorageAccounts')
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $Quota.$($_) = $PSBoundParameters[$_]
+                    # Update the Quota object
+                    $flattenedParameters = @('CapacityInGb', 'NumberOfStorageAccounts')
+                    $flattenedParameters | ForEach-Object {
+                        if ($PSBoundParameters.ContainsKey($_)) {
+                            $Quota.$($_) = $PSBoundParameters[$_]
+                        }
+                    }
+
+                    Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $StorageAdminClient.'
+                    $TaskResult = $StorageAdminClient.StorageQuotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
+                } else {
+                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
+                    throw 'Module failed to find operation to execute.'
+                }
+
+                if ($TaskResult) {
+                    $GetTaskResult_params = @{
+                        TaskResult = $TaskResult
+                    }
+                    Get-TaskResult @GetTaskResult_params
                 }
             }
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $StorageAdminClient.'
-            $TaskResult = $StorageAdminClient.StorageQuotas.CreateOrUpdateWithHttpMessagesAsync($Location, $QuotaName, $Quota)
-        } else {
-            Write-Verbose -Message 'Failed to map parameter set to operation method.'
-            throw 'Module failed to find operation to execute.'
-        }
-
-        if ($TaskResult) {
-            $GetTaskResult_params = @{
-                TaskResult = $TaskResult
-            }
-
-            Get-TaskResult @GetTaskResult_params
-
         }
     }
 

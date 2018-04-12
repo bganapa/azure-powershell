@@ -11,7 +11,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     List all quotas. Limit the list by passing a name or filter.
 
 .PARAMETER Name
-    Name of the resource.
+    Network quota resource name.
 
 .PARAMETER Location
     Location of the resource.
@@ -103,7 +103,7 @@ function Get-AzsNetworkQuota {
 
             $location = $ArmResourceIdParameterValues['location']
             $Name = $ArmResourceIdParameterValues['resourceName']
-        } elseif (-not $PSBoundParameters.ContainsKey('Location')) {
+        } elseif ([String]::IsNullOrEmpty($Location)) {
             $Location = (Get-AzureRMLocation).Location
         }
 

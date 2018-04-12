@@ -109,7 +109,6 @@ function Get-AzsAzureBridgeActivation {
             $Name = $ArmResourceIdParameterValues['activationName']
         }
 
-
         if ('List' -eq $PsCmdlet.ParameterSetName) {
             Write-Verbose -Message 'Performing operation ListWithHttpMessagesAsync on $AzureBridgeAdminClient.'
             $TaskResult = $AzureBridgeAdminClient.Activations.ListWithHttpMessagesAsync($ResourceGroupName)
