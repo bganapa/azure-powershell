@@ -227,8 +227,7 @@
           Condition="'$(SkipHelp)' == 'false'"
           ContinueOnError="false"/>
 
-    <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\UpdateModules.ps1 -BuildConfig $(Configuration) -Scope $(Scope) &quot;"
-          Condition="'$(CodeSign)' == 'false'"/>
+    <Exec Command="$(PowerShellCommandPrefix) &quot;. $(LibraryToolsFolder)\UpdateModules.ps1 -BuildConfig $(Configuration) -Scope $(Scope) &quot;" />
 
     <Exec ContinueOnError="true"
           Command="$(PowerShellCommandPrefix) &quot; . $(LibraryToolsFolder)\NewHelpIndex.ps1 -OutputFile $(AzurePackageFolder)\index.json -BuildConfig $(Configuration) &quot;"
