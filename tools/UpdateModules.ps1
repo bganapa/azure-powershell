@@ -413,7 +413,7 @@ function Update-Stack {
     Write-Host "Updated profile module"
     Write-Host " "
 
-    $modulePath = "$script:StackRMRoot\$buildConfig\Storage\Azure.Storage"
+    $modulePath = "$script:StackPackages\$buildConfig\Storage\Azure.Storage"
     Write-Host "Updating AzureStorage module from $modulePath"
     New-ModulePsm1 -ModulePath $modulePath -TemplatePath $templateLocation -IsRMModule:$false
     Write-Host " "
