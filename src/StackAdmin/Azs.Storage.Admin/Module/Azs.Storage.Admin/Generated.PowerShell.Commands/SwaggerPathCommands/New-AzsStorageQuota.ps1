@@ -22,9 +22,6 @@ Licensed under the MIT License. See License.txt in the project root for license 
 .PARAMETER Name
     The name of the storage quota.
 
-.PARAMETER Force
-    Don't ask for confirmation.
-
 .EXAMPLE
 
 	PS C:\> New-AzsStorageQuota -CapacityInGb 1000 -NumberOfStorageAccounts 100 -Name 'TestCreateStorageQuota'
@@ -34,6 +31,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsStorageQuota {
     [OutputType([Microsoft.AzureStack.Management.Storage.Admin.Models.StorageQuota])]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -50,11 +48,7 @@ function New-AzsStorageQuota {
 
         [Parameter(Mandatory = $false)]
         [System.String]
-        $Location,
-
-        [Parameter(Mandatory = $false)]
-        [switch]
-        $Force
+        $Location
     )
 
     Begin {
@@ -72,50 +66,42 @@ function New-AzsStorageQuota {
 
         $ErrorActionPreference = 'Stop'
 
-        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create new storage quota?", "Performing operation create storage quota with name $Name."))) {
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
+        }
 
-            $NewServiceClient_params = @{
-                FullClientTypeName = 'Microsoft.AzureStack.Management.Storage.Admin.StorageAdminClient'
+        $GlobalParameterHashtable = @{}
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+        $GlobalParameterHashtable['SubscriptionId'] = $null
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        }
+
+        $StorageAdminClient = New-ServiceClient @NewServiceClient_params
+
+        $flattenedParameters = @('NumberOfStorageAccounts', 'CapacityInGb')
+        $utilityCmdParams = @{}
+        $flattenedParameters | ForEach-Object {
+            if ($PSBoundParameters.ContainsKey($_)) {
+                $utilityCmdParams[$_] = $PSBoundParameters[$_]
             }
+        }
 
-            $GlobalParameterHashtable = @{}
-            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+        $Parameters = New-StorageQuotaObject @utilityCmdParams
 
-            $GlobalParameterHashtable['SubscriptionId'] = $null
-            if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-                $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        if ([String]::IsNullOrEmpty($Location)) {
+            $Location = (Get-AzureRMLocation).Location
+        }
+
+        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $StorageAdminClient.'
+        $TaskResult = $StorageAdminClient.StorageQuotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Parameters)
+
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
             }
-
-            $StorageAdminClient = New-ServiceClient @NewServiceClient_params
-
-            $flattenedParameters = @('NumberOfStorageAccounts', 'CapacityInGb')
-            $utilityCmdParams = @{}
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
-                }
-            }
-
-            $Parameters = New-StorageQuotaObject @utilityCmdParams
-
-            if ([String]::IsNullOrEmpty($Location)) {
-                $Location = (Get-AzureRMLocation).Location
-            }
-
-            if ('Create' -eq $PsCmdlet.ParameterSetName) {
-                Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $StorageAdminClient.'
-                $TaskResult = $StorageAdminClient.StorageQuotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Parameters)
-            } else {
-                Write-Verbose -Message 'Failed to map parameter set to operation method.'
-                throw 'Module failed to find operation to execute.'
-            }
-
-            if ($TaskResult) {
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
-                }
-                Get-TaskResult @GetTaskResult_params
-            }
+            Get-TaskResult @GetTaskResult_params
         }
     }
 

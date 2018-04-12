@@ -148,7 +148,7 @@ InModuleScope Azs.Fabric.Admin {
 
 
 			$params = @($Location, $ResourceGroup, $Name, $StartIpAddress, $EndIpAddress, $AddressPrefix)
-			$ipPool = New-AzsIpPool @params -Force
+			$ipPool = New-AzsIpPool @params
 
 			$ipPool | Should not be $null
 		}

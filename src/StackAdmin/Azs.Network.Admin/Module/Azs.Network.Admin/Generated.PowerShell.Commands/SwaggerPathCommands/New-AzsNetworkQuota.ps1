@@ -50,6 +50,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsNetworkQuota {
     [OutputType([Microsoft.AzureStack.Management.Network.Admin.Models.Quota])]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -91,11 +92,7 @@ function New-AzsNetworkQuota {
         [Parameter(Mandatory = $false, DontShow = $true)]
         [ValidateSet('None', 'Prepare', 'Commit', 'Abort')]
         [string]
-        $MigrationPhase = 'Prepare',
-
-        [Parameter(Mandatory = $false)]
-        [switch]
-        $Force
+        $MigrationPhase = 'Prepare'
     )
 
     Begin {
@@ -113,50 +110,48 @@ function New-AzsNetworkQuota {
 
         $ErrorActionPreference = 'Stop'
 
-        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create new network quota?", "Performing operation create network quota with $Name."))) {
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Network.Admin.NetworkAdminClient'
+        }
 
-            $NewServiceClient_params = @{
-                FullClientTypeName = 'Microsoft.AzureStack.Management.Network.Admin.NetworkAdminClient'
+        $GlobalParameterHashtable = @{}
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+        $GlobalParameterHashtable['SubscriptionId'] = $null
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        }
+
+        $NetworkAdminClient = New-ServiceClient @NewServiceClient_params
+
+        if ([String]::IsNullOrEmpty($Location)) {
+            $Location = (Get-AzureRMLocation).Location
+        }
+
+        # Create object
+        $flattenedParameters = @(
+            'MaxNicsPerSubscription', 'MaxPublicIpsPerSubscription',
+            'MaxVirtualNetworkGatewayConnectionsPerSubscription', 'MaxVnetsPerSubscription',
+            'MaxVirtualNetworkGatewaysPerSubscription', 'MaxSecurityGroupsPerSubscription',
+            'MaxLoadBalancersPerSubscription', 'MigrationPhase'
+        )
+        $utilityCmdParams = @{}
+        $flattenedParameters | ForEach-Object {
+            $utilityCmdParams[$_] = Get-Variable -Name $_ -ValueOnly
+        }
+        $Quota = New-QuotaObject @utilityCmdParams
+
+        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
+        $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
+
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
             }
-
-            $GlobalParameterHashtable = @{}
-            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
-
-            $GlobalParameterHashtable['SubscriptionId'] = $null
-            if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-                $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-            }
-
-            $NetworkAdminClient = New-ServiceClient @NewServiceClient_params
-
-            if ([String]::IsNullOrEmpty($Location)) {
-                $Location = (Get-AzureRMLocation).Location
-            }
-
-            # Create object
-            $flattenedParameters = @(
-                'MaxNicsPerSubscription', 'MaxPublicIpsPerSubscription',
-                'MaxVirtualNetworkGatewayConnectionsPerSubscription', 'MaxVnetsPerSubscription',
-                'MaxVirtualNetworkGatewaysPerSubscription', 'MaxSecurityGroupsPerSubscription',
-                'MaxLoadBalancersPerSubscription', 'MigrationPhase'
-            )
-            $utilityCmdParams = @{}
-            $flattenedParameters | ForEach-Object {
-                $utilityCmdParams[$_] = Get-Variable -Name $_ -ValueOnly
-            }
-            $Quota = New-QuotaObject @utilityCmdParams
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $NetworkAdminClient.'
-            $TaskResult = $NetworkAdminClient.Quotas.CreateOrUpdateWithHttpMessagesAsync($Location, $Name, $Quota)
-
-            if ($TaskResult) {
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
-                }
-                Get-TaskResult @GetTaskResult_params
-            }
+            Get-TaskResult @GetTaskResult_params
         }
     }
+    
     End {
         if ($tracerObject) {
             $global:DebugPreference = $oldDebugPreference

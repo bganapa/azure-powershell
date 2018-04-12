@@ -250,7 +250,7 @@ InModuleScope Azs.Network.Admin {
             $location = "local"
             $quotaName = "TestQuotaForRemoval"
 
-            $created = New-AzsNetworkQuota -Name $quotaName -Location $location -Force
+            $created = New-AzsNetworkQuota -Name $quotaName -Location $location
             $quota = Get-AzsNetworkQuota -Name $quotaName -Location $location
 
             $quota   | Should Not be $null
@@ -270,7 +270,7 @@ InModuleScope Azs.Network.Admin {
             $location = "local"
             $quotaName = "TestQuotaForUpdate"
 
-            $quota = New-AzsNetworkQuota -Name $quotaName -Location $location -Force
+            $quota = New-AzsNetworkQuota -Name $quotaName -Location $location
             $created = Get-AzsNetworkQuota -Name $quotaName -Location $location
 
             $quota   | Should Not be $null

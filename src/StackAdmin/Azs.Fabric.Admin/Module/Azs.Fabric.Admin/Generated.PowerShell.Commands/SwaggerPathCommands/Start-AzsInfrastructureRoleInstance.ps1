@@ -127,6 +127,8 @@ function Start-AzsInfrastructureRoleInstance {
                     throw 'Module failed to find operation to execute.'
                 }
 
+                $TaskResult | Out-File "output.txt" -Force -Append
+
                 Write-Verbose -Message "Waiting for the operation to complete."
 
                 $PSSwaggerJobScriptBlock = {

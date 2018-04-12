@@ -46,7 +46,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsPlan {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Plan])]
-    [CmdletBinding(SupportsShouldProcess = $true)]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -112,50 +112,43 @@ function New-AzsPlan {
             }
         }
 
-        if ($PSCmdlet.ShouldProcess("$Name" , "Create a plan")) {
-            if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a plan?", "Performing operation create plan with name $Name."))) {
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+        }
 
-                $NewServiceClient_params = @{
-                    FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-                }
+        $GlobalParameterHashtable = @{}
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-                $GlobalParameterHashtable = @{}
-                $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+        $GlobalParameterHashtable['SubscriptionId'] = $null
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        }
 
-                $GlobalParameterHashtable['SubscriptionId'] = $null
-                if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-                    $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-                }
+        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
 
-                $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+        if ([String]::IsNullOrEmpty($Location)) {
+            $Location = (Get-AzureRMLocation).Location
+            $PSBoundParameters.Add("Location", $Location)
+        }
 
-                if ([String]::IsNullOrEmpty($Location)) {
-                    $Location = (Get-AzureRMLocation).Location
-                    $PSBoundParameters.Add("Location", $Location)
-                }
-
-                $flattenedParameters = @('Description', 'Id', 'Type', 'SkuIds', 'Tags', 'ExternalReferenceId', 'DisplayName', 'Name', 'Location', 'QuotaIds', 'SubscriptionCount')
-                $utilityCmdParams = @{}
-                $flattenedParameters | ForEach-Object {
-                    if ($PSBoundParameters.ContainsKey($_)) {
-                        $utilityCmdParams[$_] = $PSBoundParameters[$_]
-                    }
-                }
-                $NewPlan = New-PlanObject @utilityCmdParams
-
-                $Plan = $Name
-
-                Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-                $TaskResult = $SubscriptionsAdminClient.Plans.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Plan, $NewPlan)
-
-                if ($TaskResult) {
-                    $GetTaskResult_params = @{
-                        TaskResult = $TaskResult
-                    }
-
-                    Get-TaskResult @GetTaskResult_params
-                }
+        $flattenedParameters = @('Description', 'Id', 'Type', 'SkuIds', 'Tags', 'ExternalReferenceId', 'DisplayName', 'Name', 'Location', 'QuotaIds', 'SubscriptionCount')
+        $utilityCmdParams = @{}
+        $flattenedParameters | ForEach-Object {
+            if ($PSBoundParameters.ContainsKey($_)) {
+                $utilityCmdParams[$_] = $PSBoundParameters[$_]
             }
+        }
+        $NewPlan = New-PlanObject @utilityCmdParams
+
+        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+        $TaskResult = $SubscriptionsAdminClient.Plans.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Name, $NewPlan)
+
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
+            }
+
+            Get-TaskResult @GetTaskResult_params
         }
     }
 

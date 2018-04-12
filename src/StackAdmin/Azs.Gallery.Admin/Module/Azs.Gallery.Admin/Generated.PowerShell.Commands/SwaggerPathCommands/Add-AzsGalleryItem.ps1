@@ -31,7 +31,7 @@ function Add-AzsGalleryItem {
         [System.String]
         $GalleryItemUri,
 
-        [Parameter(Mandatory = $true, Position = 0 )]
+        [Parameter(Mandatory = $false)]
         [switch]
         $Force
     )
@@ -68,17 +68,12 @@ function Add-AzsGalleryItem {
 
                 $GalleryAdminClient = New-ServiceClient @NewServiceClient_params
 
-                if ('Create' -eq $PsCmdlet.ParameterSetName) {
-                    Write-Verbose -Message 'Performing operation CreateWithHttpMessagesAsync on $GalleryAdminClient.'
-                    $TaskResult = $GalleryAdminClient.GalleryItems.CreateWithHttpMessagesAsync($(if ($PSBoundParameters.ContainsKey('GalleryItemUri')) {
-                                $GalleryItemUri
-                            } else {
-                                [NullString]::Value
-                            }))
-                } else {
-                    Write-Verbose -Message 'Failed to map parameter set to operation method.'
-                    throw 'Module failed to find operation to execute.'
-                }
+                Write-Verbose -Message 'Performing operation CreateWithHttpMessagesAsync on $GalleryAdminClient.'
+                $TaskResult = $GalleryAdminClient.GalleryItems.CreateWithHttpMessagesAsync($(if ($PSBoundParameters.ContainsKey('GalleryItemUri')) {
+                            $GalleryItemUri
+                        } else {
+                            [NullString]::Value
+                        }))
 
                 if ($TaskResult) {
                     $GetTaskResult_params = @{

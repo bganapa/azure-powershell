@@ -137,9 +137,14 @@ function Start-AzsBackup {
                         try {
                             Get-TaskResult @GetTaskResult_params
                         } catch {
-                            @{
-                                "Code"    = $_.Exception.Body.Code;
-                                "Message" = $_.Exception.Body.Message
+                            $_ | FL * | Out-File "output.txt" -Force 
+                            if ($_.Exception.Body -ne $null) {
+                                @{
+                                    "Code"    = $_.Exception.Body.Code;
+                                    "Message" = $_.Exception.Body.Message
+                                }
+                            } else {
+                                $_ 
                             }
                         }
                     }
@@ -147,11 +152,7 @@ function Start-AzsBackup {
 
                 $PSCommonParameters = Get-PSCommonParameter -CallerPSBoundParameters $PSBoundParameters
                 $TaskHelperFilePath = Join-Path -Path $ExecutionContext.SessionState.Module.ModuleBase -ChildPath 'Get-TaskResult.ps1'
-                if (-not $AsJob.IsPresent) {
-                    Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
-                        -ArgumentList $TaskResult, $TaskHelperFilePath `
-                        @PSCommonParameters
-                } else {
+                if ($AsJob.IsPresent) {
                     $ScriptBlockParameters = New-Object -TypeName 'System.Collections.Generic.Dictionary[string, object]'
                     $ScriptBlockParameters['TaskResult'] = $TaskResult
                     $ScriptBlockParameters['AsJob'] = $true
@@ -161,6 +162,10 @@ function Start-AzsBackup {
                     Start-PSSwaggerJobHelper -ScriptBlock $PSSwaggerJobScriptBlock `
                         -CallerPSBoundParameters $ScriptBlockParameters `
                         -CallerPSCmdlet $PSCmdlet `
+                        @PSCommonParameters
+                } else {
+                    Invoke-Command -ScriptBlock $PSSwaggerJobScriptBlock `
+                        -ArgumentList $TaskResult, $TaskHelperFilePath `
                         @PSCommonParameters
                 }
             }

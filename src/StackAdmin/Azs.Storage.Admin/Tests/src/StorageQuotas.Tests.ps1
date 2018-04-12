@@ -146,7 +146,7 @@ InModuleScope Azs.Storage.Admin {
             $quota.CapacityInGb             | Should Be 50
             $quota.NumberOfStorageAccounts  | Should Be 100
 
-            $updated = Set-AzsStorageQuota -CapacityInGb 123 -NumberOfStorageAccounts 10 -Location local -Name $name
+            $updated = Set-AzsStorageQuota -CapacityInGb 123 -NumberOfStorageAccounts 10 -Location local -Name $name -Force
             ValidateStorageQuota -storageQuota $updated
             $updated.CapacityInGb               | Should Be 123
             $updated.NumberOfStorageAccounts    | Should Be 10

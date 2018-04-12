@@ -52,6 +52,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsOffer {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.Offer])]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -101,9 +102,7 @@ function New-AzsOffer {
 
         [Parameter(Mandatory = $false)]
         [Microsoft.AzureStack.Management.Subscriptions.Admin.Models.AddonPlanDefinition[]]
-        $AddonPlanDefinition,
-
-        [switch]$Force
+        $AddonPlanDefinition
     )
 
     Begin {
@@ -121,58 +120,54 @@ function New-AzsOffer {
 
         $ErrorActionPreference = 'Stop'
 
-
-        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a offer?", "Performing operation create offer with name $Name."))) {
-
-            if ($PSBoundParameters.ContainsKey('Location')) {
-                if ( $MyInvocation.Line -match "\s-ArmLocation\s") {
-                    Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
-                }
+        if ($PSBoundParameters.ContainsKey('Location')) {
+            if ( $MyInvocation.Line -match "\s-ArmLocation\s") {
+                Write-Warning -Message "The parameter alias ArmLocation will be deprecated in future release. Please use the parameter Location instead"
             }
+        }
 
-            $NewServiceClient_params = @{
-                FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+        }
+
+        $GlobalParameterHashtable = @{}
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+
+        $GlobalParameterHashtable['SubscriptionId'] = $null
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        }
+
+        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+
+        if ([String]::IsNullOrEmpty($Location)) {
+            $Location = (Get-AzureRMLocation).Location
+            $PSBoundParameters.Add("Location", $Location)
+        }
+
+        if (-not $PSBoundParameters.ContainsKey('State')) {
+            $State = "Private"
+            $PSBoundParameters.Add("State", $State)
+        }
+
+        $flattenedParameters = @('MaxSubscriptionsPerAccount', 'BasePlanIds', 'DisplayName', 'Name', 'Description', 'ExternalReferenceId', 'State', 'Location', 'SubscriptionCount', 'AddonPlanDefinition')
+        $utilityCmdParams = @{}
+        $flattenedParameters | ForEach-Object {
+            if ($PSBoundParameters.ContainsKey($_)) {
+                $utilityCmdParams[$_] = $PSBoundParameters[$_]
             }
+        }
 
-            $GlobalParameterHashtable = @{}
-            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+        $NewOffer = New-OfferObject @utilityCmdParams
 
-            $GlobalParameterHashtable['SubscriptionId'] = $null
-            if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
-                $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+        $TaskResult = $SubscriptionsAdminClient.Offers.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Name, $NewOffer)
+
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
             }
-
-            $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
-
-            if ([String]::IsNullOrEmpty($Location)) {
-                $Location = (Get-AzureRMLocation).Location
-                $PSBoundParameters.Add("Location", $Location)
-            }
-
-            if (-not $PSBoundParameters.ContainsKey('State')) {
-                $State = "Private"
-                $PSBoundParameters.Add("State", $State)
-            }
-
-            $flattenedParameters = @('MaxSubscriptionsPerAccount', 'BasePlanIds', 'DisplayName', 'Name', 'Description', 'ExternalReferenceId', 'State', 'Location', 'SubscriptionCount', 'AddonPlanDefinition')
-            $utilityCmdParams = @{}
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
-                }
-            }
-
-            $NewOffer = New-OfferObject @utilityCmdParams
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-            $TaskResult = $SubscriptionsAdminClient.Offers.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $Name, $NewOffer)
-
-            if ($TaskResult) {
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
-                }
-                Get-TaskResult @GetTaskResult_params
-            }
+            Get-TaskResult @GetTaskResult_params
         }
     }
 

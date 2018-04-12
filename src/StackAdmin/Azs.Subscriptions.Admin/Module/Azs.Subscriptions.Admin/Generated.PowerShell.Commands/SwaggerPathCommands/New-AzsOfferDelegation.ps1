@@ -34,6 +34,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
 #>
 function New-AzsOfferDelegation {
     [OutputType([Microsoft.AzureStack.Management.Subscriptions.Admin.Models.OfferDelegation])]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory = $true)]
         [ValidateNotNullOrEmpty()]
@@ -58,9 +59,7 @@ function New-AzsOfferDelegation {
 
         [Parameter(Mandatory = $false)]
         [string]
-        $Location,
-
-        [swtich]$Force
+        $Location
     )
 
     Begin {
@@ -78,43 +77,40 @@ function New-AzsOfferDelegation {
 
         $ErrorActionPreference = 'Stop'
 
-        if (($Force.IsPresent -or $PSCmdlet.ShouldContinue("Create a delegated offer?", "Performing operation create delegated offer with name $Name."))) {
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
+        }
 
-            $NewServiceClient_params = @{
-                FullClientTypeName = 'Microsoft.AzureStack.Management.Subscriptions.Admin.SubscriptionsAdminClient'
-            }
+        $GlobalParameterHashtable = @{}
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
 
-            $GlobalParameterHashtable = @{}
-            $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+        $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
 
-            $SubscriptionsAdminClient = New-ServiceClient @NewServiceClient_params
+        if ([String]::IsNullOrEmpty($Location)) {
+            $Location = (Get-AzureRMLocation).Location
+            $PSBoundParameters.Add("Location", $Location)
+        }
 
-            if ([String]::IsNullOrEmpty($Location)) {
-                $Location = (Get-AzureRMLocation).Location
-                $PSBoundParameters.Add("Location", $Location)
-            }
-
-            $flattenedParameters = @('SubscriptionId', 'Location')
-            $utilityCmdParams = @{}
-            $flattenedParameters | ForEach-Object {
-                if ($PSBoundParameters.ContainsKey($_)) {
-                    $utilityCmdParams[$_] = $PSBoundParameters[$_]
-                }
-            }
-            $NewOfferDelegation = New-OfferDelegationObject @utilityCmdParams
-
-            Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
-            $TaskResult = $SubscriptionsAdminClient.OfferDelegations.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $OfferName, $Name, $NewOfferDelegation)
-
-            if ($TaskResult) {
-                $GetTaskResult_params = @{
-                    TaskResult = $TaskResult
-                }
-                Get-TaskResult @GetTaskResult_params
+        $flattenedParameters = @('SubscriptionId', 'Location')
+        $utilityCmdParams = @{}
+        $flattenedParameters | ForEach-Object {
+            if ($PSBoundParameters.ContainsKey($_)) {
+                $utilityCmdParams[$_] = $PSBoundParameters[$_]
             }
         }
-    }
+        $NewOfferDelegation = New-OfferDelegationObject @utilityCmdParams
 
+        Write-Verbose -Message 'Performing operation CreateOrUpdateWithHttpMessagesAsync on $SubscriptionsAdminClient.'
+        $TaskResult = $SubscriptionsAdminClient.OfferDelegations.CreateOrUpdateWithHttpMessagesAsync($ResourceGroupName, $OfferName, $Name, $NewOfferDelegation)
+
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
+            }
+            Get-TaskResult @GetTaskResult_params
+        }
+    }
+    
     End {
         if ($tracerObject) {
             $global:DebugPreference = $oldDebugPreference

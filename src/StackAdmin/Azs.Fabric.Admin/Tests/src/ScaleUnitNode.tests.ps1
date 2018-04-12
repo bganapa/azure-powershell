@@ -154,17 +154,6 @@ InModuleScope Azs.Fabric.Admin {
 			}
 		}
 
-		It "TestPowerOnScaleUnitNode" {
-			$global:TestName = 'TestPowerOnScaleUnitNode'
-
-			$ScaleUnitNodes = Get-AzsScaleUnitNode -ResourceGroupName $ResourceGroup -Location $Location
-			foreach($ScaleUnitNode in $ScaleUnitNodes) {
-
-				Start-AzsScaleUnitNode -ResourceGroupName $ResourceGroup -Location $Location -Name $ScaleUnitNode.Name -Force
-				break
-			}
-		}
-
 		It "TestStartStopMaintenanceModeUnitNode" {
 			$global:TestName = 'TestStartStopMaintenanceModeUnitNode'
 
@@ -218,7 +207,7 @@ InModuleScope Azs.Fabric.Admin {
 		# Disabled
 
 		It "TestPowerOnScaleUnitNode" -Skip {
-			$global:TestName = 'TestPowerOffScaleUnitNode'
+			$global:TestName = 'TestPowerOnScaleUnitNode'
 
 			$ScaleUnitNodes = Get-AzsScaleUnitNode -ResourceGroupName $ResourceGroup -Location $Location
             foreach($ScaleUnitNode in $ScaleUnitNodes) {
