@@ -624,7 +624,7 @@ function Add-PSM1Dependency {
         $regex = New-Object System.Text.RegularExpressions.Regex "#\s*RootModule\s*=\s*''"
         $content = (Get-Content -Path $Path) -join "`r`n"
         $text = $regex.Replace($content, "RootModule = '$psm1file'")
-        $text | Out-File -FilePath $Path
+        Out-FileNoBom -File $Path -Text $text 
     }
 }
 
