@@ -41,10 +41,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Storage", "Storage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Management.Storage", "ResourceManager\Storage\Stack\Commands.Management.Storage\Commands.Management.Storage.csproj", "{A50AB133-5C04-4A17-9054-F8343683EC23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VhdManagement", "ResourceManager\Compute\Stack\VhdManagement\VhdManagement.csproj", "{80496B7B-068A-4A1E-B0BB-4B1FFF3FA616}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sync", "ResourceManager\Compute\Stack\Sync\Sync.csproj", "{73820CBC-F4EB-4C5E-B4F0-CC4A93FBF157}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Network", "ResourceManager\Network\Stack\Commands.Network\Commands.Network.csproj", "{98CFD96B-A6BC-4F15-AE2C-603FC2B58981}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Compute", "ResourceManager\Compute\Stack\Commands.Compute\Commands.Compute.csproj", "{52643BD5-6378-49BD-9F6E-DAC9DD8A867B}"
