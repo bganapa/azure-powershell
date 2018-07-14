@@ -72,7 +72,7 @@
       <HintPath>..\..\..\..\packages\Microsoft.WindowsAzure.Management.Storage.5.1.1\lib\net40\Microsoft.WindowsAzure.Management.Storage.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\..\..\..\packages\WindowsAzure.Storage.8.6.0\lib\net40\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <HintPath>..\..\..\..\packages\WindowsAzure.Storage.8.6.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Management.Automation, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
