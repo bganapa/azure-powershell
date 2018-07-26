@@ -100,13 +100,20 @@ InModuleScope Azs.Subscriptions.Admin {
                 $updated.DisplayName | Should Be $sub.DisplayName
                 $updated.Owner       | Should Be $global:Owner
 
-                break;
-            }
-        }
+				break;
+			}
+		}
+
         it "CheckNameAvailability" -Skip:$('CheckNameAvailability' -in $global:SkippedTests) {
             $global:TestName = 'CheckNameAvailability'
 
             Test-AzsNameAvailability -Name $global:TestAvailability -ResourceType $global:ResourceType
         }
+
+        It "TestMoveSubscription" {
+            $global:TestName = 'MoveSubscription'
+            $resourceIds = Get-AzsUserSubscription -Filter "offerName eq 'o1'" | Select -ExpandProperty Id
+            Move-AzsSubscription -DestinationDelegatedProviderOffer $Null -ResourceId $resourceIds
+		} 
     }
 }
