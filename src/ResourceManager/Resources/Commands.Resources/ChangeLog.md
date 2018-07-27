@@ -24,6 +24,8 @@
 * Fix piping scenario with `Set-AzureRmResource`
 * Fix issue when providing both tag name and value for `Get-AzureRmResource`
     - https://github.com/Azure/azure-powershell/issues/6765
+* Fix example in New-AzureRmResourceGroupDeployment
+
 
 ## Version 6.2.1
 * Update Roleassignment and roledefinition cmdlets:
