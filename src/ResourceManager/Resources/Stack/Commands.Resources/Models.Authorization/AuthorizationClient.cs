@@ -33,7 +33,7 @@ namespace Microsoft.Azure.Commands.Resources.Models.Authorization
         /// This queue is used by the tests to assign fixed role assignment
         /// names every time the test runs.
         /// </summary>
-        public static Queue<Guid> RoleAssignmentNames { get; set; }
+        public static Queue<string> RoleAssignmentNames { get; set; }
 
         /// <summary>
         /// This queue is used by the tests to assign fixed role definition
@@ -48,7 +48,7 @@ namespace Microsoft.Azure.Commands.Resources.Models.Authorization
 
         static AuthorizationClient()
         {
-            RoleAssignmentNames = new Queue<Guid>();
+            RoleAssignmentNames = new Queue<string>();
             RoleDefinitionNames = new Queue<Guid>();
         }
 
@@ -165,7 +165,7 @@ namespace Microsoft.Azure.Commands.Resources.Models.Authorization
         public PSRoleAssignment CreateRoleAssignment(FilterRoleAssignmentsOptions parameters)
         {
             string principalId = ActiveDirectoryClient.GetObjectId(parameters.ADObjectFilter);
-            string roleAssignmentId = RoleAssignmentNames.Count == 0 ? Guid.NewGuid() : RoleAssignmentNames.Dequeue();
+            string roleAssignmentId = RoleAssignmentNames.Count == 0 ? Guid.NewGuid().ToString() : RoleAssignmentNames.Dequeue();
             string scope = parameters.Scope;
             string roleDefinitionId = !string.IsNullOrEmpty(parameters.RoleDefinitionName)
                 ? AuthorizationHelper.ConstructFullyQualifiedRoleDefinitionIdFromScopeAndIdAsGuid(scope, GetSingleRoleDefinitionByName(parameters.RoleDefinitionName, scope).Id)
