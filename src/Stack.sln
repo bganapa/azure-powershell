@@ -119,6 +119,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sync", "ResourceManager\Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VhdManagement", "ResourceManager\Compute\Stack\VhdManagement\VhdManagement.csproj", "{1494D7FD-02CD-45AC-89E1-5AAB8368B00A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Storage", "Storage\Stack\Commands.Storage\Commands.Storage.csproj", "{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -777,6 +779,18 @@ Global
 		{1494D7FD-02CD-45AC-89E1-5AAB8368B00A}.Release|x64.Build.0 = Release|Any CPU
 		{1494D7FD-02CD-45AC-89E1-5AAB8368B00A}.Release|x86.ActiveCfg = Release|Any CPU
 		{1494D7FD-02CD-45AC-89E1-5AAB8368B00A}.Release|x86.Build.0 = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|x64.Build.0 = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Debug|x86.Build.0 = Debug|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|x64.ActiveCfg = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|x64.Build.0 = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|x86.ActiveCfg = Release|Any CPU
+		{08CF7DA7-0392-4A19-B79B-E1FF67CDB81A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
