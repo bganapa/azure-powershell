@@ -199,7 +199,7 @@ namespace Microsoft.Azure.Commands.Sql.ServerActiveDirectoryAdministrator.Servic
                 return new ServerAdministratorCreateOrUpdateProperties()
                 {
                     Login = group.DisplayName,
-                    Sid = group.Id,
+                    Sid = Guid.Parse(group.Id),
                     TenantId = tenantId,
                 };
             }
@@ -247,7 +247,7 @@ namespace Microsoft.Azure.Commands.Sql.ServerActiveDirectoryAdministrator.Servic
                 return new ServerAdministratorCreateOrUpdateProperties()
                 {
                     Login = displayName,
-                    Sid = obj.Id,
+                    Sid = Guid.Parse(obj.Id),
                     TenantId = tenantId,
                 };
             }
