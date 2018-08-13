@@ -428,10 +428,6 @@
       <Project>{3819d8a7-c62c-4c47-8ddd-0332d9ce1252}</Project>
       <Name>Commands.ResourceManager.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\Network\Stack\Commands.Network\Commands.Network.csproj">
-      <Project>{98cfd96b-a6bc-4f15-ae2c-603fc2b58981}</Project>
-      <Name>Commands.Network</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Storage\Stack\Commands.Management.Storage\Commands.Management.Storage.csproj">
       <Project>{a50ab133-5c04-4a17-9054-f8343683ec23}</Project>
       <Name>Commands.Management.Storage</Name>
