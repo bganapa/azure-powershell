@@ -41,7 +41,7 @@ Ssl cipher suites to be enabled in the specified order to application gateway
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -68,6 +68,7 @@ Accept wildcard characters: False
 ### -DisabledSslProtocols
 Specifies which protocols are disabled.
 The acceptable values for this parameter are:
+
 - TLSv1_0 
 - TLSv1_1 
 - TLSv1_2
@@ -75,7 +76,7 @@ The acceptable values for this parameter are:
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: TLSv1_0, TLSv1_1, TLSv1_2
 
 Required: False
@@ -89,9 +90,9 @@ Accept wildcard characters: False
 Minimum version of Ssl protocol to be supported on application gateway
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: TLSv1_0, TLSv1_1, TLSv1_2
 
 Required: False
@@ -105,9 +106,9 @@ Accept wildcard characters: False
 Name of Ssl predefined policy
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -120,9 +121,9 @@ Accept wildcard characters: False
 Type of Ssl Policy
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: Predefined, Custom
 
 Required: False
@@ -136,7 +137,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -152,7 +153,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -168,7 +169,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### None
+### System.String
 
 ## OUTPUTS
 

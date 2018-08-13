@@ -25,7 +25,7 @@ using Microsoft.Azure.Commands.ResourceManager.Common.ArgumentCompleters;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VpnClientConfiguration", SupportsShouldProcess = true), OutputType(typeof(PSVpnProfile))]
+    [Cmdlet(VerbsCommon.New, "AzureRmVpnClientConfiguration", SupportsShouldProcess = true), OutputType(typeof(PSVpnProfile))]
     public class NewAzureVpnClientConfigurationCommand : VirtualNetworkGatewayBaseCmdlet
     {
         [Alias("ResourceName")]

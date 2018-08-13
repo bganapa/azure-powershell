@@ -17,7 +17,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ApplicationGatewaySku"), OutputType(typeof(PSApplicationGatewaySku))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmApplicationGatewaySku"), OutputType(typeof(PSApplicationGatewaySku))]
     public class GetAzureApplicationGatewaySkuCommand : NetworkBaseCmdlet
     {
         [Parameter(

@@ -30,6 +30,7 @@ PS C:\> Get-AzureRmLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPoo
 ```
 
 The first command gets an existing load balancer named MyLoadBalancer in the resource group named MyResourceGroup, and then stores it in the $loadbalancer variable.
+
 The second command gets the associated backend address pool configuration named BackendAddressPool02 for the load balancer in $loadbalancer.
 
 ## PARAMETERS
@@ -38,7 +39,7 @@ The second command gets the associated backend address pool configuration named 
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -53,9 +54,9 @@ Accept wildcard characters: False
 Specifies the load balancer that is associated with the backend address pool to get.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
+Type: PSLoadBalancer
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -68,9 +69,9 @@ Accept wildcard characters: False
 Specifies the name of the load balancer that contains the backend address pool to get.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -84,8 +85,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
-Parameters: LoadBalancer (ByValue)
+### PSLoadBalancer
+Parameter 'LoadBalancer' accepts value of type 'PSLoadBalancer' from the pipeline
 
 ## OUTPUTS
 

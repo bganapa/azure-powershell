@@ -47,7 +47,7 @@ In this case, however, the *VpnClientRevokedCertificateName* parameter is used t
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -60,12 +60,13 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Specifies the name of the resource group that the virtual network gateway is assigned to.
+
 Resource groups categorize items to help simplify inventory management and general Azure administration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -78,9 +79,9 @@ Accept wildcard characters: False
 Specifies the name of the virtual network gateway where the revoked certificate information is assigned.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -93,7 +94,7 @@ Accept wildcard characters: False
 Specifies the name of the VPN client certificate that this cmdlet gets.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases: ResourceName
 
@@ -109,11 +110,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
-
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate
+###  
+**Get-AzureRmVpnClientRevokedCertificate** returns instances of the **Microsoft.Azure.Commands.Network.Models.PSVpnClientRevokedCertificate** object.
 
 ## NOTES
 

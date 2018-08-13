@@ -22,6 +22,7 @@ Get-AzureRmVpnClientRootCertificate [-VpnClientRootCertificateName <String>]
 ## DESCRIPTION
 The **Get-AzureRmVpnClientRootCertificate** cmdlet returns information about the root certificates assigned to a virtual network gateway.
 Root certificates are X.509 certificates that identify your Root Certification Authority: all other certificates used on the gateway trust the root certificate.
+
 By default, **Get-AzureRmVpnClientRootCertificate** returns information about all the root certificates assigned to a gateway.
 (Gateways can have more than one root certificate.) However, by including the **VpnClientRootCertificateName** parameter you can limit the returned data to a specific certificate.
 
@@ -48,7 +49,7 @@ In this case, however, the *VpnClientRootCertificateName* parameter is included 
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -61,12 +62,13 @@ Accept wildcard characters: False
 
 ### -ResourceGroupName
 Specifies the name of the resource group that the virtual network gateway is assigned to.
+
 Resource groups categorize items to help simplify inventory management and general Azure administration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -79,9 +81,9 @@ Accept wildcard characters: False
 Specifies the name of the virtual network gateway where the root certificate is assigned.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -94,7 +96,7 @@ Accept wildcard characters: False
 Specifies the name of the client root certificate that this cmdlet gets.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases: ResourceName
 
@@ -110,11 +112,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.String
-
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate
+###  
+**Get-AzureRmVpnClientRootCertificate** gets instances of the **Microsoft.Azure.Commands.Network.Models.PSVpnClientRootCertificate** object.
 
 ## NOTES
 

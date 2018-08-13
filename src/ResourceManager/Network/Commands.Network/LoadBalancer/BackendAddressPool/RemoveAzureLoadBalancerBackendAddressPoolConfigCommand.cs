@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "LoadBalancerBackendAddressPoolConfig"), OutputType(typeof(PSLoadBalancer))]
+    [Cmdlet(VerbsCommon.Remove, "AzureRmLoadBalancerBackendAddressPoolConfig"), OutputType(typeof(PSLoadBalancer))]
     public class RemoveAzureLoadBalancerBackendAddressPoolConfigCommand : NetworkBaseCmdlet
     {
         [Parameter(

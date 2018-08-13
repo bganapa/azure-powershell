@@ -53,6 +53,7 @@ PS C:\> New-AzureRmLoadBalancerFrontendIpConfig -Name "FrontendIpConfig01" -Publ
 ```
 
 The first command creates a dynamic public IP address named MyPublicIP in the resource group named MyResourceGroup, and then stores it in the $publicip variable.
+
 The second command creates a front-end IP configuration named FrontendIpConfig01 using the public IP address in $publicip.
 
 ## PARAMETERS
@@ -61,7 +62,7 @@ The second command creates a front-end IP configuration named FrontendIpConfig01
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -76,9 +77,9 @@ Accept wildcard characters: False
 Specifies the front-end IP configuration that this cmdlet creates.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -92,9 +93,9 @@ Specifies the private IP address of the load balancer.
 Specify this parameter only if you also specify the *Subnet* parameter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceSubnet, SetByResourceIdSubnet
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -107,9 +108,9 @@ Accept wildcard characters: False
 Specifies the **PublicIpAddress** object to associate with a front-end IP configuration.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
+Type: PSPublicIpAddress
 Parameter Sets: SetByResourcePublicIpAddress
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -122,9 +123,9 @@ Accept wildcard characters: False
 Specifies the ID of the **PublicIpAddress** object to associate with a front-end IP configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceIdPublicIpAddress
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -137,9 +138,9 @@ Accept wildcard characters: False
 Specifies the **Subnet** object in which to create a front-end IP configuration.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
+Type: PSSubnet
 Parameter Sets: SetByResourceSubnet
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -152,9 +153,9 @@ Accept wildcard characters: False
 Specifies the ID of the subnet in which to create a front-end IP configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceIdSubnet
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -169,7 +170,7 @@ A list of availability zones denoting the IP allocated for the resource needs to
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -182,8 +183,6 @@ Accept wildcard characters: False
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
-
-### System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
 
 ## OUTPUTS
 

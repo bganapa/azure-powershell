@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VirtualNetworkPeering", SupportsShouldProcess = true), OutputType(typeof(bool))]
+    [Cmdlet(VerbsCommon.Remove, "AzureRmVirtualNetworkPeering", SupportsShouldProcess = true)]
     public class RemoveAzureVirtualNetworkPeeringCommand : VirtualNetworkPeeringBase
     {
         [Parameter(

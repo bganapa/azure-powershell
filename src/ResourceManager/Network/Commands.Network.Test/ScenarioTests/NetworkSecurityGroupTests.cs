@@ -21,36 +21,30 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class NetworkSecurityGroupTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public NetworkSecurityGroupTests(Xunit.Abstractions.ITestOutputHelper output)
+        public NetworkSecurityGroupTests(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkSecurityGroupCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkSecurityGroupCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkSecurityGroupCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkSecurityGroupSecurityRuleCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkSecurityGroup-SecurityRuleCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkSecurityGroup-SecurityRuleCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkSecurityGroupMultiValuedRules()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkSecurityGroup-MultiValuedRules");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkSecurityGroup-MultiValuedRules");
         }
     }
 }

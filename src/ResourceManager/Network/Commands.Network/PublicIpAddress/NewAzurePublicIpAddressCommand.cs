@@ -1,4 +1,4 @@
-﻿
+
 
 // ----------------------------------------------------------------------------------
 //
@@ -26,7 +26,8 @@ using MNM = Microsoft.Azure.Management.Network.Models;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "PublicIpAddress", SupportsShouldProcess = true),OutputType(typeof(PSPublicIpAddress))]
+    [Cmdlet(VerbsCommon.New, "AzureRmPublicIpAddress", SupportsShouldProcess = true),
+        OutputType(typeof(PSPublicIpAddress))]
     public class NewAzurePublicIpAddressCommand : PublicIpAddressBaseCmdlet
     {
         [Alias("ResourceName")]
@@ -91,12 +92,6 @@ namespace Microsoft.Azure.Commands.Network
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "The Domain Name label.")]
         public string DomainNameLabel { get; set; }
-
-        [Parameter(
-            Mandatory = false,
-            ValueFromPipelineByPropertyName = true,
-            HelpMessage = "IpTag List.")]
-        public List<PSPublicIpTag> IpTag { get; set; }
 
         [Parameter(
             Mandatory = false,
@@ -175,11 +170,6 @@ namespace Microsoft.Azure.Commands.Network
                 publicIp.DnsSettings.ReverseFqdn = this.ReverseFqdn;
             }
 
-            if (this.IpTag != null && this.IpTag.Count > 0)
-            {
-                publicIp.IpTags = this.IpTag;
-            }
-
             var publicIpModel = NetworkResourceManagerProfile.Mapper.Map<MNM.PublicIPAddress>(publicIp);
 
             publicIpModel.Tags = TagsConversionHelper.CreateTagDictionary(this.Tag, validate: true);
@@ -192,3 +182,4 @@ namespace Microsoft.Azure.Commands.Network
         }
     }
 }
+

@@ -16,14 +16,13 @@ using AutoMapper;
 using Microsoft.Azure.Commands.Network.Models;
 using Microsoft.Azure.Commands.ResourceManager.Common.ArgumentCompleters;
 using Microsoft.Azure.Management.Network;
-using System;
 using System.Collections.Generic;
 using System.Management.Automation;
 using MNM = Microsoft.Azure.Management.Network.Models;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "NetworkWatcherPacketCapture", DefaultParameterSetName = "SetByResource"), OutputType(typeof(PSGetPacketCaptureResult))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmNetworkWatcherPacketCapture", DefaultParameterSetName = "SetByResource"), OutputType(typeof(PSGetPacketCaptureResult))]
 
     public class GetAzureNetworkWatcherPacketCaptureCommand : PacketCaptureBaseCmdlet
     {
@@ -54,14 +53,6 @@ namespace Microsoft.Azure.Commands.Network
         public string ResourceGroupName { get; set; }
 
         [Parameter(
-            Mandatory = true,
-            HelpMessage = "Location of the network watcher.",
-            ParameterSetName = "SetByLocation")]
-        [LocationCompleter("Microsoft.Network/networkWatchers")]
-        [ValidateNotNull]
-        public string Location { get; set; }
-
-        [Parameter(
             Mandatory = false,
             HelpMessage = "The packet capture name.")]
         [ValidateNotNullOrEmpty]
@@ -77,19 +68,7 @@ namespace Microsoft.Azure.Commands.Network
             string resourceGroupName;
             string name;
 
-            if (string.Equals(this.ParameterSetName, "SetByLocation", StringComparison.OrdinalIgnoreCase))
-            {
-                var networkWatcher = this.GetNetworkWatcherByLocation(this.Location);
-
-                if (networkWatcher == null)
-                {
-                    throw new ArgumentException("There is no network watcher in location {0}", this.Location);
-                }
-
-                resourceGroupName = NetworkBaseCmdlet.GetResourceGroup(networkWatcher.Id);
-                name = networkWatcher.Name;
-            }
-            else if (string.Equals(this.ParameterSetName, "SetByResource", StringComparison.OrdinalIgnoreCase))
+            if (ParameterSetName.Contains("SetByResource"))
             {
                 resourceGroupName = this.NetworkWatcher.ResourceGroupName;
                 name = this.NetworkWatcher.Name;

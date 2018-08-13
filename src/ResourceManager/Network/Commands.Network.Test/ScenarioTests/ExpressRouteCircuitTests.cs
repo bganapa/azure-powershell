@@ -12,85 +12,62 @@
 // limitations under the License.
 // ----------------------------------------------------------------------------------
 
-using Microsoft.Azure.ServiceManagemenet.Common.Models;
 using Microsoft.WindowsAzure.Commands.ScenarioTest;
 using Xunit;
-using Xunit.Abstractions;
 
 namespace Commands.Network.Test.ScenarioTests
 {
     public class ExpressRouteCircuitTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public ExpressRouteCircuitTests(ITestOutputHelper output)
-        {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
-        }
-
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteCircuitStageCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitStageCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteCircuitStageCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteCircuitCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteCircuitCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteCircuitPrivatePublicPeeringCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitPrivatePublicPeeringCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteCircuitPrivatePublicPeeringCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteCircuitMicrosoftPeeringCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitMicrosoftPeeringCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteCircuitMicrosoftPeeringCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteCircuitAuthorizationCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitAuthorizationCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteCircuitAuthorizationCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteBgpServiceCommunitiesGet()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteBGPServiceCommunities");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteBGPServiceCommunities");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
         public void TestExpressRouteRouteFilterCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteRouteFilters");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-ExpressRouteRouteFilters");
         }
 
-        [Fact(Skip = "Express Route Circuits need to be manually provisioned by Service Providers and the whole setup can't be automated.")]
-        [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.pgtm)]
-        public void TestExpressRouteCircuitConnectionCRUD()
-        {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-ExpressRouteCircuitConnectionCRUD");
-        }
+        
     }
 }

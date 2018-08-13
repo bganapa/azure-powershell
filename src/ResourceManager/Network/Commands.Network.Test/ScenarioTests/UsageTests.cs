@@ -21,20 +21,16 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class UsageTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public UsageTests(Xunit.Abstractions.ITestOutputHelper output)
+        public UsageTests(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.wanrpdev)]
         public void TestNetworkUsage()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkUsage");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkUsage");
         }
     }
 }

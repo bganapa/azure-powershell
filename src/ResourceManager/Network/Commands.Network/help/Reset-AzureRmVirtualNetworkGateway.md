@@ -9,7 +9,6 @@ schema: 2.0.0
 # Reset-AzureRmVirtualNetworkGateway
 
 ## SYNOPSIS
-Resets the Virtual Network Gateway
 
 ## SYNTAX
 
@@ -19,14 +18,12 @@ Reset-AzureRmVirtualNetworkGateway -VirtualNetworkGateway <PSVirtualNetworkGatew
 ```
 
 ## DESCRIPTION
-Resets the Virtual Network Gateway
 
 ## EXAMPLES
 
-### Example 1:
+### 1:
 ```
-$Gateway = Get-AzureRmVirtualNetworkGateway -Name "ContosoVirtualGateway"
-Reset-AzureRmVirtualNetworkGateway -VirtualNetworkGateway $Gateway
+
 ```
 
 ## PARAMETERS
@@ -35,9 +32,9 @@ Reset-AzureRmVirtualNetworkGateway -VirtualNetworkGateway $Gateway
 Run cmdlet in the background
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -50,7 +47,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -65,9 +62,9 @@ Accept wildcard characters: False
 The gateway vip in order to reset particular gateway instance (e.g. in case of Active-Active feature enabled gateways.) By default, gateway primary instance will be reset if no value is passed.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -78,9 +75,9 @@ Accept wildcard characters: False
 
 ### -VirtualNetworkGateway
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
+Type: PSVirtualNetworkGateway
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -94,11 +91,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVirtualNetworkGateway
-Parameters: VirtualNetworkGateway (ByValue)
+### String
+Parameter 'GatewayVip' accepts value of type 'String' from the pipeline
 
-### System.String
-Parameters: GatewayVip (ByValue)
+### PSVirtualNetworkGateway
+Parameter 'VirtualNetworkGateway' accepts value of type 'PSVirtualNetworkGateway' from the pipeline
 
 ## OUTPUTS
 

@@ -1,4 +1,4 @@
-﻿// ----------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
 //
 // Copyright Microsoft Corporation
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +24,8 @@ using MNM = Microsoft.Azure.Management.Network.Models;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VirtualNetwork", SupportsShouldProcess = true),OutputType(typeof(PSVirtualNetwork))]
+    [Cmdlet(VerbsCommon.New, "AzureRmVirtualNetwork", SupportsShouldProcess = true),
+        OutputType(typeof(PSVirtualNetwork))]
     public class NewAzureVirtualNetworkCommand : VirtualNetworkBaseCmdlet
     {
         [Alias("ResourceName")]
@@ -75,17 +76,12 @@ namespace Microsoft.Azure.Commands.Network
             ValueFromPipelineByPropertyName = true,
             HelpMessage = "A hashtable which represents resource tags.")]
         public Hashtable Tag { get; set; }
-
-        [Parameter(
-            Mandatory = false,
-            HelpMessage = "A switch parameter which represents whether DDoS protection is enabled or not. It can only be turned on if a DDoS Protection Plan is associated with the virtual network.")]
-        public SwitchParameter EnableDdosProtection { get; set; }
-
+        
         [Parameter(
             Mandatory = false,
             ValueFromPipelineByPropertyName = true,
-            HelpMessage = "Reference to the DDoS protection plan resource associated with the virtual network.")]
-        public string DdosProtectionPlanId { get; set; }
+            HelpMessage = "A switch parameter which represents if DDoS protection is enabled or not.")]
+        public SwitchParameter EnableDDoSProtection { get; set; }
 
         [Parameter(
            Mandatory = false,
@@ -135,14 +131,8 @@ namespace Microsoft.Azure.Commands.Network
             }
 
             vnet.Subnets = this.Subnet;
-            vnet.EnableDdosProtection = this.EnableDdosProtection;
+            vnet.EnableDDoSProtection = this.EnableDDoSProtection;
             vnet.EnableVmProtection = this.EnableVmProtection;
-
-            if (!string.IsNullOrEmpty(this.DdosProtectionPlanId))
-            {
-                vnet.DdosProtectionPlan = new PSResourceId();
-                vnet.DdosProtectionPlan.Id = this.DdosProtectionPlanId;
-            }
 
             // Map to the sdk object
             var vnetModel = NetworkResourceManagerProfile.Mapper.Map<MNM.VirtualNetwork>(vnet);

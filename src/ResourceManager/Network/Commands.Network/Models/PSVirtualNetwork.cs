@@ -14,12 +14,11 @@
 
 namespace Microsoft.Azure.Commands.Network.Models
 {
+    using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.Management.Automation;
-    using Microsoft.Azure.Management.Internal.Network.Common;
-    using Newtonsoft.Json;
-    
-    public class PSVirtualNetwork : PSTopLevelResource, IResourceReference
+
+    public class PSVirtualNetwork : PSTopLevelResource
     {
         public PSAddressSpace AddressSpace { get; set; }
 
@@ -31,11 +30,9 @@ namespace Microsoft.Azure.Commands.Network.Models
 
         public string ProvisioningState { get; set; }
 
-        public bool? EnableDdosProtection { get; set; }
+        public bool? EnableDDoSProtection { get; set; }
 
         public bool? EnableVmProtection { get; set; }
-
-        public PSResourceId DdosProtectionPlan { get; set; }
 
         [JsonIgnore]
         public string AddressSpaceText
@@ -62,15 +59,9 @@ namespace Microsoft.Azure.Commands.Network.Models
         }
 
         [JsonIgnore]
-        public string EnableDdosProtectionText
+        public string EnableDDoSProtectionText
         {
-            get { return JsonConvert.SerializeObject(EnableDdosProtection, Formatting.Indented, new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore }); }
-        }
-
-        [JsonIgnore]
-        public string DdosProtectionPlanText
-        {
-            get { return JsonConvert.SerializeObject(DdosProtectionPlan, Formatting.Indented, new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore }); }
+            get { return JsonConvert.SerializeObject(EnableDDoSProtection, Formatting.Indented, new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore }); }
         }
 
         [JsonIgnore]

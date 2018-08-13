@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ApplicationGatewayBackendHttpSettings"), OutputType(typeof(PSApplicationGateway))]
+    [Cmdlet(VerbsCommon.Remove, "AzureRmApplicationGatewayBackendHttpSettings"), OutputType(typeof(PSApplicationGateway))]
     public class RemoveAzureApplicationGatewayBackendHttpSettingsCommand : NetworkBaseCmdlet
     {
         [Parameter(

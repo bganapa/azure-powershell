@@ -19,7 +19,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VpnClientRevokedCertificate"), OutputType(typeof(PSVpnClientRevokedCertificate))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmVpnClientRevokedCertificate"), OutputType(typeof(PSVpnClientRevokedCertificate))]
     public class GetAzureVpnClientRevokedCertificates : VirtualNetworkGatewayBaseCmdlet
     {
         [Alias("ResourceName")]
@@ -69,3 +69,4 @@ namespace Microsoft.Azure.Commands.Network
         }
     }
 }
+

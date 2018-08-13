@@ -41,7 +41,7 @@ This example creates a resource group and a virtual network with a single subnet
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -56,9 +56,9 @@ Accept wildcard characters: False
 Specifies the name of the subnet configuration that this cmdlet gets.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -71,9 +71,9 @@ Accept wildcard characters: False
 Specifies the **VirtualNetwork** object that contains the subnet configuration that this cmdlet gets.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
+Type: PSVirtualNetwork
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -87,8 +87,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSVirtualNetwork
-Parameters: VirtualNetwork (ByValue)
+### PSVirtualNetwork
+Parameter 'VirtualNetwork' accepts value of type 'PSVirtualNetwork' from the pipeline
 
 ## OUTPUTS
 

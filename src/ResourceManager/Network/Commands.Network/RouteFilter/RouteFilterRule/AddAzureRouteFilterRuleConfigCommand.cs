@@ -19,7 +19,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Add", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "RouteFilterRuleConfig", SupportsShouldProcess = true), OutputType(typeof(PSRouteFilter))]
+    [Cmdlet(VerbsCommon.Add, "AzureRmRouteFilterRuleConfig", SupportsShouldProcess = true), OutputType(typeof(PSRouteFilter))]
     public class AddAzureRouteFilterRuleConfigCommand : AzureRouteFilterRuleConfigBase
     {
         [Parameter(

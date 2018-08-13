@@ -82,8 +82,10 @@ PS C:\> New-AzureRmNetworkInterface -Name "NetworkInterface1" -ResourceGroupName
 
 This example creates a new network interface using an IP configuration object. The IP configuration
 object specifies a static private IPv4 address.
+
 The first command creates a network interface IP configuration named IPConfig1 and stores the
 configuration in the variable named $IPconfig.
+
 The second command creates a network interface named NetworkInterface1 that uses the network
 interface IP configuration stored in the variable named $IPconfig.
 
@@ -95,7 +97,7 @@ Specifies an **ApplicationGatewayBackendAddressPool** object.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool]
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -110,7 +112,7 @@ Specifies the ID of a **ApplicationGatewayBackendAddressPool** object.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -125,7 +127,7 @@ Specifies a collection of application security group references to which the net
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup]
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -140,7 +142,7 @@ Specifies a collection of application security group references to which the net
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -153,9 +155,9 @@ Accept wildcard characters: False
 Run cmdlet in the background
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -168,7 +170,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -185,7 +187,7 @@ Specifies the DNS server for the network interface.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -198,9 +200,9 @@ Accept wildcard characters: False
 Enables accelerated networking.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -214,9 +216,9 @@ Indicates that this cmdlet enables IP forwarding for the network interface.
 IP forwarding allows a virtual machine to receive traffic addressed to other destinations.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -229,9 +231,9 @@ Accept wildcard characters: False
 Forces the creation of the network interface even if a network interface with the same name already exists.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -244,9 +246,9 @@ Accept wildcard characters: False
 Specifies the internal DNS name label for the new network interface.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -261,7 +263,7 @@ Specifies the IP configuration that this cmdlet uses for the network interface.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceIPConfiguration]
 Parameter Sets: SetByIpConfigurationResource, SetByIpConfigurationResourceId
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -274,9 +276,9 @@ Accept wildcard characters: False
 Specifies the name of an IP configuration.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceId, SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -291,7 +293,7 @@ Specifies a **BackendAddressPool** object.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool]
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -306,7 +308,7 @@ Specifies the ID of a **BackendAddressPool** object.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -321,7 +323,7 @@ Specifies an inbound NAT rule configuration for a load balancer.
 ```yaml
 Type: System.Collections.Generic.List`1[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule]
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -336,7 +338,7 @@ Specifies the ID of an inbound NAT rule configuration for a load balancer.
 ```yaml
 Type: System.Collections.Generic.List`1[System.String]
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -349,9 +351,9 @@ Accept wildcard characters: False
 Specifies the region for a network interface.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -364,7 +366,7 @@ Accept wildcard characters: False
 Specifies the name of the network interface to create.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases: ResourceName
 
@@ -379,9 +381,9 @@ Accept wildcard characters: False
 Specifies a **NetworkSecurityGroup** object.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
+Type: PSNetworkSecurityGroup
 Parameter Sets: SetByIpConfigurationResourceId, SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -394,9 +396,9 @@ Accept wildcard characters: False
 Specifies the ID of a network security group.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByIpConfigurationResourceId, SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -409,9 +411,9 @@ Accept wildcard characters: False
 Specifies a static IPv4 IP address to assign to this network interface.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceId, SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -424,9 +426,9 @@ Accept wildcard characters: False
 Specifies a **PublicIPAddress** object to assign to a network interface.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
+Type: PSPublicIpAddress
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -439,9 +441,9 @@ Accept wildcard characters: False
 Specifies the ID of a **PublicIPAddress** object to assign to a network interface.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -454,9 +456,9 @@ Accept wildcard characters: False
 Specifies the name of a resource group that the network interface belongs to.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -470,9 +472,9 @@ Specifies a **Subnet** object.
 This cmdlet creates a network interface for the subnet that this parameter specifies.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSSubnet
+Type: PSSubnet
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -485,9 +487,9 @@ Accept wildcard characters: False
 Specifies the ID of the subnet for which to create a network interface.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -498,12 +500,13 @@ Accept wildcard characters: False
 
 ### -Tag
 Key-value pairs in the form of a hash table. For example:
+
 @{key0="value0";key1=$null;key2="value2"}
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -516,7 +519,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -532,7 +535,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -547,28 +550,6 @@ Accept wildcard characters: False
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
-
-### System.String
-
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Network.Models.PSNetworkInterfaceIPConfiguration, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
-
-### Microsoft.Azure.Commands.Network.Models.PSSubnet
-
-### Microsoft.Azure.Commands.Network.Models.PSPublicIpAddress
-
-### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
-
-### System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Network.Models.PSBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
-
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Network.Models.PSInboundNatRule, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
-
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Network.Models.PSApplicationGatewayBackendAddressPool, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
-
-### System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Network.Models.PSApplicationSecurityGroup, Microsoft.Azure.Commands.Network, Version=6.4.1.0, Culture=neutral, PublicKeyToken=null]]
-
-### System.Collections.Hashtable
 
 ## OUTPUTS
 

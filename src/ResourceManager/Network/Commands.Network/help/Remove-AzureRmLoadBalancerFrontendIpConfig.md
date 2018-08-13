@@ -30,6 +30,7 @@ PS C:> Remove-AzureRmLoadBalancerFrontendIpConfig -Name "frontendName" -LoadBala
 ```
 
 The first command gets the load balancer that is associated with the front-end IP configuration you want to remove, and then stores it in the $loadbalancer variable.
+
 The second command removes the associated frontend IP configuration from the load balancer in $loadbalancer.
 
 ## PARAMETERS
@@ -38,7 +39,7 @@ The second command removes the associated frontend IP configuration from the loa
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -53,9 +54,9 @@ Accept wildcard characters: False
 Specifies the load balancer that contains the front-end IP configuration to remove.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
+Type: PSLoadBalancer
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -68,9 +69,9 @@ Accept wildcard characters: False
 Specifies the name of the front-end IP address configuration to remove.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -84,8 +85,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
-Parameters: LoadBalancer (ByValue)
+### PSLoadBalancer
+Parameter 'LoadBalancer' accepts value of type 'PSLoadBalancer' from the pipeline
 
 ## OUTPUTS
 

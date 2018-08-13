@@ -21,100 +21,86 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class NetworkInterfaceTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public NetworkInterfaceTests(Xunit.Abstractions.ITestOutputHelper output)
+        public NetworkInterfaceTests(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceCRUDUsingId()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceCRUDUsingId");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceCRUDUsingId");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceCRUDStaticAllocation()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceCRUDStaticAllocation");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceCRUDStaticAllocation");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceNoPublicIpAddress()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceNoPublicIpAddress");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceNoPublicIpAddress");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceSet()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceSet");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceSet");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceIDns()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceIDns");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceIDns");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceEnableIPForwarding()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceEnableIPForwarding");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceEnableIPForwarding");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceExpandResource()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceExpandResource");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceExpandResource");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceIpv6()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceIpv6");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceIpv6");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceWithIpConfiguration()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceWithIpConfiguration");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceWithIpConfiguration");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestNetworkInterfaceWithAcceleratedNetworking()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-NetworkInterfaceWithAcceleratedNetworking");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-NetworkInterfaceWithAcceleratedNetworking");
         }
     }
 }

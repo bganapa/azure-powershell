@@ -17,7 +17,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ApplicationGatewayBackendHttpSettings"), OutputType(typeof(PSApplicationGatewayBackendHttpSettings))]
+    [Cmdlet(VerbsCommon.New, "AzureRmApplicationGatewayBackendHttpSettings"), OutputType(typeof(PSApplicationGatewayBackendHttpSettings))]
     public class NewAzureApplicationGatewayBackendHttpSettingsCommand : AzureApplicationGatewayBackendHttpSettingsBase
     {
         public override void ExecuteCmdlet()

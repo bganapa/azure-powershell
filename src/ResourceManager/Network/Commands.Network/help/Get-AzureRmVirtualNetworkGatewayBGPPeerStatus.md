@@ -37,6 +37,7 @@ State             : Connected
 ```
 
 Retrieves BGP peers for the Azure virtual network gateway named gatewayName in resource group resourceGroup.
+
 This example output shows one connected BGP peer, with an IP of 10.0.0.254.
 
 ## PARAMETERS
@@ -45,9 +46,9 @@ This example output shows one connected BGP peer, with an IP of 10.0.0.254.
 Run cmdlet in the background
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -60,7 +61,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -75,9 +76,9 @@ Accept wildcard characters: False
 IP of the peer to retrieve status for
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -90,9 +91,9 @@ Accept wildcard characters: False
 Virtual network gateway resource group's name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -105,7 +106,7 @@ Accept wildcard characters: False
 Virtual network gateway name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases: ResourceName
 
@@ -125,8 +126,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSBGPPeerStatus
+### Microsoft.Azure.Commands.Network.Models.PSBGPPeerStatus[]
 
 ## NOTES
 
 ## RELATED LINKS
+

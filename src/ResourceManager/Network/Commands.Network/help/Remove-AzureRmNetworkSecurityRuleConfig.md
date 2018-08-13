@@ -31,7 +31,9 @@ PS C:\> Remove-AzureRmNetworkSecurityRuleConfig -Name "rdp-rule" -NetworkSecurit
 ```
 
 The first command creates a network security rule configuration named rdp-rule, and then stores it in the $rule1 variable.
+
 The second command creates a network security group using the rule in $rule1, and then stores the network security group in the $nsg variable.
+
 The third command removes the network security rule configuration named rdp-rule from the network security group in $nsg.
 
 ## PARAMETERS
@@ -40,7 +42,7 @@ The third command removes the network security rule configuration named rdp-rule
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -55,9 +57,9 @@ Accept wildcard characters: False
 Specifies the name of the network security rule configuration that this cmdlet removes.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -71,9 +73,9 @@ Specifies a **NetworkSecurityGroup** object.
 This object contains the network security rule configuration to remove.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
+Type: PSNetworkSecurityGroup
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -87,8 +89,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSNetworkSecurityGroup
-Parameters: NetworkSecurityGroup (ByValue)
+### PSNetworkSecurityGroup
+Parameter 'NetworkSecurityGroup' accepts value of type 'PSNetworkSecurityGroup' from the pipeline
 
 ## OUTPUTS
 

@@ -56,6 +56,7 @@ authorization information is returned in command 2 and is piped to the **Where-O
 **Where-Object** then picks out only those authorizations where the *AuthorizationUseStatus*
 property is set to Available. To list only those authorizations that are not available, use this
 syntax for the Where clause:
+
 `{$_.AuthorizationUseStatus -ne "Available"}`
 
 ## PARAMETERS
@@ -64,7 +65,7 @@ syntax for the Where clause:
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -79,9 +80,9 @@ Accept wildcard characters: False
 Specifies the ExpressRoute circuit authorization.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
+Type: PSExpressRouteCircuit
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -92,12 +93,13 @@ Accept wildcard characters: False
 
 ### -Name
 Specifies the name of the ExpressRoute circuit authorization that this cmdlet gets.
+
 -Name "ContosoCircuitAuthorization"
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -111,12 +113,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit
-Parameters: ExpressRouteCircuit (ByValue)
+### PSExpressRouteCircuit
+**Get-AzureRmExpressRouteCircuitAuthorization** accepts pipelined instances of the
+**Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuit** object.
 
 ## OUTPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization
+### PSExpressRouteCircuitAuthorization
+**Get-AzureRmExpressRouteCircuitAuthorization** returns instances of the
+**Microsoft.Azure.Commands.Network.Models.PSExpressRouteCircuitAuthorization** object.
 
 ## NOTES
 

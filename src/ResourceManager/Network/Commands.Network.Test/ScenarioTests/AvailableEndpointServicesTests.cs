@@ -21,20 +21,16 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class AvailableEndpointServicesTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public AvailableEndpointServicesTests(Xunit.Abstractions.ITestOutputHelper output)
+        public AvailableEndpointServicesTests(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestAvailableEndpointServicesList()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-VirtualNetworkAvailableEndpointServicesList");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-VirtualNetworkAvailableEndpointServicesList");
         }
     }
 }

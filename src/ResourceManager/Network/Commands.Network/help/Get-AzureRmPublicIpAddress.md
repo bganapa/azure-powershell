@@ -46,7 +46,7 @@ The **Get-AzureRmPublicIPAddress** cmdlet gets one or more public IP addresses i
 
 ### 1: Get a public IP resource
 ```
-$publicIp = Get-AzureRmPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName
+$publicIp = Get-AzureRmPublicIpAddress -Name $publicIpName -ResourceGroupName $rgName $publicIp
 ```
 
 This command gets a public IP address resource with name $publicIPName in the resource group $rgName.
@@ -57,7 +57,7 @@ This command gets a public IP address resource with name $publicIPName in the re
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -70,9 +70,9 @@ Accept wildcard characters: False
 
 ### -ExpandResource
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandStandAloneIp, ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -83,11 +83,10 @@ Accept wildcard characters: False
 
 ### -IpConfigurationName
 Network Interface IP Configuration Name.
-
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -97,9 +96,9 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -112,7 +111,7 @@ Accept wildcard characters: False
 Specifies the name of the public IP address that this cmdlet gets.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandStandAloneIp, NoExpandScaleSetIp
 Aliases: ResourceName
 
@@ -124,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandStandAloneIp, ExpandScaleSetIp
 Aliases: ResourceName
 
@@ -137,11 +136,10 @@ Accept wildcard characters: False
 
 ### -NetworkInterfaceName
 Virtual Machine Network Interface Name.
-
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -151,9 +149,9 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -166,9 +164,9 @@ Accept wildcard characters: False
 Specifies the name of the resource group that contains the public IP address that this cmdlet gets.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandStandAloneIp
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -178,9 +176,9 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandStandAloneIp, NoExpandScaleSetIp, ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -191,11 +189,10 @@ Accept wildcard characters: False
 
 ### -VirtualMachineIndex
 Virtual Machine Index.
-
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -205,9 +202,9 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -218,11 +215,10 @@ Accept wildcard characters: False
 
 ### -VirtualMachineScaleSetName
 Virtual Machine Scale Set Name.
-
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: NoExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -232,9 +228,9 @@ Accept wildcard characters: False
 ```
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ExpandScaleSetIp
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -247,8 +243,6 @@ Accept wildcard characters: False
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see about_CommonParameters (http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
-
-### System.String
 
 ## OUTPUTS
 

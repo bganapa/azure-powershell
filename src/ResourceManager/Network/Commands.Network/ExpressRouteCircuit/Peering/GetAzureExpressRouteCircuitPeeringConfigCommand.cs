@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ExpressRouteCircuitPeeringConfig"), OutputType(typeof(PSPeering))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmExpressRouteCircuitPeeringConfig"), OutputType(typeof(PSPeering))]
     public class GetAzureExpressRouteCircuitPeeringConfigCommand : NetworkBaseCmdlet
     {
         [Parameter(

@@ -1,8 +1,8 @@
 ---
 Module Name: AzureRM.Network
-Module Guid: eb75c732-e274-4a20-b502-e9958e63484a
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/azurerm.network
-Help Version: 5.4.2.0
+Module Guid: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+Download Help Link: {{Please enter FwLink manually}}
+Help Version: {{Please enter version of help manually (X.X.X.X) format}}
 Locale: en-US
 ---
 
@@ -50,9 +50,6 @@ Adds an array of URL path mappings to a backend server pool.
 ### [Add-AzureRmExpressRouteCircuitAuthorization](Add-AzureRmExpressRouteCircuitAuthorization.md)
 Adds an ExpressRoute circuit authorization.
 
-### [Add-AzureRmExpressRouteCircuitConnectionConfig](Add-AzureRmExpressRouteCircuitConnectionConfig.md)
-Adds a circuit connection configuration to Private Peering of an Express Route Circuit. 
-
 ### [Add-AzureRmExpressRouteCircuitPeeringConfig](Add-AzureRmExpressRouteCircuitPeeringConfig.md)
 Adds a peering configuration to an ExpressRoute circuit.
 
@@ -63,7 +60,7 @@ Adds a backend address pool configuration to a load balancer.
 Adds a front-end IP configuration to a load balancer.
 
 ### [Add-AzureRmLoadBalancerInboundNatPoolConfig](Add-AzureRmLoadBalancerInboundNatPoolConfig.md)
-Adds an inbound NAT pool configuration to a load balancer.
+{{Manually Enter Add-AzureRmLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Add-AzureRmLoadBalancerInboundNatRuleConfig](Add-AzureRmLoadBalancerInboundNatRuleConfig.md)
 Adds an inbound NAT rule configuration to a load balancer.
@@ -168,10 +165,7 @@ Gets the WAF configuration of an application gateway.
 Gets an application security group.
 
 ### [Get-AzureRmBgpServiceCommunity](Get-AzureRmBgpServiceCommunity.md)
-Provides a list of all services / regions, BGP communities, and associated prefixes.
-
-### [Get-AzureRmDdosProtectionPlan](Get-AzureRmDdosProtectionPlan.md)
-Gets a DDoS protection plan.
+{{Manually Enter Get-AzureRmBgpServiceCommunity Description Here}}
 
 ### [Get-AzureRmEffectiveNetworkSecurityGroup](Get-AzureRmEffectiveNetworkSecurityGroup.md)
 Gets the effective network security group of a network interface.
@@ -187,9 +181,6 @@ Gets the ARP table from an ExpressRoute circuit.
 
 ### [Get-AzureRmExpressRouteCircuitAuthorization](Get-AzureRmExpressRouteCircuitAuthorization.md)
 Gets information about ExpressRoute circuit authorizations.
-
-### [Get-AzureRmExpressRouteCircuitConnectionConfig](Get-AzureRmExpressRouteCircuitConnectionConfig.md)
-Gets an ExpressRoute circuit connection configuration associated with Private Peering of ExpressRouteCircuit.
 
 ### [Get-AzureRmExpressRouteCircuitPeeringConfig](Get-AzureRmExpressRouteCircuitPeeringConfig.md)
 Gets an ExpressRoute circuit peering configuration.
@@ -216,7 +207,7 @@ Gets a backend address pool configuration for a load balancer.
 Gets a front-end IP configuration in a load balancer.
 
 ### [Get-AzureRmLoadBalancerInboundNatPoolConfig](Get-AzureRmLoadBalancerInboundNatPoolConfig.md)
-Gets an inbound NAT pool configuration for a load balancer.
+{{Manually Enter Get-AzureRmLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Get-AzureRmLoadBalancerInboundNatRuleConfig](Get-AzureRmLoadBalancerInboundNatRuleConfig.md)
 Gets an inbound NAT rule configuration for a load balancer.
@@ -247,12 +238,6 @@ Lists network usages for a subscription
 
 ### [Get-AzureRmNetworkWatcher](Get-AzureRmNetworkWatcher.md)
 Gets the properties of a Network Watcher
-
-### [Get-AzureRmNetworkWatcherConnectionMonitor](Get-AzureRmNetworkWatcherConnectionMonitor.md)
-Returns connection monitor with specified name or the list of connection monitors
-
-### [Get-AzureRmNetworkWatcherConnectionMonitorReport](Get-AzureRmNetworkWatcherConnectionMonitorReport.md)
-Query a snapshot of the most recent connection states.
 
 ### [Get-AzureRmNetworkWatcherFlowLogStatus](Get-AzureRmNetworkWatcherFlowLogStatus.md)
 Gets the status of flow logging on a resource.
@@ -312,7 +297,7 @@ Lists an Azure virtual network gateway's BGP peers
 Gets a Virtual Network Gateway Connection
 
 ### [Get-AzureRmVirtualNetworkGatewayConnectionSharedKey](Get-AzureRmVirtualNetworkGatewayConnectionSharedKey.md)
-
+{{Manually Enter Get-AzureRmVirtualNetworkGatewayConnectionSharedKey Description Here}}
 
 ### [Get-AzureRmVirtualNetworkGatewayConnectionVpnDeviceConfigScript](Get-AzureRmVirtualNetworkGatewayConnectionVpnDeviceConfigScript.md)
 This commandlet takes the connection resource, VPN device brand, model, firmware version, and return the corresponding configuration script that customers can apply directly on their on-premises VPN devices. The script will follow the syntax of the selected device, and fill in the necessary parameters such as Azure gateway public IP addresses, virtual network address prefixes, VPN tunnel pre-shared key, etc. so customers can simply copy-paste to their VPN device configurations.
@@ -334,9 +319,6 @@ Gets virtual network current usage.
 
 ### [Get-AzureRmVpnClientConfiguration](Get-AzureRmVpnClientConfiguration.md)
 Allows users to easily download the Vpn Profile package that was generated using the New-AzureRmVpnClientConfiguration commandlet.
-
-### [Get-AzureRmVpnClientIpsecParameter](Get-AzureRmVpnClientIpsecParameter.md)
-Gets the vpn Ipsec parameters set on Virtual Network Gateway for Point to site connections.
 
 ### [Get-AzureRmVpnClientPackage](Get-AzureRmVpnClientPackage.md)
 Gets information about a VPN client package.
@@ -413,9 +395,6 @@ Creates a WAF configuration for an application gateway.
 ### [New-AzureRmApplicationSecurityGroup](New-AzureRmApplicationSecurityGroup.md)
 Creates an application security group.
 
-### [New-AzureRmDdosProtectionPlan](New-AzureRmDdosProtectionPlan.md)
-Creates a DDoS protection plan.
-
 ### [New-AzureRmExpressRouteCircuit](New-AzureRmExpressRouteCircuit.md)
 Creates an Azure express route circuit.
 
@@ -438,7 +417,7 @@ Creates a backend address pool configuration for a load balancer.
 Creates a front-end IP configuration for a load balancer.
 
 ### [New-AzureRmLoadBalancerInboundNatPoolConfig](New-AzureRmLoadBalancerInboundNatPoolConfig.md)
-Creates an inbound NAT pool configuration for a load balancer.
+{{Manually Enter New-AzureRmLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [New-AzureRmLoadBalancerInboundNatRuleConfig](New-AzureRmLoadBalancerInboundNatRuleConfig.md)
 Creates an inbound NAT rule configuration for a load balancer.
@@ -467,23 +446,14 @@ Creates a network security rule configuration.
 ### [New-AzureRmNetworkWatcher](New-AzureRmNetworkWatcher.md)
 Creates a new Network Watcher resource.
 
-### [New-AzureRmNetworkWatcherConnectionMonitor](New-AzureRmNetworkWatcherConnectionMonitor.md)
-Creates a connection monitor.
-
 ### [New-AzureRmNetworkWatcherPacketCapture](New-AzureRmNetworkWatcherPacketCapture.md)
 Creates a new packet capture resource and starts a packet capture session on a VM.
-
-### [New-AzureRmNetworkWatcherProtocolConfiguration](New-AzureRmNetworkWatcherProtocolConfiguration.md)
-Creates a new protocol configuration object.
 
 ### [New-AzureRmPacketCaptureFilterConfig](New-AzureRmPacketCaptureFilterConfig.md)
 Creates a new packet capture filter object.
 
 ### [New-AzureRmPublicIpAddress](New-AzureRmPublicIpAddress.md)
 Creates a public IP address.
-
-### [New-AzureRmPublicIpTag](New-AzureRmPublicIpTag.md)
-Creates an IP Tag.
 
 ### [New-AzureRmRouteConfig](New-AzureRmRouteConfig.md)
 Creates a route for a route table.
@@ -504,7 +474,7 @@ Creates a virtual network.
 Creates a Virtual Network Gateway
 
 ### [New-AzureRmVirtualNetworkGatewayConnection](New-AzureRmVirtualNetworkGatewayConnection.md)
-Creates the Site-to-Site VPN connection between the virtual network gateway and the on-prem VPN device.
+{{Manually Enter New-AzureRmVirtualNetworkGatewayConnection Description Here}}
 
 ### [New-AzureRmVirtualNetworkGatewayIpConfig](New-AzureRmVirtualNetworkGatewayIpConfig.md)
 Creates an IP Configuration for a Virtual Network Gateway
@@ -514,12 +484,6 @@ Creates a virtual network subnet configuration.
 
 ### [New-AzureRmVpnClientConfiguration](New-AzureRmVpnClientConfiguration.md)
 This command allows the users to create the Vpn profile package based on pre-configured vpn settings on the VPN gateway, in addition to some additional settings that users may need to configure, for e.g. some root certificates.
-
-### [New-AzureRmVpnClientIpsecParameter](New-AzureRmVpnClientIpsecParameter.md)
-This command allows the users to create the Vpn ipsec parameters object specifying one or all values such as IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup to set on the existing VPN gateway.
-
-### [New-AzureRmVpnClientIpsecPolicy](New-AzureRmVpnClientIpsecPolicy.md)
-This command allows the users to create the Vpn ipsec policy object specifying one or all values such as IpsecEncryption,IpsecIntegrity,IkeEncryption,IkeIntegrity,DhGroup,PfsGroup to set on the VPN gateway. This command let output object is used to set vpn ipsec policy for both new / exisitng gateway.
 
 ### [New-AzureRmVpnClientRevokedCertificate](New-AzureRmVpnClientRevokedCertificate.md)
 Creates a new VPN client-revocation certificate.
@@ -575,17 +539,11 @@ Removes URL path mappings to a backend server pool.
 ### [Remove-AzureRmApplicationSecurityGroup](Remove-AzureRmApplicationSecurityGroup.md)
 Removes an application security group.
 
-### [Remove-AzureRmDdosProtectionPlan](Remove-AzureRmDdosProtectionPlan.md)
-Removes a DDoS protection plan.
-
 ### [Remove-AzureRmExpressRouteCircuit](Remove-AzureRmExpressRouteCircuit.md)
 Removes an ExpressRoute circuit.
 
 ### [Remove-AzureRmExpressRouteCircuitAuthorization](Remove-AzureRmExpressRouteCircuitAuthorization.md)
 Removes an existing ExpressRoute configuration authorization.
-
-### [Remove-AzureRmExpressRouteCircuitConnectionConfig](Remove-AzureRmExpressRouteCircuitConnectionConfig.md)
-Removes an ExpressRoute circuit connection configuration.
 
 ### [Remove-AzureRmExpressRouteCircuitPeeringConfig](Remove-AzureRmExpressRouteCircuitPeeringConfig.md)
 Removes an ExpressRoute circuit peering configuration.
@@ -600,7 +558,7 @@ Removes a backend address pool configuration from a load balancer.
 Removes a front-end IP configuration from a load balancer.
 
 ### [Remove-AzureRmLoadBalancerInboundNatPoolConfig](Remove-AzureRmLoadBalancerInboundNatPoolConfig.md)
-Removes an inbound NAT pool configuration from a load balancer.
+{{Manually Enter Remove-AzureRmLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Remove-AzureRmLoadBalancerInboundNatRuleConfig](Remove-AzureRmLoadBalancerInboundNatRuleConfig.md)
 Removes an inbound NAT rule configuration from a load balancer.
@@ -628,9 +586,6 @@ Removes a network security rule from a network security group.
 
 ### [Remove-AzureRmNetworkWatcher](Remove-AzureRmNetworkWatcher.md)
 Removes a Network Watcher.
-
-### [Remove-AzureRmNetworkWatcherConnectionMonitor](Remove-AzureRmNetworkWatcherConnectionMonitor.md)
-Remove connection monitor.
 
 ### [Remove-AzureRmNetworkWatcherPacketCapture](Remove-AzureRmNetworkWatcherPacketCapture.md)
 Removes a packet capture resource.
@@ -663,16 +618,13 @@ Deletes a Virtual Network Gateway Connection
 Removes the default site from a virtual network gateway.
 
 ### [Remove-AzureRmVirtualNetworkGatewayIpConfig](Remove-AzureRmVirtualNetworkGatewayIpConfig.md)
-Removes a virtual network gateway ip configuration.
+{{Manually Enter Remove-AzureRmVirtualNetworkGatewayIpConfig Description Here}}
 
 ### [Remove-AzureRmVirtualNetworkPeering](Remove-AzureRmVirtualNetworkPeering.md)
-Removes a virtual network peering.
+{{Manually Enter Remove-AzureRmVirtualNetworkPeering Description Here}}
 
 ### [Remove-AzureRmVirtualNetworkSubnetConfig](Remove-AzureRmVirtualNetworkSubnetConfig.md)
 Removes a subnet configuration from a virtual network.
-
-### [Remove-AzureRmVpnClientIpsecParameter](Remove-AzureRmVpnClientIpsecParameter.md)
-Removes Vpn custom ipsec policy set on Virtual Network Gateway resource.
 
 ### [Remove-AzureRmVpnClientRevokedCertificate](Remove-AzureRmVpnClientRevokedCertificate.md)
 Removes a VPN client-revocation certificate.
@@ -681,10 +633,10 @@ Removes a VPN client-revocation certificate.
 Removes an existing VPN client root certificate.
 
 ### [Reset-AzureRmVirtualNetworkGateway](Reset-AzureRmVirtualNetworkGateway.md)
-Resets Virtual network gateway instance.
+{{Manually Enter Reset-AzureRmVirtualNetworkGateway Description Here}}
 
 ### [Reset-AzureRmVirtualNetworkGatewayConnectionSharedKey](Reset-AzureRmVirtualNetworkGatewayConnectionSharedKey.md)
-Resets Virtual network gateway connection shared key.
+{{Manually Enter Reset-AzureRmVirtualNetworkGatewayConnectionSharedKey Description Here}}
 
 ### [Resize-AzureRmVirtualNetworkGateway](Resize-AzureRmVirtualNetworkGateway.md)
 Resizes an existing virtual network gateway.
@@ -753,7 +705,7 @@ Sets the goal state for a load balancer.
 Sets the goal state for a front-end IP configuration in a load balancer.
 
 ### [Set-AzureRmLoadBalancerInboundNatPoolConfig](Set-AzureRmLoadBalancerInboundNatPoolConfig.md)
-Sets an inbound NAT pool configuration for a load balancer.
+{{Manually Enter Set-AzureRmLoadBalancerInboundNatPoolConfig Description Here}}
 
 ### [Set-AzureRmLoadBalancerInboundNatRuleConfig](Set-AzureRmLoadBalancerInboundNatRuleConfig.md)
 Sets an inbound NAT rule configuration for a load balancer.
@@ -781,9 +733,6 @@ Sets the goal state for a network security rule configuration.
 
 ### [Set-AzureRmNetworkWatcherConfigFlowLog](Set-AzureRmNetworkWatcherConfigFlowLog.md)
 Configures flow logging for a target resource.
-
-### [Set-AzureRmNetworkWatcherConnectionMonitor](Set-AzureRmNetworkWatcherConnectionMonitor.md)
-Update a connection monitor.
 
 ### [Set-AzureRmPublicIpAddress](Set-AzureRmPublicIpAddress.md)
 Sets the goal state for a public IP address.
@@ -824,14 +773,8 @@ Configures a virtual network peering.
 ### [Set-AzureRmVirtualNetworkSubnetConfig](Set-AzureRmVirtualNetworkSubnetConfig.md)
 Configures the goal state for a subnet configuration in a virtual network.
 
-### [Set-AzureRmVpnClientIpsecParameter](Set-AzureRmVpnClientIpsecParameter.md)
-Sets the vpn ipsec parameters for existing virtual network gateway.
-
 ### [Start-AzureRmApplicationGateway](Start-AzureRmApplicationGateway.md)
 Starts an application gateway.
-
-### [Start-AzureRmNetworkWatcherConnectionMonitor](Start-AzureRmNetworkWatcherConnectionMonitor.md)
-Start a connection monitor
 
 ### [Start-AzureRmNetworkWatcherResourceTroubleshooting](Start-AzureRmNetworkWatcherResourceTroubleshooting.md)
 Starts troubleshooting on a Networking resource in Azure.
@@ -839,14 +782,11 @@ Starts troubleshooting on a Networking resource in Azure.
 ### [Stop-AzureRmApplicationGateway](Stop-AzureRmApplicationGateway.md)
 Stops an application gateway
 
-### [Stop-AzureRmNetworkWatcherConnectionMonitor](Stop-AzureRmNetworkWatcherConnectionMonitor.md)
-Stop a connection monitor
-
 ### [Stop-AzureRmNetworkWatcherPacketCapture](Stop-AzureRmNetworkWatcherPacketCapture.md)
 Stops a running packet capture session
 
 ### [Test-AzureRmDnsAvailability](Test-AzureRmDnsAvailability.md)
-Checks whether a domain name in the cloudapp.azure.com zone is available for use.
+{{Manually Enter Test-AzureRmDnsAvailability Description Here}}
 
 ### [Test-AzureRmNetworkWatcherConnectivity](Test-AzureRmNetworkWatcherConnectivity.md)
 Returns connectivity information for a specified source VM and a destination.

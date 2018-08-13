@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "LoadBalancerFrontendIpConfig"), OutputType(typeof(PSFrontendIPConfiguration))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmLoadBalancerFrontendIpConfig"), OutputType(typeof(PSFrontendIPConfiguration))]
     public class GetAzureLoadBalancerFrontendIpConfigCommand : NetworkBaseCmdlet
     {
         [Parameter(

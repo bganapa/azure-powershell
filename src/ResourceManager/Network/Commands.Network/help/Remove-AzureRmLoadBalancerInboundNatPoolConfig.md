@@ -21,10 +21,9 @@ Remove-AzureRmLoadBalancerInboundNatPoolConfig [-Name <String>] -LoadBalancer <P
 
 ## EXAMPLES
 
-### 1: Remove
+### 1:
 ```
-PS C:\> $slb = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
-PS C:\> Remove-AzureRmLoadBalancerInboundNatPoolConfig -Name myinboundnatpool -LoadBalancer $slb
+PS C:\>
 ```
 
 ## PARAMETERS
@@ -33,7 +32,7 @@ PS C:\> Remove-AzureRmLoadBalancerInboundNatPoolConfig -Name myinboundnatpool -L
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -46,9 +45,9 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
+Type: PSLoadBalancer
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -59,9 +58,9 @@ Accept wildcard characters: False
 
 ### -Name
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -75,8 +74,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
-Parameters: LoadBalancer (ByValue)
+### PSLoadBalancer
+Parameter 'LoadBalancer' accepts value of type 'PSLoadBalancer' from the pipeline
 
 ## OUTPUTS
 
@@ -85,3 +84,4 @@ Parameters: LoadBalancer (ByValue)
 ## NOTES
 
 ## RELATED LINKS
+

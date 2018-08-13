@@ -21,20 +21,16 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class TestDnsAvailabilityTest : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public TestDnsAvailabilityTest(Xunit.Abstractions.ITestOutputHelper output)
+        public TestDnsAvailabilityTest(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestDnsAvailability()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-DnsAvailability");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-DnsAvailability");
         }
     }
 }

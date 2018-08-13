@@ -32,20 +32,18 @@ Add-AzureRmLoadBalancerInboundNatPoolConfig -Name <String> -LoadBalancer <PSLoad
 
 ## EXAMPLES
 
-### 1: Add
+### 1:
 ```
-PS C:\> $slb = Get-AzureRmLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup"
-PS C:\> $feIpConfig = Get-AzureRmLoadBalancerFrontendIpConfig -Name "FrontendName" -Loadbalancer $slb
-PS C:\> $slb | Add-AzureRmLoadBalancerInboundNatPoolConfig -Name "myInboundNatPool" -Protocol TCP -FrontendIPConfigurationId $feIpConfig.Id -FrontendPortRangeStart 1001 -FrontendPortRangeEnd 2000 -BackendPort 1001
+PS C:\>
 ```
 
 ## PARAMETERS
 
 ### -BackendPort
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -58,7 +56,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -71,9 +69,9 @@ Accept wildcard characters: False
 
 ### -FrontendIpConfiguration
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSFrontendIPConfiguration
+Type: PSFrontendIPConfiguration
 Parameter Sets: SetByResource
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -84,9 +82,9 @@ Accept wildcard characters: False
 
 ### -FrontendIpConfigurationId
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetByResourceId
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -97,9 +95,9 @@ Accept wildcard characters: False
 
 ### -FrontendPortRangeEnd
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -110,9 +108,9 @@ Accept wildcard characters: False
 
 ### -FrontendPortRangeStart
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -123,9 +121,9 @@ Accept wildcard characters: False
 
 ### -LoadBalancer
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
+Type: PSLoadBalancer
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -136,9 +134,9 @@ Accept wildcard characters: False
 
 ### -Name
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -149,9 +147,9 @@ Accept wildcard characters: False
 
 ### -Protocol
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 Accepted values: Tcp, Udp
 
 Required: True
@@ -166,8 +164,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
-Parameters: LoadBalancer (ByValue)
+### PSLoadBalancer
+Parameter 'LoadBalancer' accepts value of type 'PSLoadBalancer' from the pipeline
 
 ## OUTPUTS
 
@@ -176,3 +174,4 @@ Parameters: LoadBalancer (ByValue)
 ## NOTES
 
 ## RELATED LINKS
+

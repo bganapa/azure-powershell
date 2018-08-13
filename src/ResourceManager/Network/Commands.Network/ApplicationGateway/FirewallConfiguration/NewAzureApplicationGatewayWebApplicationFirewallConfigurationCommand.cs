@@ -17,7 +17,8 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ApplicationGatewayWebApplicationFirewallConfiguration", SupportsShouldProcess = true),OutputType(typeof(PSApplicationGatewayWebApplicationFirewallConfiguration))]
+    [Cmdlet(VerbsCommon.New, "AzureRmApplicationGatewayWebApplicationFirewallConfiguration", SupportsShouldProcess = true),
+        OutputType(typeof(PSApplicationGatewayWebApplicationFirewallConfiguration))]
     public class NewAzureApplicationGatewayWebApplicationFirewallConfigurationCommand : AzureApplicationGatewayWebApplicationFirewallConfigurationBase
     {
         public override void ExecuteCmdlet()

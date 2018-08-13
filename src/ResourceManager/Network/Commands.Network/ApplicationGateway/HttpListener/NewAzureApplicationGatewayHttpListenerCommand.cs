@@ -17,7 +17,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ApplicationGatewayHttpListener"), OutputType(typeof(PSApplicationGatewayHttpListener))]
+    [Cmdlet(VerbsCommon.New, "AzureRmApplicationGatewayHttpListener"), OutputType(typeof(PSApplicationGatewayHttpListener))]
     public class NewAzureApplicationGatewayHttpListenerCommand : AzureApplicationGatewayHttpListenerBase
     {
         public override void ExecuteCmdlet()

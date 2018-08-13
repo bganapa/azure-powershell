@@ -17,7 +17,6 @@ using Microsoft.Azure.Commands.Network.Models;
 using Microsoft.Azure.Commands.ResourceManager.Common.ArgumentCompleters;
 using Microsoft.Azure.Commands.ResourceManager.Common.Tags;
 using Microsoft.Azure.Management.Network;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Management.Automation;
@@ -25,7 +24,8 @@ using MNM = Microsoft.Azure.Management.Network.Models;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "NetworkWatcherPacketCapture", SupportsShouldProcess = true, DefaultParameterSetName = "SetByResource"),OutputType(typeof(PSPacketCaptureResult))]
+    [Cmdlet(VerbsCommon.New, "AzureRmNetworkWatcherPacketCapture", SupportsShouldProcess = true, DefaultParameterSetName = "SetByResource"),
+        OutputType(typeof(PSPacketCapture))]
     public class NewAzureNetworkWatcherPacketCaptureCommand : PacketCaptureBaseCmdlet
     {
         [Parameter(
@@ -53,14 +53,6 @@ namespace Microsoft.Azure.Commands.Network
         [ResourceGroupCompleter]
         [ValidateNotNullOrEmpty]
         public string ResourceGroupName { get; set; }
-
-        [Parameter(
-            Mandatory = true,
-            HelpMessage = "Location of the network watcher.",
-            ParameterSetName = "SetByLocation")]
-        [LocationCompleter("Microsoft.Network/networkWatchers")]
-        [ValidateNotNull]
-        public string Location { get; set; }
 
         [Parameter(
             Mandatory = true,
@@ -136,19 +128,7 @@ namespace Microsoft.Azure.Commands.Network
             string resourceGroupName;
             string name;
 
-            if (string.Equals(this.ParameterSetName, "SetByLocation", StringComparison.OrdinalIgnoreCase))
-            {
-                var networkWatcher = this.GetNetworkWatcherByLocation(this.Location);
-
-                if (networkWatcher == null)
-                {
-                    throw new ArgumentException("There is no network watcher in location {0}", this.Location);
-                }
-
-                resourceGroupName = NetworkBaseCmdlet.GetResourceGroup(networkWatcher.Id);
-                name = networkWatcher.Name;
-            }
-            else if (string.Equals(this.ParameterSetName, "SetByResource", StringComparison.OrdinalIgnoreCase))
+            if(ParameterSetName.Contains("SetByResource"))
             {
                 resourceGroupName = this.NetworkWatcher.ResourceGroupName;
                 name = this.NetworkWatcher.Name;
@@ -168,13 +148,13 @@ namespace Microsoft.Azure.Commands.Network
                     this.PacketCaptureName,
                     () =>
                     {
-                        var packetCapture = CreatePacketCapture(resourceGroupName, name);
+                        var packetCapture = CreatePacketCapture();
                         WriteObject(packetCapture);
                     });
             }
         }
 
-        private PSPacketCaptureResult CreatePacketCapture(string resourceGroupName, string networkWatcherName)
+        private PSPacketCaptureResult CreatePacketCapture()
         {
             MNM.PacketCapture packetCaptureProperties = new MNM.PacketCapture();
 
@@ -213,8 +193,16 @@ namespace Microsoft.Azure.Commands.Network
             PSPacketCaptureResult getPacketCapture = new PSPacketCaptureResult();
 
             // Execute the Create NetworkWatcher call
-            this.PacketCaptures.Create(resourceGroupName, networkWatcherName, this.PacketCaptureName, packetCaptureProperties);
-            getPacketCapture = this.GetPacketCapture(resourceGroupName, networkWatcherName, this.PacketCaptureName);
+            if (ParameterSetName.Contains("SetByResource"))
+            {
+                this.PacketCaptures.Create(this.NetworkWatcher.ResourceGroupName, this.NetworkWatcher.Name, this.PacketCaptureName, packetCaptureProperties);
+                getPacketCapture = this.GetPacketCapture(this.NetworkWatcher.ResourceGroupName, this.NetworkWatcher.Name, this.PacketCaptureName);
+            }
+            else
+            {
+                this.PacketCaptures.Create(this.ResourceGroupName, this.NetworkWatcherName, this.PacketCaptureName, packetCaptureProperties);
+                getPacketCapture = this.GetPacketCapture(this.ResourceGroupName, this.NetworkWatcherName, this.PacketCaptureName);
+            }
 
             return getPacketCapture;
         }

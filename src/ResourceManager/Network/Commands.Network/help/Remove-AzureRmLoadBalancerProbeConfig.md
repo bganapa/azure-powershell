@@ -30,6 +30,7 @@ PS C:> Remove-AzureRmLoadBalancerProbeConfig -Name "MyProbe" -LoadBalancer $load
 ```
 
 The first command gets the load balancer named MyLoadBalancer, and then stores it in the $loadbalancer variable.
+
 The second command deletes the configuration named MyProbe from the load balancer in $loadbalancer.
 
 ## PARAMETERS
@@ -38,7 +39,7 @@ The second command deletes the configuration named MyProbe from the load balance
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -53,9 +54,9 @@ Accept wildcard characters: False
 Specifies the load balancer that contains the probe configuration that this cmdlet removes.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
+Type: PSLoadBalancer
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -68,9 +69,9 @@ Accept wildcard characters: False
 Specifies the name of the probe configuration that this cmdlet removes.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -84,8 +85,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSLoadBalancer
-Parameters: LoadBalancer (ByValue)
+### PSLoadBalancer
+Parameter 'LoadBalancer' accepts value of type 'PSLoadBalancer' from the pipeline
 
 ## OUTPUTS
 

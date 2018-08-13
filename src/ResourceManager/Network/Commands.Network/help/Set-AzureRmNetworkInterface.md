@@ -67,8 +67,10 @@ $nic | Set-AzureRmNetworkInterface
 ```
 
 The first command gets the network interface NetworkInterface1 and stores it in the $nic variable. The second command gets the virtual network associated with the subnet that the network interface is going to be associated with. The second command gets the subnet and stores it in the $subnet2 variable. The third command associated the primary private IP address of the network interface with the new subnet. Finally the last command applied these changes on the network interface.
+
 >[!NOTE] 
 >The IP configurations must be dynamic before you can change the subnet. If you have static IP configurations, change then to dynamic before proceeding. 
+
 >[!NOTE]
 >If the network interface has multiple IP configurations, the forth command must be done for all these IP configurations before the final Set-AzureRmNetworkInterface command is executed. This can be done as in the forth command but by replacing "0" with the appropriate number. If a network interface has N IP configurations, then N-1 of these commands must exist.
 
@@ -88,9 +90,9 @@ The first command gets an existing network interface called NetworkInterface1 an
 Run cmdlet in the background
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -103,7 +105,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -118,9 +120,9 @@ Accept wildcard characters: False
 Specifies a **NetworkInterface** object that represents the goal state for a network interface.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
+Type: PSNetworkInterface
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -134,8 +136,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSNetworkInterface
-Parameters: NetworkInterface (ByValue)
+### PSNetworkInterface
+Parameter 'NetworkInterface' accepts value of type 'PSNetworkInterface' from the pipeline
 
 ## OUTPUTS
 

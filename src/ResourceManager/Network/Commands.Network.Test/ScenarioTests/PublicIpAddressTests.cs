@@ -21,102 +21,79 @@ namespace Commands.Network.Test.ScenarioTests
 {
     public class PublicIpAddressTests : Microsoft.WindowsAzure.Commands.Test.Utilities.Common.RMTestBase
     {
-        public XunitTracingInterceptor _logger;
-
-        public PublicIpAddressTests(Xunit.Abstractions.ITestOutputHelper output)
+        public PublicIpAddressTests(ITestOutputHelper output)
         {
-            _logger = new XunitTracingInterceptor(output);
-            XunitTracingInterceptor.AddToContext(_logger);
+            XunitTracingInterceptor.AddToContext(new XunitTracingInterceptor(output));
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressCRUD()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressCRUDNoDomainNameLabel()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-NoDomainNameLabel");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-NoDomainNameLabel");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressCRUDStaticAllocation()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-StaticAllocation");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-StaticAllocation");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressCRUDEditDomainNameLavel()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-EditDomainNameLavel");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-EditDomainNameLavel");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressCRUDReverseFqdn()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-ReverseFqdn");
-        }
-
-        [Fact(Skip = "Need service team to re-record test after changes to the ClientRuntime.")]
-        [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
-        [Trait("Re-record", "ClientRuntime changes")]
-        public void TestPublicIpAddressCRUDIpTag()
-        {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-IpTag");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-ReverseFqdn");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressIpVersion()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressIpVersion");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressIpVersion");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpAddressVmss()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressVmss");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressVmss");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
         public void TestPublicIpBasicSku()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-BasicSku");
-        }
-
-        [Fact(Skip = "Need service team to re-record test after changes to the ClientRuntime.")]
-        [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
-        [Trait("Re-record", "ClientRuntime changes")]
-        public void TestPublicIpStandardSku()
-        {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressCRUD-StandardSku");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-BasicSku");
         }
 
         [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
-        [Trait(Category.Owner, Category.sdnnrp)]
+        public void TestPublicIpStandardSku()
+        {
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressCRUD-StandardSku");
+        }
+
+        [Fact]
+        [Trait(Category.AcceptanceType, Category.CheckIn)]
         public void TestPublicIpAddressZones()
         {
-            NetworkResourcesController.NewInstance.RunPsTest(_logger, "Test-PublicIpAddressZones");
+            NetworkResourcesController.NewInstance.RunPsTest("Test-PublicIpAddressZones");
         }
     }
 }

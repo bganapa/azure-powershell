@@ -17,7 +17,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "LoadBalancerProbeConfig"), OutputType(typeof(PSProbe))]
+    [Cmdlet(VerbsCommon.New, "AzureRmLoadBalancerProbeConfig"), OutputType(typeof(PSProbe))]
     public class NewAzureLoadBalancerProbeConfigCommand : AzureLoadBalancerProbeConfigBase
     {
         [Parameter(

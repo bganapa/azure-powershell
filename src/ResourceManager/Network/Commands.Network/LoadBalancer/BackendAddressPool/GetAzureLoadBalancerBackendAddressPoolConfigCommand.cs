@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "LoadBalancerBackendAddressPoolConfig"), OutputType(typeof(PSBackendAddressPool))]
+    [Cmdlet(VerbsCommon.Get, "AzureRmLoadBalancerBackendAddressPoolConfig"), OutputType(typeof(PSBackendAddressPool))]
     public class GetAzureLoadBalancerBackendAddressPoolConfigCommand : NetworkBaseCmdlet
     {
         [Parameter(

@@ -18,7 +18,7 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
-    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VirtualNetworkSubnetConfig"), OutputType(typeof(PSVirtualNetwork))]
+    [Cmdlet(VerbsCommon.Remove, "AzureRmVirtualNetworkSubnetConfig"), OutputType(typeof(PSVirtualNetwork))]
     public class RemoveAzureVirtualNetworkSubnetConfigCommand : NetworkBaseCmdlet
     {
         [Parameter(

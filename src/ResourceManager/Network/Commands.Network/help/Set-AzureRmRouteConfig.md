@@ -14,9 +14,9 @@ Sets the goal state for a route.
 ## SYNTAX
 
 ```
-Set-AzureRmRouteConfig -RouteTable <PSRouteTable> [-Name <String>] [-AddressPrefix <String>]
- [-NextHopType <String>] [-NextHopIpAddress <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-AzureRmRouteConfig -RouteTable <PSRouteTable> [-AddressPrefix <String>] [-NextHopType <String>]
+ [-NextHopIpAddress <String>] [-Name <String>] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,9 +70,9 @@ The current cmdlet modifies the route named Route02, and then passes the result 
 Specifies the destination, in Classless Interdomain Routing (CIDR) format, to which the route applies.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 The credentials, account, tenant, and subscription used for communication with azure.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+Type: IAzureContextContainer
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -100,9 +100,9 @@ Accept wildcard characters: False
 Specifies the name of the route that this cmdlet modifies.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -117,9 +117,9 @@ This route forwards packets to that address.
 Specify this parameter only if you specify a value of VirtualAppliance for the *NextHopType* parameter.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -131,6 +131,7 @@ Accept wildcard characters: False
 ### -NextHopType
 Specifies how this route forwards packets.
 The acceptable values for this parameter are:
+
 - Internet.
 The default Internet gateway provided by Azure. 
 - None.
@@ -144,9 +145,9 @@ The local virtual network.
 If you have two subnets, 10.1.0.0/16 and 10.2.0.0/16 in the same virtual network, select a value of VnetLocal for each subnet to forward to the other subnet.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: False
 Position: Named
@@ -159,9 +160,9 @@ Accept wildcard characters: False
 Specifies the route table with which this route is associated.
 
 ```yaml
-Type: Microsoft.Azure.Commands.Network.Models.PSRouteTable
+Type: PSRouteTable
 Parameter Sets: (All)
-Aliases:
+Aliases: 
 
 Required: True
 Position: Named
@@ -174,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +190,7 @@ Accept wildcard characters: False
 Shows what would happen if the cmdlet runs. The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,9 +206,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Azure.Commands.Network.Models.PSRouteTable
-
-### System.String
+### PSRouteTable
+Parameter 'RouteTable' accepts value of type 'PSRouteTable' from the pipeline
 
 ## OUTPUTS
 
