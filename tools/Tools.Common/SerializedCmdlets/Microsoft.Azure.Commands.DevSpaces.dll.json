@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
             "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "ResourceGroupName": "System.String",
@@ -357,7 +361,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
             "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "ResourceGroupName": "System.String",
@@ -831,7 +839,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
             "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "ResourceGroupName": "System.String",
@@ -1219,7 +1231,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
                   "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "ResourceGroupName": "System.String",
@@ -1474,7 +1490,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
             "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "ResourceGroupName": "System.String",
@@ -1589,7 +1609,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
             "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "ResourceGroupName": "System.String",
@@ -1911,7 +1935,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DevSpaces.Models",
                   "Name": "Microsoft.Azure.Commands.DevSpaces.Models.PSController",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevSpaces.Models.PSController, Microsoft.Azure.Commands.DevSpaces, Version=0.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "ResourceGroupName": "System.String",

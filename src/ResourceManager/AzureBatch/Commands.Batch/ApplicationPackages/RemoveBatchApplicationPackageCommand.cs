@@ -19,7 +19,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, Constants.AzureRmBatchApplicationPackage), OutputType(typeof(void))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "BatchApplicationPackage"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RemoveBatchApplicationPackageCommand : BatchCmdletBase
     {
         private static string mamlCall = "RemoveApplicationPackage";

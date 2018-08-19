@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
             "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -516,7 +520,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
             "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -830,7 +838,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
                   "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
                     "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -1225,7 +1237,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
             "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -2673,7 +2689,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
             "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -2789,7 +2809,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
             "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -3057,7 +3081,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
                   "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
                     "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
@@ -3518,7 +3546,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3530,7 +3562,11 @@
     "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer": {
       "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
       "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "CurrentState": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState",
         "PreviousState": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState",
@@ -3597,7 +3633,11 @@
     "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState": {
       "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
       "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerState, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "StartTime": "System.Nullable`1[System.DateTime]",
         "FinishTime": "System.Nullable`1[System.DateTime]",
@@ -3689,7 +3729,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3701,7 +3745,11 @@
     "Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent": {
       "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
       "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSEvent, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "FirstTimestamp": "System.Nullable`1[System.DateTime]",
         "LastTimestamp": "System.Nullable`1[System.DateTime]",
@@ -3889,7 +3937,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSPort]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSPort]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSPort, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.ContainerInstance.Models.PSPort, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3901,7 +3953,11 @@
     "Microsoft.Azure.Commands.ContainerInstance.Models.PSPort": {
       "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
       "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSPort",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSPort, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSPort, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "PortProperty": "System.Int32",
         "Protocol": "System.String"
@@ -4276,7 +4332,11 @@
     "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup": {
       "Namespace": "Microsoft.Azure.Commands.ContainerInstance.Models",
       "Name": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.ContainerInstance.Models.PSContainerGroup, Microsoft.Azure.Commands.ContainerInstance, Version=0.2.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
         "Containers": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.ContainerInstance.Models.PSContainer]",

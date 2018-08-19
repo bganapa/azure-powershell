@@ -24,5 +24,10 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
 [assembly: Guid("ed102280-3577-49bf-93dd-11b6e3a44a57")]
+<<<<<<< HEAD
 [assembly: AssemblyVersion("5.1.0")]
 [assembly: AssemblyFileVersion("5.1.0")]
+=======
+[assembly: AssemblyVersion("5.1.1")]
+[assembly: AssemblyFileVersion("5.1.1")]
+>>>>>>> upstream/preview

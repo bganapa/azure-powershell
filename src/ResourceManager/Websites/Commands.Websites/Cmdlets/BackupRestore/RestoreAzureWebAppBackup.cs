@@ -22,7 +22,11 @@ namespace Microsoft.Azure.Commands.WebApps.Cmdlets.BackupRestore
     /// <summary>
     /// Restores an Azure Web App backup
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsData.Restore, "AzureRmWebAppBackup"), OutputType(typeof(void))]
+=======
+    [Cmdlet("Restore", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "WebAppBackup"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RestoreAzureWebAppBackup : WebAppOptionalSlotBaseCmdlet
     {
         [Parameter(Position = 3, Mandatory = true, HelpMessage = "The SAS URL for the Azure Storage container used to store the backup.", ValueFromPipelineByPropertyName = true)]

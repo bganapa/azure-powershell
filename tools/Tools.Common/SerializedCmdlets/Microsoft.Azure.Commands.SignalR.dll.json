@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRKeys",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRKeys, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRKeys, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "PrimaryKey": "System.String",
@@ -132,7 +136,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -396,7 +404,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
                   "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -636,7 +648,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1041,7 +1057,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
                   "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1383,7 +1403,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1779,7 +1803,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
                   "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -2042,7 +2070,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -2478,7 +2510,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
             "Name": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSSignalRResource, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -3076,7 +3112,11 @@
     "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku": {
       "Namespace": "Microsoft.Azure.Commands.SignalR.Models",
       "Name": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku, Microsoft.Azure.Commands.SignalR, Version=0.1.3.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.SignalR.Models.PSResourceSku, Microsoft.Azure.Commands.SignalR, Version=0.1.4.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Capacity": "System.Nullable`1[System.Int32]",
         "Family": "System.String",

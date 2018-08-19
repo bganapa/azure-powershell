@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSMarketplace",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSMarketplace, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSMarketplace, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tag": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "IsEstimated": "System.Nullable`1[System.Boolean]",
@@ -498,7 +502,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheet, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheet, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tag": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "PriceSheets": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty]",
@@ -773,7 +781,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSUsageDetail",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSUsageDetail, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSUsageDetail, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "MeterDetails": "Microsoft.Azure.Management.Consumption.Models.MeterDetails",
               "AdditionalProperties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1518,7 +1530,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSReservationDetail",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSReservationDetail, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSReservationDetail, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tag": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "UsageDate": "System.Nullable`1[System.DateTime]",
@@ -1848,7 +1864,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSReservationSummary",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSReservationSummary, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSReservationSummary, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tag": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "UsageDate": "System.Nullable`1[System.DateTime]",
@@ -2235,7 +2255,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSBudget",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "TimePeriod": "Microsoft.Azure.Management.Consumption.Models.BudgetTimePeriod",
               "CurrentSpend": "Microsoft.Azure.Management.Consumption.Models.CurrentSpend",
@@ -2396,7 +2420,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSBudget",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "TimePeriod": "Microsoft.Azure.Management.Consumption.Models.BudgetTimePeriod",
               "CurrentSpend": "Microsoft.Azure.Management.Consumption.Models.CurrentSpend",
@@ -2672,7 +2700,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
             "Name": "Microsoft.Azure.Commands.Consumption.Models.PSBudget",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSBudget, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "TimePeriod": "Microsoft.Azure.Management.Consumption.Models.BudgetTimePeriod",
               "CurrentSpend": "Microsoft.Azure.Management.Consumption.Models.CurrentSpend",
@@ -3215,7 +3247,11 @@
     "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3227,7 +3263,11 @@
     "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty": {
       "Namespace": "Microsoft.Azure.Commands.Consumption.Models",
       "Name": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty, Microsoft.Azure.Commands.Consumption, Version=0.3.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Consumption.Models.PSPriceSheetProperty, Microsoft.Azure.Commands.Consumption, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "MeterDetails": "Microsoft.Azure.Management.Consumption.Models.MeterDetails",
         "IncludedQuantity": "System.Nullable`1[System.Decimal]",

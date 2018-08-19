@@ -153,6 +153,7 @@ namespace Microsoft.Azure.Commands.Compute.Test.ScenarioTests
                     "ScenarioTests\\Common.ps1",
                     "ScenarioTests\\ComputeTestCommon.ps1",
                     "ScenarioTests\\" + callingClassName + ".ps1",
+<<<<<<< HEAD
                     _helper.RMProfileModule,
                     computeLocation,
                     networkLocation,
@@ -160,6 +161,18 @@ namespace Microsoft.Azure.Commands.Compute.Test.ScenarioTests
                     resourceLocation,
                     _helper.RMStorageDataPlaneModule,
                     _helper.RMStorageModule);
+=======
+                    helper.RMProfileModule,
+                    helper.RMResourceModule,
+#if !NETSTANDARD
+                    helper.RMStorageDataPlaneModule,
+#endif
+                    helper.RMStorageModule,
+                    helper.GetRMModulePath("AzureRM.Compute.psd1"),
+                    helper.GetRMModulePath("AzureRM.Network.psd1"),
+                    "AzureRM.Storage.ps1",
+                    "AzureRM.Resources.ps1");
+>>>>>>> upstream/preview
 
                 try
                 {

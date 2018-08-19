@@ -23,8 +23,12 @@ namespace Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets
     /// <summary>
     /// Unregisters container from the recovery services vault.
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Unregister, "AzureRmRecoveryServicesBackupContainer",
         SupportsShouldProcess = true), OutputType(typeof(ContainerBase))]
+=======
+    [Cmdlet("Unregister", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "RecoveryServicesBackupContainer",SupportsShouldProcess = true), OutputType(typeof(ContainerBase))]
+>>>>>>> upstream/preview
     public class UnregisterAzureRmRecoveryServicesBackupContainer
         : RSBackupVaultCmdletBase
     {
@@ -80,4 +84,3 @@ namespace Microsoft.Azure.Commands.RecoveryServices.Backup.Cmdlets
         }
     }
 }
-

@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Rights": "System.Collections.Generic.IList`1[System.String]",
               "Name": "System.String",
@@ -699,7 +703,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "PrimaryConnectionString": "System.String",
               "SecondaryConnectionString": "System.String",
@@ -1411,7 +1419,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Rights": "System.Collections.Generic.IList`1[System.String]",
               "Name": "System.String",
@@ -2230,7 +2242,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleKeysAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "PrimaryConnectionString": "System.String",
               "SecondaryConnectionString": "System.String",
@@ -3937,7 +3953,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Rights": "System.Collections.Generic.IList`1[System.String]",
               "Name": "System.String",
@@ -4093,7 +4113,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Rights": "System.Collections.Generic.IList`1[System.String]",
               "Name": "System.String",
@@ -4329,7 +4353,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
                     "Name": "System.String",
@@ -4563,7 +4591,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
                     "Name": "System.String",
@@ -4797,7 +4829,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
                     "Name": "System.String",
@@ -4983,7 +5019,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.AuthorizationRuleAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
                     "Name": "System.String",
@@ -5267,7 +5307,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -5554,7 +5598,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -5681,7 +5729,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -5985,7 +6037,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
                     "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -6636,7 +6692,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -6763,7 +6823,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -7006,7 +7070,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.WcfRelayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
                     "RequiresTransportSecurity": "System.Nullable`1[System.Boolean]",
@@ -7345,7 +7413,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -7507,7 +7579,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -7805,7 +7881,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
                     "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -8205,7 +8285,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -8760,7 +8844,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -8922,7 +9010,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
               "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -9200,7 +9292,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.HybridConnectionAttibutes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RequiresClientAuthorization": "System.Nullable`1[System.Boolean]",
                     "CreatedAt": "System.Nullable`1[System.DateTime]",
@@ -9574,7 +9670,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.CheckNameAvailabilityResultAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.CheckNameAvailabilityResultAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.CheckNameAvailabilityResultAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Reason": "System.Nullable`1[Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes]",
               "NameAvailable": "System.Nullable`1[System.Boolean]",
@@ -9787,7 +9887,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -10084,7 +10188,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -10656,7 +10764,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -10835,7 +10947,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]"
@@ -11018,7 +11134,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Relay.Models",
                   "Name": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.RelayNamespaceAttirbutesUpdateParameter, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]"
@@ -11147,7 +11267,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Relay.Models",
             "Name": "Microsoft.Azure.Commands.Relay.Models.OperationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.OperationAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.OperationAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Display": "Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes",
               "Name": "System.String"
@@ -11691,7 +11815,11 @@
     "System.Nullable`1[Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes]": {
       "Namespace": "System",
       "Name": "System.Nullable`1[Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -11703,7 +11831,11 @@
     "Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes": {
       "Namespace": "Microsoft.Azure.Commands.Relay.Models",
       "Name": "Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -11808,7 +11940,11 @@
     "Microsoft.Azure.Commands.Relay.Models.SkuAttributes": {
       "Namespace": "Microsoft.Azure.Commands.Relay.Models",
       "Name": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.SkuAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Name": "System.String",
         "Tier": "System.String"
@@ -11853,7 +11989,11 @@
     "Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes": {
       "Namespace": "Microsoft.Azure.Commands.Relay.Models",
       "Name": "Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Relay.Models.OperationDisplayAttributes, Microsoft.Azure.Commands.Relay, Version=0.3.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Provider": "System.String",
         "Resource": "System.String",

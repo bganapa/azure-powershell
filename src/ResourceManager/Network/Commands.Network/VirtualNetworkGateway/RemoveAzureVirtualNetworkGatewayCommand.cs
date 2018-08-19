@@ -18,7 +18,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmVirtualNetworkGateway", SupportsShouldProcess = true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "VirtualNetworkGateway", SupportsShouldProcess = true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveAzureVirtualNetworkGatewayCommand : VirtualNetworkGatewayBaseCmdlet
     {
         [Alias("ResourceName")]

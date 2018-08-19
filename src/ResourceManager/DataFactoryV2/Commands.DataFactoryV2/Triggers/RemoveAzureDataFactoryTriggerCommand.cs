@@ -21,8 +21,12 @@ using Microsoft.Azure.Commands.DataFactoryV2.Properties;
 
 namespace Microsoft.Azure.Commands.DataFactoryV2
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, Constants.Trigger, DefaultParameterSetName = ParameterSetNames.ByFactoryName, 
         SupportsShouldProcess = true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "DataFactoryV2Trigger", DefaultParameterSetName = ParameterSetNames.ByFactoryName, SupportsShouldProcess = true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveAzureDataFactoryTriggerCommand : DataFactoryContextActionBaseCmdlet
     {
         [Parameter(ParameterSetName = ParameterSetNames.ByFactoryName, Position = 2, Mandatory = true,

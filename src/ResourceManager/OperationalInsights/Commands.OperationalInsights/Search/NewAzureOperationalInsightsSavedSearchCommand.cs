@@ -20,7 +20,11 @@ using System.Net;
 
 namespace Microsoft.Azure.Commands.OperationalInsights
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.New, Constants.SavedSearch, SupportsShouldProcess = true), OutputType(typeof(HttpStatusCode))]
+=======
+    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "OperationalInsightsSavedSearch", SupportsShouldProcess = true), OutputType(typeof(HttpStatusCode))]
+>>>>>>> upstream/preview
     public class NewAzureOperationalInsightsSavedSearchCommand : OperationalInsightsBaseCmdlet
     {
         [Parameter(Position = 0, Mandatory = true, ValueFromPipelineByPropertyName = true,

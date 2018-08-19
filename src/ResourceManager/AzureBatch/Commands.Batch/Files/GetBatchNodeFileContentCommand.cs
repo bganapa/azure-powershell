@@ -20,7 +20,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Get, Constants.AzureBatchNodeFileContent), OutputType(typeof(void))]
+=======
+    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchNodeFileContent"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class GetBatchNodeFileContentCommand : BatchObjectModelCmdletBase
     {
         internal const string TaskAndIdAndPathParameterSet = "Task_Id_Path";

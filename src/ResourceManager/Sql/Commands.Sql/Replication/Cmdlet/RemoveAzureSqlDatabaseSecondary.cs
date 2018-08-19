@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------------
 //
 // Copyright Microsoft Corporation
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Sql.Replication.Cmdlet
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmSqlDatabaseSecondary", SupportsShouldProcess = true), OutputType(typeof(AzureReplicationLinkModel))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlDatabaseSecondary", SupportsShouldProcess = true), OutputType(typeof(AzureReplicationLinkModel))]
+>>>>>>> upstream/preview
     public class RemoveAzureSqlDatabaseSecondary : AzureSqlDatabaseSecondaryCmdletBase
     {
         /// <summary>

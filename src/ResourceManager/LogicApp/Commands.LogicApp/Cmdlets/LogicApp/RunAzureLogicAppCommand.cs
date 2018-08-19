@@ -23,7 +23,11 @@ namespace Microsoft.Azure.Commands.LogicApp.Cmdlets
     /// <summary>
     /// Creates a new LogicApp workflow 
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Start, "AzureRmLogicApp", SupportsShouldProcess = true), OutputType(typeof(void))]
+=======
+    [Cmdlet("Start", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "LogicApp", SupportsShouldProcess = true), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RunAzureLogicAppCommand : LogicAppBaseCmdlet
     {
 

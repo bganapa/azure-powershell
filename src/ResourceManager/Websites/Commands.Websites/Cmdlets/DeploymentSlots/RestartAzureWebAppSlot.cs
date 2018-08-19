@@ -22,7 +22,11 @@ namespace Microsoft.Azure.Commands.WebApps.Cmdlets.DeploymentSlots
     /// <summary>
     /// this commandlet will let you restart an Azure Web app slot 
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Restart, "AzureRmWebAppSlot"), OutputType(typeof(Site))]
+=======
+    [Cmdlet("Restart", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "WebAppSlot"), OutputType(typeof(Site))]
+>>>>>>> upstream/preview
     public class RestartAzureWebAppSlotCmdlet : WebAppSlotBaseCmdlet
     {
         public override void ExecuteCmdlet()
@@ -33,7 +37,3 @@ namespace Microsoft.Azure.Commands.WebApps.Cmdlets.DeploymentSlots
         }
     }
 }
-
-
-
-

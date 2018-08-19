@@ -18,6 +18,13 @@
         - Additional information about change #1
 -->
 ## Current Release
+<<<<<<< HEAD
+=======
+* Fixed issue with default resource groups not being set.
+
+## Version 0.16.8
+* Updated to the latest version of the Azure ClientRuntime.
+>>>>>>> upstream/preview
 
 ## Version 0.16.7
 * Updated all help files to include full parameter types and correct input/output types.
@@ -44,7 +51,7 @@
 ## Version 0.16.0
 * Add support for online help
     - Run Get-Help with the -Online parameter to open the online help in your default Internet browser
-    
+
 ## Version 0.15.7
 
 ## Version 0.15.6

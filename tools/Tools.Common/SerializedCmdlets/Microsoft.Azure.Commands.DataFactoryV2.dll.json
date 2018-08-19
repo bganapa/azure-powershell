@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -125,7 +129,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -388,7 +396,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -755,7 +767,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1018,7 +1034,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1328,7 +1348,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AuthKey1": "System.String",
               "AuthKey2": "System.String"
@@ -1467,7 +1491,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -1761,7 +1789,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -1930,7 +1962,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -1997,7 +2033,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NodeCount": "System.Nullable`1[System.Int32]",
               "MaxParallelExecutionsPerNode": "System.Nullable`1[System.Int32]",
@@ -2078,7 +2118,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -2145,7 +2189,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AuthorizationType": "System.String",
               "Name": "System.String",
@@ -2311,7 +2359,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -2720,7 +2772,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -2870,7 +2926,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeMetrics",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeMetrics, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeMetrics, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Nodes": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.IntegrationRuntimeNodeMonitoringData]",
               "IntegrationRuntimeName": "System.String",
@@ -3020,7 +3080,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -3314,7 +3378,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -3483,7 +3551,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeNode",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Errors": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.ManagedIntegrationRuntimeError]",
               "ResourceGroupName": "System.String",
@@ -3559,7 +3631,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Capabilities": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "IsActiveDispatcher": "System.Nullable`1[System.Boolean]",
@@ -3768,7 +3844,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -4247,7 +4327,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -4516,7 +4600,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -4810,7 +4898,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -4979,7 +5071,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntimeKeys, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AuthKey1": "System.String",
               "AuthKey2": "System.String"
@@ -5157,7 +5253,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -5647,7 +5747,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -5955,7 +6059,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -6436,7 +6544,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -6739,7 +6851,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -7218,7 +7334,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -7392,7 +7512,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -7519,7 +7643,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -9336,7 +9464,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -9854,7 +9986,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -10197,7 +10333,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeStatus",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeStatus, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeStatus, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Capabilities": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Links": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.LinkedIntegrationRuntime]",
@@ -10405,7 +10545,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -10901,7 +11045,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -11080,7 +11228,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSSelfHostedIntegrationRuntimeNode, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Capabilities": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "IsActiveDispatcher": "System.Nullable`1[System.Boolean]",
@@ -11289,7 +11441,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -11768,7 +11924,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -11942,7 +12102,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeStatus",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeStatus, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSManagedIntegrationRuntimeStatus, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "LastOperation": "Microsoft.Azure.Management.DataFactory.Models.ManagedIntegrationRuntimeOperationResult",
               "OtherErrors": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.ManagedIntegrationRuntimeError]",
@@ -12129,7 +12293,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -12538,7 +12706,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -12801,7 +12973,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -13210,7 +13386,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -13471,7 +13651,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String",
               "Type": "System.String",
@@ -13878,7 +14062,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSIntegrationRuntime, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Name": "System.String",
                     "Type": "System.String",
@@ -14103,7 +14291,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -14464,7 +14656,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -14683,7 +14879,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.LinkedService",
               "Name": "System.String",
@@ -14797,7 +14997,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -15086,7 +15290,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -15324,7 +15532,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "LastUpdated": "System.Nullable`1[System.DateTime]",
@@ -15405,7 +15617,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -15623,7 +15839,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -15768,7 +15988,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16289,7 +16513,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTriggerRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "TriggerRunTimestamp": "System.Nullable`1[System.DateTime]",
               "ResourceGroupName": "System.String",
@@ -16422,7 +16650,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16642,7 +16874,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16997,7 +17233,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "LastUpdated": "System.Nullable`1[System.DateTime]",
@@ -17113,7 +17353,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -17259,7 +17503,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipelineRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Parameters": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
                     "LastUpdated": "System.Nullable`1[System.DateTime]",
@@ -17575,7 +17823,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -17794,7 +18046,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -17891,7 +18147,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -18218,7 +18478,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
                     "Name": "System.String",
@@ -18532,7 +18796,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -18629,7 +18897,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -18956,7 +19228,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
                     "Name": "System.String",
@@ -19270,7 +19546,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -19385,7 +19665,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -19674,7 +19958,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -19951,7 +20239,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -20278,7 +20570,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
                     "Name": "System.String",
@@ -20592,7 +20888,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSTrigger, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Trigger",
               "Name": "System.String",
@@ -21179,7 +21479,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSActivityRun",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSActivityRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSActivityRun, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ActivityRunStart": "System.Nullable`1[System.DateTime]",
               "ActivityRunEnd": "System.Nullable`1[System.DateTime]",
@@ -21370,7 +21674,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -21660,7 +21968,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -22066,7 +22378,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
               "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -22143,7 +22459,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
               "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -22347,7 +22667,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
                     "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -22496,7 +22820,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
                     "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -22973,7 +23301,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.LinkedService",
               "Name": "System.String",
@@ -23598,7 +23930,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.LinkedService",
               "Name": "System.String",
@@ -23924,7 +24260,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSLinkedService, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Properties": "Microsoft.Azure.Management.DataFactory.Models.LinkedService",
                     "Name": "System.String",
@@ -24237,7 +24577,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -24533,7 +24877,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -24910,7 +25258,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
               "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -25025,7 +25377,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -25314,7 +25670,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -25552,7 +25912,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
               "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -26178,7 +26542,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
               "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -26505,7 +26873,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSPipeline, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Parameters": "System.Collections.Generic.IDictionary`2[System.String,Microsoft.Azure.Management.DataFactory.Models.ParameterSpecification]",
                     "Activities": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.DataFactory.Models.Activity]",
@@ -26819,7 +27191,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Dataset",
               "Structure": "System.Object",
@@ -26934,7 +27310,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -27223,7 +27603,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataFactory, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Identity": "Microsoft.Azure.Management.DataFactory.Models.FactoryIdentity",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -27461,7 +27845,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Dataset",
               "Structure": "System.Object",
@@ -28087,7 +28475,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
             "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "Microsoft.Azure.Management.DataFactory.Models.Dataset",
               "Structure": "System.Object",
@@ -28414,7 +28806,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.DataFactoryV2.Models",
                   "Name": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.DataFactoryV2.Models.PSDataset, Microsoft.Azure.Commands.DataFactoryV2, Version=0.5.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Properties": "Microsoft.Azure.Management.DataFactory.Models.Dataset",
                     "Structure": "System.Object",

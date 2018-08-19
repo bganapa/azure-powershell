@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -250,7 +254,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "DailyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails",
               "HourlyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails",
@@ -486,7 +494,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "DailyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails",
               "HourlyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails",
@@ -722,7 +734,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -958,7 +974,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -1194,7 +1214,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "DailyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails",
               "HourlyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails",
@@ -1884,7 +1908,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSSchedule, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "DailyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails",
               "HourlyRecurrence": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails",
@@ -2484,7 +2512,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -3084,7 +3116,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -3676,7 +3712,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
             "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSPolicy, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Description": "System.String",
@@ -4608,7 +4648,11 @@
     "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails": {
       "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
       "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSDayDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Time": "System.String"
       },
@@ -4652,7 +4696,11 @@
     "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails": {
       "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
       "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSHourDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Minute": "System.Nullable`1[System.Int32]"
       },
@@ -4708,7 +4756,11 @@
     "Microsoft.Azure.Commands.DevTestLabs.Models.PSWeekDetails": {
       "Namespace": "Microsoft.Azure.Commands.DevTestLabs.Models",
       "Name": "Microsoft.Azure.Commands.DevTestLabs.Models.PSWeekDetails",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSWeekDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.6.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.DevTestLabs.Models.PSWeekDetails, Microsoft.Azure.Commands.DevTestLabs, Version=4.0.7.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Weekdays": "System.Collections.Generic.IList`1[System.String]",
         "Time": "System.String"

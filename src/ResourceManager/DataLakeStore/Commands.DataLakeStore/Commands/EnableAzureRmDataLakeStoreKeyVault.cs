@@ -19,7 +19,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.DataLakeStore
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Enable, "AzureRmDataLakeStoreKeyVault", SupportsShouldProcess = true), OutputType(typeof(void))]
+=======
+    [Cmdlet("Enable", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "DataLakeStoreKeyVault", SupportsShouldProcess = true), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     [Alias("Enable-AdlStoreKeyVault")]
     public class EnableAzureDataLakeStoreKeyVault : DataLakeStoreCmdletBase
     {

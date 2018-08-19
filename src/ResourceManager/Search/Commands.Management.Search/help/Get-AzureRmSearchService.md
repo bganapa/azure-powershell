@@ -51,7 +51,11 @@ Get an Azure Search service with specified parameters.
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
+<<<<<<< HEAD
 Type: IAzureContextContainer
+=======
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -66,7 +70,11 @@ Accept wildcard characters: False
 Search Service name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceGroupParameterSet
 Aliases:
 
@@ -81,7 +89,11 @@ Accept wildcard characters: False
 Resource Group name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceGroupParameterSet
 Aliases:
 
@@ -96,7 +108,11 @@ Accept wildcard characters: False
 Search Service Resource Id.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceIdParameterSet
 Aliases:
 

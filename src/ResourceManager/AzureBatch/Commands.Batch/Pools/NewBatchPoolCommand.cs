@@ -22,8 +22,12 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.New, Constants.AzureBatchPool, 
         DefaultParameterSetName = CloudServiceTargetDedicatedParameterSet, SupportsShouldProcess=true), OutputType(typeof(void))]
+=======
+    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchPool", DefaultParameterSetName = CloudServiceTargetDedicatedParameterSet, SupportsShouldProcess=true), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class NewBatchPoolCommand : BatchObjectModelCmdletBase
     {
         internal const string CloudServiceTargetDedicatedParameterSet = "CloudServiceAndTargetDedicated";

@@ -51,7 +51,11 @@ CLRVersion = '4.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
+<<<<<<< HEAD
 RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.4.6.1'; })
+=======
+RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.3.3'; })
+>>>>>>> upstream/preview
 
 # Assemblies that must be loaded prior to importing this module
 RequiredAssemblies = '.\Microsoft.Azure.Management.Search.dll'

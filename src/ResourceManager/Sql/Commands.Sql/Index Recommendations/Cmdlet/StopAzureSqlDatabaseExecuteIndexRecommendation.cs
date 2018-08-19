@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------------
 //
 // Copyright Microsoft Corporation
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,8 +21,12 @@ namespace Microsoft.Azure.Commands.Sql.Cmdlet
     /// <summary>
     /// Defines the Stop-AzureRmSqlDatabaseExecuteIndexRecommendation cmdlet
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Stop, "AzureRmSqlDatabaseExecuteIndexRecommendation",
         ConfirmImpact = ConfirmImpact.Low), OutputType(typeof(IndexRecommendation))]
+=======
+    [Cmdlet("Stop", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlDatabaseExecuteIndexRecommendation",ConfirmImpact = ConfirmImpact.Low), OutputType(typeof(IndexRecommendation))]
+>>>>>>> upstream/preview
     public class StopAzureSqlDatabaseExecuteIndexRecommendation : AzureSqlDatabaseExecuteIndexRecommendationCmdletBase
     {
         /// <summary>

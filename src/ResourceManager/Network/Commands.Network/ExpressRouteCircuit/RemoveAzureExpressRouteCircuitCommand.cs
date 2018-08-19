@@ -18,7 +18,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Network
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmExpressRouteCircuit", SupportsShouldProcess =  true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ExpressRouteCircuit", SupportsShouldProcess =  true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveAzureExpressRouteCircuitCommand : ExpressRouteCircuitBaseCmdlet
     {
         [Alias("ResourceName")]

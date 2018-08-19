@@ -18,7 +18,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.OperationalInsights
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, Constants.IntelligencePack), OutputType(typeof(PSIntelligencePack))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "OperationalInsightsIntelligencePack"), OutputType(typeof(PSIntelligencePack))]
+>>>>>>> upstream/preview
     public class SetAzureOperationalInsightsIntelligencePackCommand : OperationalInsightsBaseCmdlet
     {
         [Parameter(Position = 0, Mandatory = true, ValueFromPipelineByPropertyName = true,

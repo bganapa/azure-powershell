@@ -24,12 +24,17 @@ Gets an Azure Search service.
 Regenerates an admin key of the Azure Search service.
 
 ### [New-AzureRmSearchQueryKey](New-AzureRmSearchQueryKey.md)
+<<<<<<< HEAD
 Creates a new query key for the Azure Search service.
+=======
+Create a new query key for the Azure Search service.
+>>>>>>> upstream/preview
 
 ### [New-AzureRmSearchService](New-AzureRmSearchService.md)
 Creates an Azure Search service.
 
 ### [Remove-AzureRmSearchQueryKey](Remove-AzureRmSearchQueryKey.md)
+<<<<<<< HEAD
 Removes the query key from the Azure Search service.
 
 ### [Remove-AzureRmSearchService](Remove-AzureRmSearchService.md)
@@ -37,4 +42,13 @@ Removes an Azure Search service.
 
 ### [Set-AzureRmSearchService](Set-AzureRmSearchService.md)
 Updates an Azure Search service.
+=======
+Remove the query key from the Azure Search service.
+
+### [Remove-AzureRmSearchService](Remove-AzureRmSearchService.md)
+Remove an Azure Search service.
+
+### [Set-AzureRmSearchService](Set-AzureRmSearchService.md)
+Update an Azure Search service.
+>>>>>>> upstream/preview
 

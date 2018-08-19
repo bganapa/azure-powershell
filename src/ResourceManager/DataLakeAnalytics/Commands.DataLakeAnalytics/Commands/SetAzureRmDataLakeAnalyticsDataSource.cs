@@ -21,7 +21,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.DataLakeAnalytics
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, "AzureRmDataLakeAnalyticsDataSource"), OutputType(typeof(void))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "DataLakeAnalyticsDataSource"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     [Alias("Set-AdlAnalyticsDataSource")]
     public class SetAzureDataLakeAnalyticsDataSource : DataLakeAnalyticsCmdletBase
     {

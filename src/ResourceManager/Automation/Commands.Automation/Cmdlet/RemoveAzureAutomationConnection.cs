@@ -22,8 +22,12 @@ namespace Microsoft.Azure.Commands.Automation.Cmdlet
     /// <summary>
     /// Removes a Connection for automation.
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmAutomationConnection", SupportsShouldProcess = true,
         DefaultParameterSetName = AutomationCmdletParameterSets.ByName), OutputType(typeof(void))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "AutomationConnection", SupportsShouldProcess = true,DefaultParameterSetName = AutomationCmdletParameterSets.ByName), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RemoveAzureAutomationConnection : AzureAutomationBaseCmdlet
     {
         /// <summary>

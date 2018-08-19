@@ -19,7 +19,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, Constants.AzureBatchPoolOSVersion), OutputType(typeof(void))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchPoolOSVersion"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class SetBatchPoolOSVersionCommand : BatchObjectModelCmdletBase
     {
         [Parameter(Position = 0, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true,

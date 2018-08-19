@@ -21,8 +21,12 @@ using Microsoft.Azure.Commands.DataFactoryV2.Properties;
 
 namespace Microsoft.Azure.Commands.DataFactoryV2
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, Constants.Pipeline, DefaultParameterSetName = ParameterSetNames.ByFactoryName, 
         SupportsShouldProcess = true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "DataFactoryV2Pipeline", DefaultParameterSetName = ParameterSetNames.ByFactoryName, SupportsShouldProcess = true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveAzureDataFactoryPipelineCommand : DataFactoryContextActionBaseCmdlet
     {
         [Parameter(ParameterSetName = ParameterSetNames.ByFactoryName, Position = 2, Mandatory = true,

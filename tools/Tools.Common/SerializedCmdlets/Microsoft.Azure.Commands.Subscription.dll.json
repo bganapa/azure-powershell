@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Subscription.Models",
             "Name": "Microsoft.Azure.Commands.Subscription.Models.PSAzureSubscription",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Subscription.Models.PSAzureSubscription, Microsoft.Azure.Commands.Subscription, Version=0.2.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Subscription.Models.PSAzureSubscription, Microsoft.Azure.Commands.Subscription, Version=0.2.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ExtendedProperties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Id": "System.String",

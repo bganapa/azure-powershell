@@ -19,7 +19,11 @@ using PartnerResources = Microsoft.Azure.Commands.ManagementPartner.Properties.R
 
 namespace Microsoft.Azure.Commands.ManagementPartner
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmManagementPartner", SupportsShouldProcess = true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ManagementPartner", SupportsShouldProcess = true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveManagementPartner : AzureManagementPartnerCmdletsBase
     {
         [Parameter(Position = 0, Mandatory = true, HelpMessage = "The management partner id")]

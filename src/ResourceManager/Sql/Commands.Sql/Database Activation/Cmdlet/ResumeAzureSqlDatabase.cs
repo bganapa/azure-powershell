@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------------
 //
 // Copyright Microsoft Corporation
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +21,11 @@ namespace Microsoft.Azure.Commands.Sql.DatabaseActivation.Cmdlet
     /// <summary>
     /// Cmdlet to resume a paused Azure SQL Data Warehouse database.
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Resume, "AzureRmSqlDatabase", SupportsShouldProcess = true), OutputType(typeof(AzureSqlDatabaseModel))]
+=======
+    [Cmdlet("Resume", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlDatabase", SupportsShouldProcess = true), OutputType(typeof(AzureSqlDatabaseModel))]
+>>>>>>> upstream/preview
     public class ResumeAzureSqlDatabase : AzureSqlDatabaseActivationCmdletBase
     {
         /// <summary>

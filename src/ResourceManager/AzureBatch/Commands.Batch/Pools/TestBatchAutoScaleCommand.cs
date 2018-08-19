@@ -19,7 +19,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsDiagnostic.Test, Constants.AzureBatchAutoScale), OutputType(typeof(PSAutoScaleRun))]
+=======
+    [Cmdlet("Test", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchAutoScale"), OutputType(typeof(PSAutoScaleRun))]
+>>>>>>> upstream/preview
     public class TestBatchAutoScaleCommand : BatchObjectModelCmdletBase
     {
         [Parameter(Position = 0, ValueFromPipeline = true, ValueFromPipelineByPropertyName = true,

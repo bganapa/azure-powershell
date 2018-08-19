@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
               "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -723,7 +727,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AliasPrimaryConnectionString": "System.String",
               "AliasSecondaryConnectionString": "System.String",
@@ -1428,7 +1436,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
               "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -2082,7 +2094,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSListKeysAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AliasPrimaryConnectionString": "System.String",
               "AliasSecondaryConnectionString": "System.String",
@@ -3505,7 +3521,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
               "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -3653,7 +3673,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
               "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -3901,7 +3925,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -4149,7 +4177,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -4345,7 +4377,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSSharedAccessAuthorizationRuleAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.Dictionary`2[System.String,System.String]",
                     "Rights": "System.Collections.Generic.IList`1[System.String]",
@@ -4518,7 +4554,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -4857,7 +4897,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -4988,7 +5032,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -5257,7 +5305,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
                     "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -5707,7 +5759,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -6036,7 +6092,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
                     "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -6416,7 +6476,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -6547,7 +6611,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
               "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -6816,7 +6884,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "CaptureDescription": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
                     "PartitionIds": "System.Collections.Generic.IList`1[System.String]",
@@ -7189,7 +7261,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
               "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -7295,7 +7371,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -7551,7 +7631,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
                     "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -7856,7 +7940,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
               "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -7962,7 +8050,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -8344,7 +8436,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
                     "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -8938,7 +9034,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
               "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -9262,7 +9362,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
                     "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -9714,7 +9818,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
               "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -9996,7 +10104,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
                     "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -10376,7 +10488,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
               "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -10658,7 +10774,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSEventHubDRConfigurationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "ProvisioningState": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.ProvisioningStateDR]",
                     "Role": "System.Nullable`1[Microsoft.Azure.Management.EventHub.Models.RoleDisasterRecovery]",
@@ -10965,7 +11085,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CreatedAt": "System.Nullable`1[System.DateTime]",
               "UpdatedAt": "System.Nullable`1[System.DateTime]",
@@ -11347,7 +11471,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CreatedAt": "System.Nullable`1[System.DateTime]",
               "UpdatedAt": "System.Nullable`1[System.DateTime]",
@@ -11822,7 +11950,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CreatedAt": "System.Nullable`1[System.DateTime]",
               "UpdatedAt": "System.Nullable`1[System.DateTime]",
@@ -12174,7 +12306,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "CreatedAt": "System.Nullable`1[System.DateTime]",
                     "UpdatedAt": "System.Nullable`1[System.DateTime]",
@@ -12551,7 +12687,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CreatedAt": "System.Nullable`1[System.DateTime]",
               "UpdatedAt": "System.Nullable`1[System.DateTime]",
@@ -12929,7 +13069,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSCheckNameAvailabilityResultAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSCheckNameAvailabilityResultAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSCheckNameAvailabilityResultAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Reason": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes]",
               "NameAvailable": "System.Nullable`1[System.Boolean]",
@@ -13336,7 +13480,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -13580,7 +13728,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -14411,7 +14563,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -14711,7 +14867,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
                   "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
                     "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -15088,7 +15248,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
             "Name": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Sku": "Microsoft.Azure.Management.EventHub.Models.Sku",
               "IsAutoInflateEnabled": "System.Nullable`1[System.Boolean]",
@@ -15254,7 +15418,11 @@
           "Type": {
             "Namespace": "System",
             "Name": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.NamespaceState]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -15496,7 +15664,11 @@
                 "Type": {
                   "Namespace": "System",
                   "Name": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.NamespaceState]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -15717,7 +15889,11 @@
                 "Type": {
                   "Namespace": "System",
                   "Name": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.NamespaceState]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -16255,7 +16431,11 @@
     "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes": {
       "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
       "Name": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSCaptureDescriptionAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Destination": "Microsoft.Azure.Commands.EventHub.Models.PSDestinationAttributes",
         "Encoding": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription]",
@@ -16313,7 +16493,11 @@
     "Microsoft.Azure.Commands.EventHub.Models.PSDestinationAttributes": {
       "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
       "Name": "Microsoft.Azure.Commands.EventHub.Models.PSDestinationAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSDestinationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.PSDestinationAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Name": "System.String",
         "StorageAccountResourceId": "System.String",
@@ -16370,7 +16554,11 @@
     "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription]": {
       "Namespace": "System",
       "Name": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -16382,7 +16570,11 @@
     "Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription": {
       "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
       "Name": "Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.EnumEncodingCaptureDescription, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -16935,7 +17127,11 @@
     "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes]": {
       "Namespace": "System",
       "Name": "System.Nullable`1[Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -16947,7 +17143,11 @@
     "Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes": {
       "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
       "Name": "Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.UnavailableReasonAttributes, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -17042,7 +17242,11 @@
     "Microsoft.Azure.Commands.EventHub.Models.NamespaceState": {
       "Namespace": "Microsoft.Azure.Commands.EventHub.Models",
       "Name": "Microsoft.Azure.Commands.EventHub.Models.NamespaceState",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.7.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.EventHub.Models.NamespaceState, Microsoft.Azure.Commands.EventHub, Version=0.6.8.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],

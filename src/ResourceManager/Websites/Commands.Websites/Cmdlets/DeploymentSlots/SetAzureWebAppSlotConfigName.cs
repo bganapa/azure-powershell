@@ -18,7 +18,11 @@ using Microsoft.Azure.Management.WebSites.Models;
 
 namespace Microsoft.Azure.Commands.WebApps.Cmdlets.DeploymentSlots
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, "AzureRmWebAppSlotConfigName"), OutputType(typeof(SlotConfigNamesResource))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "WebAppSlotConfigName"), OutputType(typeof(SlotConfigNamesResource))]
+>>>>>>> upstream/preview
     public class SetAzureWebAppSlotConfigName : WebAppBaseCmdlet
     {
         [Parameter(Position = 2, Mandatory = false, HelpMessage = "Names of app settings that need to marked as slot settings", ValueFromPipelineByPropertyName = true)]

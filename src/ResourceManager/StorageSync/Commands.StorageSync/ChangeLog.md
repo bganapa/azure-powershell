@@ -19,6 +19,14 @@
 -->
 
 ## Current Release
+<<<<<<< HEAD
+=======
+
+## Version 0.1.1
+* Updated to the latest version of the Azure ClientRuntime.
+
+## Version 0.1.0
+>>>>>>> upstream/preview
 * Add Azure File Sync evaluation cmdlet
     - Invoke-AzureRmStorageSyncCompatibilityCheck
 

@@ -21,7 +21,11 @@ namespace Microsoft.WindowsAzure.Commands.Storage.Common.Cmdlet
     /// <summary>
     /// Remove all azure storage CORS rules
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, StorageNouns.StorageCORSRule), OutputType(typeof(void))]
+=======
+    [Cmdlet("Remove", Azure.Commands.ResourceManager.Common.AzureRMConstants.AzurePrefix + "StorageCORSRule"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RemoveAzureStorageCORSRuleCommand : StorageCloudBlobCmdletBase
     {
         [Parameter(Mandatory = true, Position = 0, HelpMessage = GetAzureStorageServiceLoggingCommand.ServiceTypeHelpMessage)]

@@ -42,19 +42,32 @@ PS C:\> Remove-AzureRmServiceBusNamespace -ResourceGroup Default-ServiceBus-West
 
 Removes the Service Bus namespace `SB-Example1` from the specified resource group `Default-ServiceBus-WestUS`.
 
+<<<<<<< HEAD
 ### Example 2.1 - InputObject - Using variable: 
+=======
+### Example 2.1 - InputObject - Using variable:
+>>>>>>> upstream/preview
 ```
 PS C:\> $inputobject = Get-AzureRmServiceBusNamespace <params>
 PS C:\> Remove-AzureRmServiceBusNamespace -InputObject $inputobject
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/preview
 Removes the Service Bus namespace provided through the $inputobject.
 
 ### Example 2.2 - InputObject - Using Piping:
 ```
 PS C:\> Get-AzureRmServiceBusNamespace <params> | Remove-AzureRmServiceBusNamespace
 ```
+<<<<<<< HEAD
 Removes the Service Bus namespace using Piping.
 
+=======
+
+Removes the Service Bus namespace using Piping.
+>>>>>>> upstream/preview
 
 ### Example 3 - ResourceId
 ```
@@ -70,7 +83,11 @@ Removes the Service Bus namespace provided through ARM id in $resourceid for -Re
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -100,7 +117,11 @@ Accept wildcard characters: False
 Service Bus Namespace Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSNamespaceAttributes
+=======
+Type: Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceInputObjectSet
 Aliases:
 
@@ -115,7 +136,11 @@ Accept wildcard characters: False
 Namespace Name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespacePropertiesSet
 Aliases: NamespaceName
 
@@ -130,7 +155,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +174,11 @@ Accept wildcard characters: False
 The name of the resource group
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespacePropertiesSet
 Aliases: ResourceGroup
 
@@ -160,7 +193,11 @@ Accept wildcard characters: False
 Service Bus Namespace Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceResourceIdParameterSet
 Aliases:
 
@@ -209,7 +246,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: Name (ByPropertyName), ResourceGroupName (ByPropertyName)
+
+### Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSNamespaceAttributes
 Parameters: InputObject (ByValue)

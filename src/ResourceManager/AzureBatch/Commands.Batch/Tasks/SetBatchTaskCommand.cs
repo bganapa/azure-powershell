@@ -18,7 +18,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, Constants.AzureBatchTask), OutputType(typeof(void))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchTask"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class SetBatchTaskCommand : BatchObjectModelCmdletBase
     {
         [Parameter(Position = 0, Mandatory = true, ValueFromPipeline = true,

@@ -51,7 +51,11 @@ CLRVersion = '4.0'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
+<<<<<<< HEAD
 RequiredModules = @(@{ModuleName = 'Azure.Storage'; ModuleVersion = '4.4.0'; })
+=======
+RequiredModules = @(@{ModuleName = 'Azure.Storage'; ModuleVersion = '4.5.0'; })
+>>>>>>> upstream/preview
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()

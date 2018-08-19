@@ -70,7 +70,11 @@ PS C:\> Remove-AzureRmServiceBusTopic -ResourceId "/subscriptions/xxxx-xxxxx-xxx
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -100,7 +104,11 @@ Accept wildcard characters: False
 Service Bus Topic Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSTopicAttributes
+=======
+Type: Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
+>>>>>>> upstream/preview
 Parameter Sets: TopicInputObjectSet
 Aliases:
 
@@ -115,7 +123,11 @@ Accept wildcard characters: False
 Topic Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: TopicPropertiesSet
 Aliases: TopicName
 
@@ -130,7 +142,11 @@ Accept wildcard characters: False
 Namespace Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: TopicPropertiesSet
 Aliases: NamespaceName
 
@@ -145,7 +161,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -160,7 +180,11 @@ Accept wildcard characters: False
 The name of the resource group
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: TopicPropertiesSet
 Aliases: ResourceGroup
 
@@ -175,7 +199,11 @@ Accept wildcard characters: False
 Service Bus Topic Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: TopicResourceIdSet
 Aliases:
 
@@ -224,7 +252,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: Name (ByPropertyName), Namespace (ByPropertyName), ResourceGroupName (ByPropertyName)
+
+### Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSTopicAttributes
 Parameters: InputObject (ByValue)

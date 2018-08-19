@@ -240,7 +240,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfileCollection",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfileCollection, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfileCollection, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Item": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile",
               "Count": "System.Int32",
@@ -958,7 +962,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RetentionPolicy": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -1615,7 +1623,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetricDefinition",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetricDefinition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetricDefinition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "Microsoft.Azure.Management.Monitor.Models.LocalizableString",
               "Dimensions": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Models.LocalizableString]",
@@ -1943,7 +1955,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetric",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetric, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSMetric, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "Microsoft.Azure.Management.Monitor.Models.LocalizableString",
               "Unit": "Microsoft.Azure.Management.Monitor.Models.Unit",
@@ -2870,7 +2886,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Claims": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
               "Properties": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
@@ -4631,7 +4651,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Logs": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]",
@@ -4700,7 +4724,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Logs": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]",
@@ -5054,7 +5082,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
                     "Logs": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]",
@@ -5590,7 +5622,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSServiceDiagnosticSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Logs": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]",
@@ -5831,7 +5867,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Email": "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification",
               "Webhooks": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification]",
@@ -5896,7 +5936,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[], Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[], Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification",
             "GenericTypeArguments": [],
@@ -6006,7 +6050,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[], Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification[], Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification",
                   "GenericTypeArguments": [],
@@ -6152,7 +6200,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Recurrence": "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence",
               "Capacity": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity",
@@ -6350,7 +6402,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -6531,7 +6587,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -6685,7 +6745,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -6922,7 +6986,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -7087,7 +7155,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -7298,7 +7370,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -7417,7 +7493,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "MetricTrigger": "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger",
               "ScaleAction": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction"
@@ -7536,7 +7616,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -7639,7 +7723,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -7760,7 +7848,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -7917,7 +8009,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -8020,7 +8116,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -8227,7 +8327,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -8336,7 +8440,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -8469,7 +8577,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -8650,7 +8762,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -8759,7 +8875,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -8942,7 +9062,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAutoscaleSettingOperationResponse",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAutoscaleSettingOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAutoscaleSettingOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "SettingSpec": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleSettingResource",
               "StatusCode": "System.Net.HttpStatusCode",
@@ -8999,7 +9123,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Notifications": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
@@ -9143,7 +9271,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -9181,7 +9313,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -9241,7 +9377,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
                     "Notifications": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
@@ -9367,7 +9507,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -9393,7 +9537,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -9560,7 +9708,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -9610,7 +9762,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -9729,7 +9885,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Claims": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
               "Properties": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
@@ -10163,7 +10323,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAutoscaleSetting, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "Notifications": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
@@ -10495,7 +10659,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "ServiceUri": "System.String"
@@ -11004,7 +11172,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AlertRule": "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource",
               "StatusCode": "System.Net.HttpStatusCode",
@@ -11077,7 +11249,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -11234,7 +11410,11 @@
           "Type": {
             "Namespace": "System",
             "Name": "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -11346,7 +11526,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -11428,7 +11612,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
                   "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ConditionOperator, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [],
@@ -11609,7 +11797,11 @@
                 "Type": {
                   "Namespace": "System",
                   "Name": "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -11757,7 +11949,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -11833,7 +12029,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAddAlertRuleOperationResponse, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "AlertRule": "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource",
               "StatusCode": "System.Net.HttpStatusCode",
@@ -12070,7 +12270,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -12370,7 +12574,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -12446,7 +12654,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventData, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Claims": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
               "Properties": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
@@ -12880,7 +13092,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAlertRule",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAlertRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSAlertRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition",
               "IsEnabled": "System.Boolean",
@@ -13442,7 +13658,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RuleEmailAction",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleEmailAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleEmailAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "CustomEmails": "System.Collections.Generic.IList`1[System.String]",
               "SendToServiceOwners": "System.Nullable`1[System.Boolean]"
@@ -13678,7 +13898,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RuleWebhookAction",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleWebhookAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleWebhookAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Properties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "ServiceUri": "System.String"
@@ -14187,7 +14411,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Enabled": "System.Boolean",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -14314,7 +14542,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -14391,7 +14623,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Enabled": "System.Boolean",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -14573,7 +14809,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -14717,7 +14957,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -14936,7 +15180,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Enabled": "System.Boolean",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -15107,7 +15355,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Name": "System.String"
             },
@@ -15887,7 +16139,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Enabled": "System.Boolean",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16155,7 +16411,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Enabled": "System.Boolean",
                     "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16326,7 +16586,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Enabled": "System.Boolean",
               "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -16681,7 +16945,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -16789,7 +17057,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -17007,7 +17279,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
                     "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -17244,7 +17520,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -17390,7 +17670,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -17410,7 +17694,11 @@
           "Type": {
             "Namespace": "System.Collections.Generic",
             "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+            "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [
@@ -17487,7 +17775,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -17712,7 +18004,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -17738,7 +18034,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -17932,7 +18232,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -17958,7 +18262,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -18152,7 +18460,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -18178,7 +18490,11 @@
                 "Type": {
                   "Namespace": "System.Collections.Generic",
                   "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+                  "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": null,
                   "GenericTypeArguments": [
@@ -18255,7 +18571,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
                     "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -18425,7 +18745,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -18779,7 +19103,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "WebhookProperties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
               "ActionGroupId": "System.String"
@@ -19026,7 +19354,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
             "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Field": "System.String",
               "Equals": "System.String"
@@ -19357,7 +19689,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -19575,7 +19911,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
                     "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -19812,7 +20152,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -19920,7 +20264,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
             "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
               "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -20138,7 +20486,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
                   "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActivityLogAlertResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Actions": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
                     "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
@@ -20717,7 +21069,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "RetentionPolicy": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy",
         "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
@@ -20780,7 +21136,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Enabled": "System.Boolean",
         "Days": "System.Int32"
@@ -20899,7 +21259,11 @@
     "System.Collections.ObjectModel.ReadOnlyCollection`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]": {
       "Namespace": "System.Collections.ObjectModel",
       "Name": "System.Collections.ObjectModel.ReadOnlyCollection`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.ObjectModel.ReadOnlyCollection`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -20911,7 +21275,11 @@
     "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -20923,7 +21291,11 @@
     "System.Collections.Generic.List`1+Enumerator[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.List`1+Enumerator[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.List`1+Enumerator[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.List`1+Enumerator[[Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -20935,7 +21307,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile[]": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile[]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile[], Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile[], Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": "Microsoft.Azure.Commands.Insights.OutputClasses.PSLogProfile",
       "GenericTypeArguments": [],
@@ -21756,7 +22132,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSDictionaryElement, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Content": "System.Collections.Generic.IDictionary`2[System.String,System.String]"
       },
@@ -21815,7 +22195,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataAuthorization": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataAuthorization",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataAuthorization, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataAuthorization, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Scope": "System.String",
         "Action": "System.String",
@@ -21862,7 +22246,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataHttpRequest": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataHttpRequest",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataHttpRequest, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEventDataHttpRequest, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "ClientId": "System.String",
         "Method": "System.String",
@@ -22161,7 +22549,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.LogSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -22173,7 +22565,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.LogSettings": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.LogSettings",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.LogSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.LogSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "RetentionPolicy": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy",
         "Enabled": "System.Boolean",
@@ -22229,7 +22625,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -22241,7 +22641,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricSettings, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "RetentionPolicy": "Microsoft.Azure.Management.Monitor.Management.Models.RetentionPolicy",
         "Enabled": "System.Boolean",
@@ -22465,7 +22869,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "CustomEmails": "System.Collections.Generic.IList`1[System.String]",
         "SendToSubscriptionCoAdministrators": "System.Nullable`1[System.Boolean]",
@@ -22585,7 +22993,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -22597,7 +23009,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Properties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
         "ServiceUri": "System.String"
@@ -22723,7 +23139,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Frequency": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency",
         "Schedule": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrentSchedule"
@@ -22783,7 +23203,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrenceFrequency, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -22878,7 +23302,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RecurrentSchedule": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrentSchedule",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrentSchedule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RecurrentSchedule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Hours": "System.Collections.Generic.IList`1[System.Nullable`1[System.Int32]]",
         "Minutes": "System.Collections.Generic.IList`1[System.Nullable`1[System.Int32]]",
@@ -23133,7 +23561,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Minimum": "System.String",
         "Maximum": "System.String",
@@ -23194,7 +23626,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.TimeWindow": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.TimeWindow",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeWindow, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeWindow, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Start": "System.DateTime",
         "End": "System.DateTime",
@@ -23457,7 +23893,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -23469,7 +23909,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleRule, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "MetricTrigger": "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger",
         "ScaleAction": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction"
@@ -23543,7 +23987,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricTrigger, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "OperatorProperty": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType",
         "Statistic": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType",
@@ -23609,7 +24057,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ComparisonOperationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -23704,7 +24156,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.MetricStatisticType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -23799,7 +24255,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -24179,7 +24639,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Direction": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection",
         "Type": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType",
@@ -24241,7 +24705,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleDirection, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -24336,7 +24804,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleType, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -24865,7 +25337,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleSettingResource": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleSettingResource",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleSettingResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleSettingResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Tags": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
         "Notifications": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
@@ -24928,7 +25404,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -24940,7 +25420,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleNotification, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Email": "Microsoft.Azure.Management.Monitor.Management.Models.EmailNotification",
         "Webhooks": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.WebhookNotification]",
@@ -24996,7 +25480,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25008,7 +25496,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AutoscaleProfile, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Recurrence": "Microsoft.Azure.Management.Monitor.Management.Models.Recurrence",
         "Capacity": "Microsoft.Azure.Management.Monitor.Management.Models.ScaleCapacity",
@@ -25234,7 +25726,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.AlertRuleResource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Condition": "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition",
         "IsEnabled": "System.Boolean",
@@ -25303,7 +25799,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "DataSource": "Microsoft.Azure.Management.Monitor.Management.Models.RuleDataSource"
       },
@@ -25357,7 +25857,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RuleDataSource": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RuleDataSource",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleDataSource, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleDataSource, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "ResourceUri": "System.String"
       },
@@ -25519,7 +26023,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25531,7 +26039,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.RuleAction": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.RuleAction",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.RuleAction, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -25627,7 +26139,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.TimeAggregationOperator, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -25722,7 +26238,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25734,7 +26254,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSEmailReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Status": "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus]",
         "EmailAddress": "System.String",
@@ -25790,7 +26314,11 @@
     "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus]": {
       "Namespace": "System",
       "Name": "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Nullable`1[[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25802,7 +26330,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],
@@ -25897,7 +26429,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25909,7 +26445,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSSmsReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Status": "System.Nullable`1[Microsoft.Azure.Management.Monitor.Management.Models.ReceiverStatus]",
         "CountryCode": "System.String",
@@ -25966,7 +26506,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -25978,7 +26522,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSWebhookReceiver, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "ServiceUri": "System.String",
         "Name": "System.String"
@@ -26033,7 +26581,11 @@
     "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase": {
       "Namespace": "Microsoft.Azure.Commands.Insights.OutputClasses",
       "Name": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Insights.OutputClasses.PSActionGroupReceiverBase, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Name": "System.String"
       },
@@ -26071,7 +26623,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionList, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "ActionGroups": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]"
       },
@@ -26125,7 +26681,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -26137,7 +26697,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertActionGroup, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "WebhookProperties": "System.Collections.Generic.IDictionary`2[System.String,System.String]",
         "ActionGroupId": "System.String"
@@ -26273,7 +26837,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertAllOfCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "AllOf": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]"
       },
@@ -26327,7 +26895,11 @@
     "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.IList`1[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.IList`1[[Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -26339,7 +26911,11 @@
     "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition": {
       "Namespace": "Microsoft.Azure.Management.Monitor.Management.Models",
       "Name": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Management.Monitor.Management.Models.ActivityLogAlertLeafCondition, Microsoft.Azure.Commands.Insights, Version=5.1.1.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Field": "System.String",
         "Equals": "System.String"

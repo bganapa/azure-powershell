@@ -18,8 +18,16 @@
         - Additional information about change #1
 -->
 ## Current Release
+<<<<<<< HEAD
 * Fix debugging when DebugPreference is set from powershell command line
 * Update example for Set-AzureRmDataLakeStoreItemAcl
+=======
+
+## Version 6.1.2
+* Fix debugging when DebugPreference is set from powershell command line
+* Update example for Set-AzureRmDataLakeStoreItemAcl
+* Updated to the latest version of the Azure ClientRuntime.
+>>>>>>> upstream/preview
 * Update example for Set-AzureRmDataLakeStoreItemAclEntry
 
 ## Version 6.1.1

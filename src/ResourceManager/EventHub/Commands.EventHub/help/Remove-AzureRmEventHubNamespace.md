@@ -42,7 +42,11 @@ PS C:\> Remove-AzureRmEventHubNamespace -ResourceGroupName MyResourceGroupName -
 
 Removes the Event Hubs namespace \`MyNamespaceName\` in resource group \`MyResourceGroupName\`.
 
+<<<<<<< HEAD
 ### Example 2.1 - InputObject - Using Variable: 
+=======
+### Example 2.1 - InputObject - Using Variable:
+>>>>>>> upstream/preview
 ```
 PS C:\> $inputObject = Get-AzureRmEventHubNamespace <params> 
 PS C:\> Remove-AzureRmEventHubNamespace -InputObject $inputObject
@@ -75,7 +79,11 @@ PS C:\> Remove-AzureRmEventHubNamespace -ResourceId "/subscriptions/xxx-xxxxx-xx
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +113,11 @@ Accept wildcard characters: False
 EventHubs Namespace Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSNamespaceAttributes
+=======
+Type: Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceInputObjectSet
 Aliases:
 
@@ -120,7 +132,11 @@ Accept wildcard characters: False
 EventHub Namespace Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceParameterSet
 Aliases: NamespaceName
 
@@ -135,7 +151,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -150,7 +170,11 @@ Accept wildcard characters: False
 Resource Group Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceParameterSet
 Aliases:
 
@@ -165,7 +189,11 @@ Accept wildcard characters: False
 EventHubs Namespace Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: NamespaceResourceIdParameterSet
 Aliases:
 
@@ -214,7 +242,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: Name (ByPropertyName), ResourceGroupName (ByPropertyName)
+
+### Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSNamespaceAttributes
 Parameters: InputObject (ByValue)

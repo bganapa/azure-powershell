@@ -23,10 +23,14 @@ using Microsoft.Azure.Commands.DataFactoryV2.Properties;
 
 namespace Microsoft.Azure.Commands.DataFactoryV2
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Stop,
         Constants.IntegrationRuntime,
         DefaultParameterSetName = ParameterSetNames.ByIntegrationRuntimeName,
         SupportsShouldProcess = true), OutputType(typeof(void))]
+=======
+    [Cmdlet("Stop", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "DataFactoryV2IntegrationRuntime",DefaultParameterSetName = ParameterSetNames.ByIntegrationRuntimeName,SupportsShouldProcess = true), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class StopAzureDataFactoryIntegrationRuntimeCommand : IntegrationRuntimeCmdlet
     {
         [Parameter(Mandatory = false,

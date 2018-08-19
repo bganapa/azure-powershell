@@ -24,7 +24,11 @@ namespace Microsoft.Azure.Commands.StorageSync.Test.UnitTests
     public class SystemValidationsProcessorTest
     {
         [Fact]
+<<<<<<< HEAD
 		[Trait(Category.AcceptanceType, Category.CheckIn)]  
+=======
+        [Trait(Category.AcceptanceType, Category.CheckIn)]  
+>>>>>>> upstream/preview
         public void AllOutputWritersReceiveTheValidationResults()
         {
             // Prepare
@@ -51,9 +55,17 @@ namespace Microsoft.Azure.Commands.StorageSync.Test.UnitTests
 
             // Verify
             outputWriterMockFactory1.Verify(outputWriter => outputWriter.Write(It.IsAny<IValidationResult>()), Times.AtMostOnce());
+<<<<<<< HEAD
             outputWriterMockFactory1.VerifyNoOtherCalls();
             outputWriterMockFactory2.Verify(outputWriter => outputWriter.Write(It.IsAny<IValidationResult>()), Times.AtMostOnce());
             outputWriterMockFactory2.VerifyNoOtherCalls();
+=======
+            // Only available in updated Moq library
+            //outputWriterMockFactory1.VerifyNoOtherCalls();
+            outputWriterMockFactory2.Verify(outputWriter => outputWriter.Write(It.IsAny<IValidationResult>()), Times.AtMostOnce());
+            // Only available in updated Moq library
+            //outputWriterMockFactory2.VerifyNoOtherCalls();
+>>>>>>> upstream/preview
         }
     }
 }

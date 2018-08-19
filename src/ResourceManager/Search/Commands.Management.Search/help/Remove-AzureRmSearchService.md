@@ -53,7 +53,11 @@ The example removes an Azure Search service.
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
+<<<<<<< HEAD
 Type: IAzureContextContainer
+=======
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -68,7 +72,11 @@ Accept wildcard characters: False
 Do not ask for confirmation.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -83,7 +91,11 @@ Accept wildcard characters: False
 Search Service Input Object.
 
 ```yaml
+<<<<<<< HEAD
 Type: PSSearchService
+=======
+Type: Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
+>>>>>>> upstream/preview
 Parameter Sets: InputObjectParameterSet
 Aliases:
 
@@ -98,7 +110,11 @@ Accept wildcard characters: False
 Search Service name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceNameParameterSet
 Aliases:
 
@@ -113,7 +129,11 @@ Accept wildcard characters: False
 This Cmdlet does not return an object by default. If this switch is specified, it returns true if successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +148,11 @@ Accept wildcard characters: False
 Resource Group name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceNameParameterSet
 Aliases:
 
@@ -143,7 +167,11 @@ Accept wildcard characters: False
 Search Service Resource Id.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ResourceIdParameterSet
 Aliases:
 
@@ -158,7 +186,11 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +206,11 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,9 +226,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 ### System.String
 
 ### Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
+=======
+### Microsoft.Azure.Commands.Management.Search.Models.PSSearchService
+Parameters: InputObject (ByValue)
+
+### System.String
+>>>>>>> upstream/preview
 
 ## OUTPUTS
 

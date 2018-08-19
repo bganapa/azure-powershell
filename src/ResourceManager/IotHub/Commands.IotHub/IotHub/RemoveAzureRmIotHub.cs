@@ -21,7 +21,11 @@ namespace Microsoft.Azure.Commands.Management.IotHub
     using PSIotHubProperties = Microsoft.Azure.Commands.Management.IotHub.Properties;
     using ResourceManager.Common.ArgumentCompleters;
 
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmIotHub", SupportsShouldProcess = true), OutputType(typeof(void))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "IotHub", SupportsShouldProcess = true), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RemoveAzureRmIotHub : IotHubBaseCmdlet
     {
 

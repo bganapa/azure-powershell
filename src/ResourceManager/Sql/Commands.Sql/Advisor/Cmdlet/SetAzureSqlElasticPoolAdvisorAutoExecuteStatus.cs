@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------------------------
+﻿// ----------------------------------------------------------------------------------
 //
 // Copyright Microsoft Corporation
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,8 +23,12 @@ namespace Microsoft.Azure.Commands.Sql.Advisor.Cmdlet
     /// <summary>
     /// Defines the Set-AzureRmSqlElasticPoolAdvisorAutoExecuteStatus cmdlet
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Set, "AzureRmSqlElasticPoolAdvisorAutoExecuteStatus",
         SupportsShouldProcess = true), OutputType(typeof(AzureSqlElasticPoolAdvisorModel))]
+=======
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlElasticPoolAdvisorAutoExecuteStatus",SupportsShouldProcess = true), OutputType(typeof(AzureSqlElasticPoolAdvisorModel))]
+>>>>>>> upstream/preview
     public class SetAzureSqlElasticPoolAdvisorAutoExecuteStatus : AzureSqlElasticPoolAdvisorCmdletBase
     {
         /// <summary>

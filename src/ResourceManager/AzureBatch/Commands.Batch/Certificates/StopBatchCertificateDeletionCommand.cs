@@ -18,7 +18,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Stop, Constants.AzureBatchCertificateDeletion), OutputType(typeof(void))]
+=======
+    [Cmdlet("Stop", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchCertificateDeletion"), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class StopBatchCertificateDeletionCommand : BatchObjectModelCmdletBase
     {
         [Parameter(Position = 0, Mandatory = true, ValueFromPipelineByPropertyName = true,

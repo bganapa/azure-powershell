@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -133,7 +137,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -417,7 +425,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "NameServers": "System.Collections.Generic.List`1[System.String]",
                     "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -629,7 +641,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": null,
             "GenericTypeArguments": [],
@@ -1960,7 +1976,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -2021,7 +2041,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -2540,7 +2564,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "NameServers": "System.Collections.Generic.List`1[System.String]",
                     "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -2674,7 +2702,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -2909,7 +2941,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -2974,7 +3010,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3094,7 +3134,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3231,7 +3275,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3351,7 +3399,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3416,7 +3468,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3788,7 +3844,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -3925,7 +3985,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4062,7 +4126,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4199,7 +4267,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4360,7 +4432,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4497,7 +4573,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4634,7 +4714,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4843,7 +4927,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -4980,7 +5068,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5165,7 +5257,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5285,7 +5381,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5350,7 +5450,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5722,7 +5826,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5859,7 +5967,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -5996,7 +6108,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6133,7 +6249,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6294,7 +6414,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6431,7 +6555,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6568,7 +6696,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6777,7 +6909,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -6914,7 +7050,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -7099,7 +7239,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
                     "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -7219,7 +7363,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordSet",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordSet, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "RecordType": "Microsoft.Azure.Management.Dns.Models.RecordType",
               "Records": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
@@ -7338,7 +7486,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -7538,7 +7690,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase[]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
             "GenericTypeArguments": [],
@@ -7793,7 +7949,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
                   "GenericTypeArguments": [],
@@ -8113,7 +8273,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
                   "GenericTypeArguments": [],
@@ -8204,7 +8368,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "NameServers": "System.Collections.Generic.List`1[System.String]",
                     "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -8452,7 +8620,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase[], Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
                   "GenericTypeArguments": [],
@@ -8550,7 +8722,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -8886,7 +9062,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -9136,7 +9316,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "NameServers": "System.Collections.Generic.List`1[System.String]",
                     "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -9368,7 +9552,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -9566,7 +9754,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -10021,7 +10213,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Dns",
                   "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "NameServers": "System.Collections.Generic.List`1[System.String]",
                     "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -10205,7 +10401,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Dns",
             "Name": "Microsoft.Azure.Commands.Dns.DnsZone",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsZone, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameServers": "System.Collections.Generic.List`1[System.String]",
               "RegistrationVirtualNetworkIds": "System.Collections.Generic.List`1[System.String]",
@@ -11259,7 +11459,11 @@
     "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.List`1[Microsoft.Azure.Commands.Dns.DnsRecordBase]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.List`1[[Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -11271,7 +11475,11 @@
     "Microsoft.Azure.Commands.Dns.DnsRecordBase": {
       "Namespace": "Microsoft.Azure.Commands.Dns",
       "Name": "Microsoft.Azure.Commands.Dns.DnsRecordBase",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Dns.DnsRecordBase, Microsoft.Azure.Commands.Dns, Version=5.0.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [],

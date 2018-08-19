@@ -20,7 +20,11 @@ namespace Microsoft.Azure.Commands.ServiceBus.Commands.Topic
     /// <summary>
     /// 'Remove-AzureRmServiceBusTopic' Cmdlet removes the specified ServiceBus Topic
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, ServicebusTopicVerb, DefaultParameterSetName = TopicPropertiesParameterSet, SupportsShouldProcess = true), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "ServiceBusTopic", DefaultParameterSetName = TopicPropertiesParameterSet, SupportsShouldProcess = true), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class RemoveAzureRmServiceBusTopic : AzureServiceBusCmdletBase
     {
         [Parameter(Mandatory = true, ParameterSetName = TopicPropertiesParameterSet, ValueFromPipelineByPropertyName = true, Position = 0, HelpMessage = "The name of the resource group")]

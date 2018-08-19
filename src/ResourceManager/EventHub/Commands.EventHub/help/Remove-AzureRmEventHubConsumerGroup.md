@@ -71,7 +71,11 @@ PS C:\> Remove-AzureRmEventHubConsumerGroup -ResourceId "/subscriptions/xxx-xxxx
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -101,7 +105,11 @@ Accept wildcard characters: False
 EventHub Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupPropertiesSet
 Aliases: EventHubName
 
@@ -116,7 +124,11 @@ Accept wildcard characters: False
 ConsumerGroup Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSConsumerGroupAttributes
+=======
+Type: Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupInputObjectSet
 Aliases:
 
@@ -131,7 +143,11 @@ Accept wildcard characters: False
 ConsumerGroup Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupPropertiesSet
 Aliases: ConsumerGroupName
 
@@ -146,7 +162,11 @@ Accept wildcard characters: False
 Namespace Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupPropertiesSet
 Aliases: NamespaceName
 
@@ -161,7 +181,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -176,7 +200,11 @@ Accept wildcard characters: False
 Resource Group Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupPropertiesSet
 Aliases:
 
@@ -191,7 +219,11 @@ Accept wildcard characters: False
 ConsumerGroup Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: ConsumergroupResourceIdParameterSet
 Aliases:
 
@@ -240,7 +272,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: EventHub (ByPropertyName), Name (ByPropertyName), Namespace (ByPropertyName), ResourceGroupName (ByPropertyName)
+
+### Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.EventHub.Models.PSConsumerGroupAttributes
 Parameters: InputObject (ByValue)

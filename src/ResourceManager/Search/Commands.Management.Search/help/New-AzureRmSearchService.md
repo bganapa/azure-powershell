@@ -47,7 +47,11 @@ The command creates an Azure Search service.
 The credentials, account, tenant, and subscription used for communication with Azure.
 
 ```yaml
+<<<<<<< HEAD
 Type: IAzureContextContainer
+=======
+Type: Microsoft.Azure.Commands.Common.Authentication.Abstractions.IAzureContextContainer
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: AzureRmContext, AzureCredential
 
@@ -62,7 +66,11 @@ Accept wildcard characters: False
 Search Service hosting mode.
 
 ```yaml
+<<<<<<< HEAD
 Type: PSHostingMode
+=======
+Type: System.Nullable`1[Microsoft.Azure.Commands.Management.Search.Models.PSHostingMode]
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 Accepted values: Default, HighDensity
@@ -78,7 +86,11 @@ Accept wildcard characters: False
 Search Service location.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -93,7 +105,11 @@ Accept wildcard characters: False
 Search Service name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -108,7 +124,11 @@ Accept wildcard characters: False
 Search Service partition count.
 
 ```yaml
+<<<<<<< HEAD
 Type: Int32
+=======
+Type: System.Nullable`1[System.Int32]
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -123,7 +143,11 @@ Accept wildcard characters: False
 Search Service replica count.
 
 ```yaml
+<<<<<<< HEAD
 Type: Int32
+=======
+Type: System.Nullable`1[System.Int32]
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -138,7 +162,11 @@ Accept wildcard characters: False
 Resource Group name.
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -153,7 +181,11 @@ Accept wildcard characters: False
 Search Service Sku.
 
 ```yaml
+<<<<<<< HEAD
 Type: PSSkuName
+=======
+Type: Microsoft.Azure.Commands.Management.Search.Models.PSSkuName
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 Accepted values: Free, Basic, Standard, Standard2, Standard3
@@ -169,7 +201,11 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: cf
 
@@ -184,7 +220,11 @@ Accept wildcard characters: False
 Shows what would happen if the cmdlet runs. The cmdlet is not run.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases: wi
 

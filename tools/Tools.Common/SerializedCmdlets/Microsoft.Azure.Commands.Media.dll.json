@@ -257,7 +257,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSServiceKey",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSServiceKey, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSServiceKey, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Key": "System.String",
               "KeyType": "System.String"
@@ -701,7 +705,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSServiceKeys",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSServiceKeys, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSServiceKeys, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "PrimaryAuthEndpoint": "System.String",
               "SecondaryAuthEndpoint": "System.String",
@@ -936,7 +944,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSCheckNameAvailabilityOutput",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSCheckNameAvailabilityOutput, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSCheckNameAvailabilityOutput, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "NameAvailable": "System.Boolean",
               "Reason": "System.String",
@@ -1079,7 +1091,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "IsPrimary": "System.Nullable`1[System.Boolean]",
               "Id": "System.String",
@@ -1462,7 +1478,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSMediaService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ApiEndpoints": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint]",
               "StorageAccounts": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSStorageAccount]",
@@ -1599,7 +1619,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
             "GenericTypeArguments": [],
@@ -1920,7 +1944,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Media.Models",
                   "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
                   "GenericTypeArguments": [],
@@ -2089,7 +2117,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSMediaService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ApiEndpoints": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint]",
               "StorageAccounts": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSStorageAccount]",
@@ -2437,7 +2469,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSMediaService",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSMediaService, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "ApiEndpoints": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint]",
               "StorageAccounts": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSStorageAccount]",
@@ -2554,7 +2590,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.Media.Models",
             "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {},
             "ElementType": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
             "GenericTypeArguments": [],
@@ -2685,7 +2725,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.Media.Models",
                   "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[]",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount[], Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {},
                   "ElementType": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
                   "GenericTypeArguments": [],
@@ -3113,7 +3157,11 @@
     "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.ICollection`1[[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.ICollection`1[[Microsoft.Azure.Commands.Media.Models.PSApiEndpoint, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3125,7 +3173,11 @@
     "Microsoft.Azure.Commands.Media.Models.PSApiEndpoint": {
       "Namespace": "Microsoft.Azure.Commands.Media.Models",
       "Name": "Microsoft.Azure.Commands.Media.Models.PSApiEndpoint",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSApiEndpoint, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSApiEndpoint, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "Endpoint": "System.String",
         "MajorVersion": "System.String"
@@ -3170,7 +3222,11 @@
     "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSStorageAccount]": {
       "Namespace": "System.Collections.Generic",
       "Name": "System.Collections.Generic.ICollection`1[Microsoft.Azure.Commands.Media.Models.PSStorageAccount]",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "System.Collections.Generic.ICollection`1[[Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+=======
+      "AssemblyQualifiedName": "System.Collections.Generic.ICollection`1[[Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+>>>>>>> upstream/preview
       "Properties": {},
       "ElementType": null,
       "GenericTypeArguments": [
@@ -3182,7 +3238,11 @@
     "Microsoft.Azure.Commands.Media.Models.PSStorageAccount": {
       "Namespace": "Microsoft.Azure.Commands.Media.Models",
       "Name": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount",
+<<<<<<< HEAD
       "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null",
+=======
+      "AssemblyQualifiedName": "Microsoft.Azure.Commands.Media.Models.PSStorageAccount, Microsoft.Azure.Commands.Media, Version=0.10.2.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
       "Properties": {
         "IsPrimary": "System.Nullable`1[System.Boolean]",
         "Id": "System.String",

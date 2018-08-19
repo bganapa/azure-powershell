@@ -19,7 +19,11 @@ using Constants = Microsoft.Azure.Commands.Batch.Utils.Constants;
 
 namespace Microsoft.Azure.Commands.Batch
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Get, Constants.AzureBatchRemoteDesktopProtocolFile, DefaultParameterSetName = IdAndPathParameterSet), OutputType(typeof(void))]
+=======
+    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzurePrefix + "BatchRemoteDesktopProtocolFile", DefaultParameterSetName = IdAndPathParameterSet), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class GetBatchRemoteDesktopProtocolFileCommand : BatchObjectModelCmdletBase
     {
         internal const string IdAndPathParameterSet = "Id_Path";

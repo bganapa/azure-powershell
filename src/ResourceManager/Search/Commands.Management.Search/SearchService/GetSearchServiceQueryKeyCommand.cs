@@ -20,7 +20,11 @@ using System.Management.Automation;
 
 namespace Microsoft.Azure.Commands.Management.Search.SearchService
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Get, SearchServiceQueryKeyNounStr, DefaultParameterSetName = ResourceNameParameterSetName), OutputType(typeof(PSSearchQueryKey))]
+=======
+    [Cmdlet("Get", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SearchQueryKey", DefaultParameterSetName = ResourceNameParameterSetName), OutputType(typeof(PSSearchQueryKey))]
+>>>>>>> upstream/preview
     public class GetSearchServiceQueryKeyCommand : SearchServiceBaseCmdlet
     {
         [Parameter(

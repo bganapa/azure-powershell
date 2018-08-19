@@ -23,7 +23,11 @@ using System.Security.Permissions;
 
 namespace Microsoft.Azure.Commands.StreamAnalytics
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Start, Constants.StreamAnalyticsJob), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Start", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "StreamAnalyticsJob"), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class StartAzureStreamAnalyticsJobCommand : StreamAnalyticsResourceProviderBaseCmdlet
     {
         [Parameter(Position = 1, Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = "The azure stream analytics job name.")]

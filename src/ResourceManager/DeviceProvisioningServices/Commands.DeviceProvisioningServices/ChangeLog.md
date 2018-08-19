@@ -19,6 +19,12 @@
 -->
 ## Current Release
 
+<<<<<<< HEAD
+=======
+## Version 1.0.3
+* Updated to the latest version of the Azure ClientRuntime.
+
+>>>>>>> upstream/preview
 ## Version 1.0.2
 * Updated help files to include full parameter types and correct input/output types.
 

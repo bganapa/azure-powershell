@@ -14,7 +14,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models",
             "Name": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Id": "System.String",
               "ResourceGroupName": "System.String",
@@ -299,7 +303,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models",
             "Name": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Id": "System.String",
               "ResourceGroupName": "System.String",
@@ -678,7 +686,11 @@
           "Type": {
             "Namespace": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models",
             "Name": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity",
+<<<<<<< HEAD
             "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+            "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
             "Properties": {
               "Id": "System.String",
               "ResourceGroupName": "System.String",
@@ -976,7 +988,11 @@
                 "Type": {
                   "Namespace": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models",
                   "Name": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity",
+<<<<<<< HEAD
                   "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null",
+=======
+                  "AssemblyQualifiedName": "Microsoft.Azure.Commands.ManagedServiceIdentity.Models.PsUserAssignedIdentity, Microsoft.Azure.Commands.ManagedServiceIdentity, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null",
+>>>>>>> upstream/preview
                   "Properties": {
                     "Id": "System.String",
                     "ResourceGroupName": "System.String",

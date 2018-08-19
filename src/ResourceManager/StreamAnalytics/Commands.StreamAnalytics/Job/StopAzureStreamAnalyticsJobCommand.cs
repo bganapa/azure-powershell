@@ -21,7 +21,11 @@ using System.Security.Permissions;
 
 namespace Microsoft.Azure.Commands.StreamAnalytics
 {
+<<<<<<< HEAD
     [Cmdlet(VerbsLifecycle.Stop, Constants.StreamAnalyticsJob), OutputType(typeof(bool))]
+=======
+    [Cmdlet("Stop", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "StreamAnalyticsJob"), OutputType(typeof(bool))]
+>>>>>>> upstream/preview
     public class StopAzureStreamAnalyticsJobCommand : StreamAnalyticsResourceProviderBaseCmdlet
     {
         [Parameter(Position = 1, Mandatory = true, ValueFromPipelineByPropertyName = true, HelpMessage = "The azure stream analytics job name.")]

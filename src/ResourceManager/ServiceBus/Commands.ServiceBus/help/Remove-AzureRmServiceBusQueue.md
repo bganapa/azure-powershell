@@ -42,6 +42,7 @@ PS C:\> Remove-AzureRmServiceBusQueue -ResourceGroup Default-ServiceBus-WestUS -
 
 Removes the Service Bus queue `SB-Queue_exampl1` from the namespace `SB-Example1`.
 
+<<<<<<< HEAD
 ### Example 2.1 - InputObject - Using variable: 
 ```
 PS C:\> $inputobject = Get-AzureRmServiceBusQueue <params>
@@ -50,6 +51,17 @@ PS C:\> Remove-AzureRmServiceBusQueue -InputObject $inputobject
 Removes the Service Bus queue provided in the $inputobject for -InputObject parameter
 
 ### Example 2.1 - InputObject - Using Piping: 
+=======
+### Example 2.1 - InputObject - Using variable:
+```
+PS C:\> $inputobject = Get-AzureRmServiceBusQueue <params>
+PS C:\> Remove-AzureRmServiceBusQueue -InputObject $inputobject
+```
+
+Removes the Service Bus queue provided in the $inputobject for -InputObject parameter
+
+### Example 2.1 - InputObject - Using Piping:
+>>>>>>> upstream/preview
 ```
 PS C:\>  Get-AzureRmServiceBusQueue <params> | Remove-AzureRmServiceBusQueue
 ```
@@ -59,6 +71,10 @@ PS C:\>  Get-AzureRmServiceBusQueue <params> | Remove-AzureRmServiceBusQueue
 PS c:\> $resourceid = Get-AzureRmServiceBusQueue <params>
 PS C:\> Remove-AzureRmServiceBusQueue -ResourceId $resourceid.Id
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/preview
 Removes the Service Bus queue provided in the ARM id in $resourceid/string for -ResourceId parameter
 
 ### Example 3.2 - ResourceId - passign as string:
@@ -72,7 +88,11 @@ PS C:\> Remove-AzureRmServiceBusQueue -ResourceId "/subscriptions/xxxx-xxxxx-xxx
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -102,7 +122,11 @@ Accept wildcard characters: False
 Service Bus Queue Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSQueueAttributes
+=======
+Type: Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
+>>>>>>> upstream/preview
 Parameter Sets: QueueInputObjectSet
 Aliases:
 
@@ -117,7 +141,11 @@ Accept wildcard characters: False
 Queue Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: QueuePropertiesSet
 Aliases: QueueName
 
@@ -132,7 +160,11 @@ Accept wildcard characters: False
 Namespace Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: QueuePropertiesSet
 Aliases: NamespaceName
 
@@ -147,7 +179,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -162,7 +198,11 @@ Accept wildcard characters: False
 The name of the resource group
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: QueuePropertiesSet
 Aliases: ResourceGroup
 
@@ -177,7 +217,11 @@ Accept wildcard characters: False
 Service Bus Queue Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: QueueResourceIdSet
 Aliases:
 
@@ -226,7 +270,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: Name (ByPropertyName), Namespace (ByPropertyName), ResourceGroupName (ByPropertyName)
+
+### Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSQueueAttributes
 Parameters: InputObject (ByValue)

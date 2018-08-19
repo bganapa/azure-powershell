@@ -23,8 +23,12 @@ namespace Microsoft.Azure.Commands.Automation.Cmdlet
     /// <summary>
     /// Removes an azure automation runbook.
     /// </summary>
+<<<<<<< HEAD
     [Cmdlet(VerbsCommon.Remove, "AzureRmAutomationRunbook", SupportsShouldProcess = true, 
         DefaultParameterSetName = AutomationCmdletParameterSets.ByRunbookName), OutputType(typeof(void))]
+=======
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "AutomationRunbook", SupportsShouldProcess = true, DefaultParameterSetName = AutomationCmdletParameterSets.ByRunbookName), OutputType(typeof(void))]
+>>>>>>> upstream/preview
     public class RemoveAzureAutomationRunbook : AzureAutomationBaseCmdlet
     {
         /// <summary>

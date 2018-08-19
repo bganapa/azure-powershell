@@ -5,6 +5,7 @@ VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Management.Search", "Commands.Management.Search\Commands.Management.Search.csproj", "{F5758273-CD1F-446F-9E9D-3340ECB7DDA0}"
 EndProject
+<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Common", "..\..\Common\Commands.Common\Commands.Common.csproj", "{5EE72C53-1720-4309-B54B-5FB79703195F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Common.Authentication.Abstractions", "..\..\Common\Commands.Common.Authentication.Abstractions\Commands.Common.Authentication.Abstractions.csproj", "{70527617-7598-4AEF-B5BD-DB9186B8184B}"
@@ -24,6 +25,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Common.Authentication.ResourceManager", "..\Common\Commands.Common.Authentication.ResourceManager\Commands.Common.Authentication.ResourceManager.csproj", "{69C2EB6B-CD63-480A-89A0-C489706E9299}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.ServiceManagement.Common", "..\..\ServiceManagement\Common\Commands.ServiceManagement.Common\Commands.ServiceManagement.Common.csproj", "{CFF09E81-1E31-444E-B4D4-A21E946C29E2}"
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0818D31D-3370-44ED-9FBB-DCA2FCB10295}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Management.Search.Test", "Commands.Management.Search.Test\Commands.Management.Search.Test.csproj", "{6F17C402-50FD-4F4A-BE50-BD684243D370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commands.Profile", "..\Profile\Commands.Profile\Commands.Profile.csproj", "{142D7B0B-388A-4CEB-A228-7F6D423C5C2E}"
+>>>>>>> upstream/preview
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +43,7 @@ Global
 		{F5758273-CD1F-446F-9E9D-3340ECB7DDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5758273-CD1F-446F-9E9D-3340ECB7DDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5758273-CD1F-446F-9E9D-3340ECB7DDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{5EE72C53-1720-4309-B54B-5FB79703195F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5EE72C53-1720-4309-B54B-5FB79703195F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EE72C53-1720-4309-B54B-5FB79703195F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,10 +60,13 @@ Global
 		{3436A126-EDC9-4060-8952-9A1BE34CDD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3436A126-EDC9-4060-8952-9A1BE34CDD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3436A126-EDC9-4060-8952-9A1BE34CDD95}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+>>>>>>> upstream/preview
 		{6F17C402-50FD-4F4A-BE50-BD684243D370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6F17C402-50FD-4F4A-BE50-BD684243D370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F17C402-50FD-4F4A-BE50-BD684243D370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F17C402-50FD-4F4A-BE50-BD684243D370}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
 		{D3804B64-C0D3-48F8-82EC-1F632F833C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D3804B64-C0D3-48F8-82EC-1F632F833C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3804B64-C0D3-48F8-82EC-1F632F833C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,12 +83,21 @@ Global
 		{CFF09E81-1E31-444E-B4D4-A21E946C29E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFF09E81-1E31-444E-B4D4-A21E946C29E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFF09E81-1E31-444E-B4D4-A21E946C29E2}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+		{142D7B0B-388A-4CEB-A228-7F6D423C5C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142D7B0B-388A-4CEB-A228-7F6D423C5C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142D7B0B-388A-4CEB-A228-7F6D423C5C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142D7B0B-388A-4CEB-A228-7F6D423C5C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> upstream/preview
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+<<<<<<< HEAD
 		{3436A126-EDC9-4060-8952-9A1BE34CDD95} = {0818D31D-3370-44ED-9FBB-DCA2FCB10295}
+=======
+>>>>>>> upstream/preview
 		{6F17C402-50FD-4F4A-BE50-BD684243D370} = {0818D31D-3370-44ED-9FBB-DCA2FCB10295}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

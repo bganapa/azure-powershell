@@ -73,7 +73,11 @@ Removes the subscription provided through ARM Id in $resourceid/string for -Reso
 Run cmdlet in the background
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -103,7 +107,11 @@ Accept wildcard characters: False
 Service Bus Subscription Object
 
 ```yaml
+<<<<<<< HEAD
 Type: PSSubscriptionAttributes
+=======
+Type: Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionInputObjectSet
 Aliases:
 
@@ -118,7 +126,11 @@ Accept wildcard characters: False
 Subscription Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionPropertiesSet
 Aliases: SubscriptionName
 
@@ -133,7 +145,11 @@ Accept wildcard characters: False
 Namespace Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionPropertiesSet
 Aliases: NamespaceName
 
@@ -148,7 +164,11 @@ Accept wildcard characters: False
 Specifying this will return true if the command was successful.
 
 ```yaml
+<<<<<<< HEAD
 Type: SwitchParameter
+=======
+Type: System.Management.Automation.SwitchParameter
+>>>>>>> upstream/preview
 Parameter Sets: (All)
 Aliases:
 
@@ -163,7 +183,11 @@ Accept wildcard characters: False
 The name of the resource group
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionPropertiesSet
 Aliases: ResourceGroup
 
@@ -178,7 +202,11 @@ Accept wildcard characters: False
 Service Bus Subscription Resource Id
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionResourceIdSet
 Aliases:
 
@@ -193,7 +221,11 @@ Accept wildcard characters: False
 Topic Name
 
 ```yaml
+<<<<<<< HEAD
 Type: String
+=======
+Type: System.String
+>>>>>>> upstream/preview
 Parameter Sets: SubscriptionPropertiesSet
 Aliases: TopicName
 
@@ -242,7 +274,9 @@ For more information, see about_CommonParameters (http://go.microsoft.com/fwlink
 ## INPUTS
 
 ### System.String
-Parameters: Name (ByPropertyName), Namespace (ByPropertyName), ResourceGroupName (ByPropertyName), Topic (ByPropertyName)
+
+### Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
+Parameters: InputObject (ByValue)
 
 ### Microsoft.Azure.Commands.ServiceBus.Models.PSSubscriptionAttributes
 Parameters: InputObject (ByValue)
