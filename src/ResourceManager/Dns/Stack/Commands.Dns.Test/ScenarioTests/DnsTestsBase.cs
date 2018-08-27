@@ -41,8 +41,11 @@ namespace Microsoft.Azure.Commands.ScenarioTest.DnsTests
 
         private readonly EnvironmentSetupHelper helper;
 
+        public Microsoft.Azure.Management.ResourceManager.ResourceManagementClient LegacyResourceManagementClient { get; private set; }
 
         public ResourceManagementClient ResourceManagementClient { get; private set; }
+
+        public Microsoft.Azure.Management.Internal.Resources.ResourceManagementClient InternalResourceManagementClient { get; private set; }
 
         public SubscriptionClient SubscriptionClient { get; private set; }
 
@@ -73,6 +76,8 @@ namespace Microsoft.Azure.Commands.ScenarioTest.DnsTests
 
         protected void SetupManagementClients(MockContext context) 
         {
+            this.LegacyResourceManagementClient = this.GetLegacyResourceManagementClient(context);
+            this.InternalResourceManagementClient = this.GetInternalResourceManagementClient(context);
             this.ResourceManagementClient = this.GetResourceManagementClient();
             this.SubscriptionClient = this.GetSubscriptionClient();
             this.GalleryClient = this.GetGalleryClient();
@@ -84,6 +89,8 @@ namespace Microsoft.Azure.Commands.ScenarioTest.DnsTests
                 this.ResourceManagementClient,
                 this.SubscriptionClient,
                 this.GalleryClient,
+                this.LegacyResourceManagementClient,
+                this.InternalResourceManagementClient,
                 this.AuthorizationManagementClient,
                 this.DnsClient);
         }
@@ -171,6 +178,16 @@ namespace Microsoft.Azure.Commands.ScenarioTest.DnsTests
                     }
                 }
             }
+        }
+
+        private Microsoft.Azure.Management.ResourceManager.ResourceManagementClient GetLegacyResourceManagementClient(MockContext context)
+        {
+            return context.GetServiceClient<Microsoft.Azure.Management.ResourceManager.ResourceManagementClient>(Microsoft.Rest.ClientRuntime.Azure.TestFramework.TestEnvironmentFactory.GetTestEnvironment());
+        }
+
+        protected Microsoft.Azure.Management.Internal.Resources.ResourceManagementClient GetInternalResourceManagementClient(MockContext context)
+        {
+            return context.GetServiceClient <Microsoft.Azure.Management.Internal.Resources.ResourceManagementClient>(Microsoft.Rest.ClientRuntime.Azure.TestFramework.TestEnvironmentFactory.GetTestEnvironment());
         }
 
         protected ResourceManagementClient GetResourceManagementClient()
