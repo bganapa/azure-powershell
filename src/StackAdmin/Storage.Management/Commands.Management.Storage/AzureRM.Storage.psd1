@@ -52,7 +52,7 @@ CLRVersion = '4.0'
 
 # Modules that must be imported into the global environment prior to importing this module
 RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.5.0'; },
-               @{ModuleName = 'Azure.Storage'; ModuleVersion = '4.1.1'; })
+               @{ModuleName = 'Azure.Storage'; RequiredVersion = '4.1.1'; })
 
 # Assemblies that must be loaded prior to importing this module
 # RequiredAssemblies = @()
