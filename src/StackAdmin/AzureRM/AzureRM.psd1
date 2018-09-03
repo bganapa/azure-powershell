@@ -60,9 +60,9 @@
         @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.0.2'; },
         @{ModuleName = 'AzureRM.Storage'; RequiredVersion = '1.1.0.1'; },
         @{ModuleName = 'AzureRM.Tags'; RequiredVersion = '4.0.2'; },
-        @{ModuleName = 'AzureRM.UsageAggregates'; RequiredVersion = '4.0.3'; },
-        @{ModuleName = 'AzureRM.Websites'; RequiredVersion = '5.0.1'; },
-        @{ModuleName = 'AzureRM.Insights'; RequiredVersion = '5.0.0'; })
+        @{ModuleName = 'AzureRM.UsageAggregates'; RequiredVersion = '4.0.3'; })
+#        @{ModuleName = 'AzureRM.Websites'; RequiredVersion = '5.0.1'; },
+#        @{ModuleName = 'AzureRM.Insights'; RequiredVersion = '5.0.0'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
