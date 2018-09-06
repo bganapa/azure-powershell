@@ -54,7 +54,7 @@ CLRVersion = '4.0'
 <<<<<<< HEAD
 RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.5.2'; },
 =======
-RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.5.1'; },
+RequiredModules = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.5.2'; },
 >>>>>>> upstream/preview
                @{ModuleName = 'Azure.Storage'; RequiredVersion = '4.1.1'; })
 
