@@ -37,6 +37,9 @@ param(
 
     [ValidateNotNull()]
     [String[]]$Skipped = @()
+    "Azs.Storage.Admin"
+    "Azs.Subscriptions",
+    "Azs.Update.Admin"
 )
 
 

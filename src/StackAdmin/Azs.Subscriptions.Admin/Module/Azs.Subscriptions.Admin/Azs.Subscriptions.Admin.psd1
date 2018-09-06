@@ -38,7 +38,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     Description       = 'Subscriptions Admin Client'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    # PowerShellVersion = ''
+    PowerShellVersion = '5.0'
 
     # Name of the Windows PowerShell host required by this module
     # PowerShellHostName = ''
@@ -133,15 +133,12 @@ Licensed under the MIT License. See License.txt in the project root for license 
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '## 2018.8.12 - Version 0.2.0
+            ReleaseNotes = '## 2018.8.12
             * Module dependencies updated
-                * AzureRM.Profile >= 5.3.4
-                * AzureRM.Resources >= 6.0.2
-            * Support handling names of nested resources
-                * TODO
+                * AzureRM.Profile
+                * AzureRM.Resources
             * Deprecations
                 * Get-AzsDelegatedProviderManagedOffer, the parameter DelegatedProvider is now an alias for DelegatedProviderId
-                * TODO
             * Bug fixes
                 * Handle ErrrorAction correctly now
             '
