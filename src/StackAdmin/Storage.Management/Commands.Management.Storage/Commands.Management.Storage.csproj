@@ -51,6 +51,7 @@
   <ItemGroup>
     <!-- We Moved this to a project we build: Microsoft.Azure.Management.Storage.6.4.0-preview -->
     <Reference Include="Microsoft.Azure.KeyVault.Core">
+<<<<<<< HEAD
       <HintPath>..\..\..\..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
@@ -68,21 +69,45 @@
     </Reference>
     <Reference Include="Microsoft.Data.Services.Client">
       <HintPath>..\..\..\packages\Microsoft.Data.Services.Client.5.8.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+=======
+      <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Data.Edm.5.8.2\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Data.OData.5.8.2\lib\net40\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>$(LibraryNugetPackageFolder)\Microsoft.Data.Services.Client.5.8.2\lib\net40\Microsoft.Data.Services.Client.dll</HintPath>
+>>>>>>> upstream/preview
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Management.Storage">
-      <HintPath>..\..\..\packages\Microsoft.WindowsAzure.Management.Storage.5.1.1\lib\net40\Microsoft.WindowsAzure.Management.Storage.dll</HintPath>
+      <HintPath>$(LibraryNugetPackageFolder)\Microsoft.WindowsAzure.Management.Storage.5.1.1\lib\net40\Microsoft.WindowsAzure.Management.Storage.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+<<<<<<< HEAD
       <HintPath>..\..\..\packages\WindowsAzure.Storage.8.6.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Spatial">
       <HintPath>..\..\..\packages\System.Spatial.5.8.2\lib\net40\System.Spatial.dll</HintPath>
+=======
+      <HintPath>$(LibraryNugetPackageFolder)\WindowsAzure.Storage.8.6.0\lib\net45\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>$(LibraryNugetPackageFolder)\System.Spatial.5.8.2\lib\net40\System.Spatial.dll</HintPath>
+>>>>>>> upstream/preview
       <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="..\..\..\Common\Commands.Common.Storage\Adapters\ARM.Storage.6\ARMStorageProvider.cs">
       <Link>Common\ARMStorageProvider.cs</Link>
     </Compile>
@@ -96,6 +121,21 @@
       <Link>Common\AzureStorageContext.cs</Link>
     </Compile>
     <Compile Include="..\..\..\Common\Commands.Common.Storage\Adapters\WindowsAzure.Storage.8\LazyAzureStorageContext.cs">
+=======
+    <Compile Include="$(StorageToolsPath)Adapters\ARM.Storage.6\ARMStorageProvider.cs">
+      <Link>Common\ARMStorageProvider.cs</Link>
+    </Compile>
+    <Compile Include="$(StorageToolsPath)Adapters\ARM.Storage.6\ARMStorageService.cs">
+      <Link>Common\ARMStorageService.cs</Link>
+    </Compile>
+    <Compile Include="$(StorageToolsPath)Adapters\WindowsAzure.Storage.8\AzureContextAdapterExtensions.cs">
+      <Link>Common\AzureContextAdapterExtensions.cs</Link>
+    </Compile>
+    <Compile Include="$(StorageToolsPath)Adapters\WindowsAzure.Storage.8\AzureStorageContext.cs">
+      <Link>Common\AzureStorageContext.cs</Link>
+    </Compile>
+    <Compile Include="$(StorageToolsPath)Adapters\WindowsAzure.Storage.8\LazyAzureStorageContext.cs">
+>>>>>>> upstream/preview
       <Link>Common\LazyAzureStorageContext.cs</Link>
     </Compile>
     <Compile Include="Models\PSStorageAccount.cs" />
@@ -129,6 +169,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <!--    <ProjectReference Include="..\..\..\Common\Commands.Common.Authentication.Abstractions\Commands.Common.Authentication.Abstractions.csproj">
       <Project>{70527617-7598-4aef-b5bd-db9186b8184b}</Project>
       <Name>Commands.Common.Authentication.Abstractions</Name>
@@ -145,6 +186,8 @@
       <Project>{3819d8a7-c62c-4c47-8ddd-0332d9ce1252}</Project>
       <Name>Commands.ResourceManager.Common</Name>
     </ProjectReference> -->
+=======
+>>>>>>> upstream/preview
     <ProjectReference Include="..\SDK\StorageSDK.csproj">
       <Project>{ccc1f6c7-e2ce-47b3-bd64-8efd17823e20}</Project>
       <Name>StorageSDK</Name>
