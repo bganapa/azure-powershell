@@ -52,7 +52,7 @@ Changes may cause incorrect behavior and will be lost if the code is regenerated
     Description          = 'Backup Admin Client'
 
     # Minimum version of the Windows PowerShell engine required by this module
-    # PowerShellVersion = ''
+    PowerShellVersion = '5.0'
 
     # Name of the Windows PowerShell host required by this module
     # PowerShellHostName = ''
@@ -131,10 +131,10 @@ Changes may cause incorrect behavior and will be lost if the code is regenerated
             # IconUri = ''
 
             # ReleaseNotes of this module
-            ReleaseNotes = '## 2018.8.12 - Version 0.2.0
+            ReleaseNotes = '## 2018.8.12
             * Module dependencies updated
-                * AzureRM.Profile >= 5.3.4
-                * AzureRM.Resources >= 6.0.2
+                * AzureRM.Profile
+                * AzureRM.Resources
             * Support handling names of nested resources
                 * Get-AzsBackup
                 * Restore-AzsBackup
