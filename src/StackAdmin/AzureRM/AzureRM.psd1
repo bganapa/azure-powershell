@@ -52,7 +52,17 @@
 
     # Modules that must be imported into the global environment prior to importing this module
     RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; RequiredVersion = '5.5.1'; },
-        @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.0.2'; })
+        @{ModuleName = 'Azure.Storage'; RequiredVersion = '4.1.1'; },
+        @{ModuleName = 'AzureRM.Compute'; RequiredVersion = '4.0.2'; },
+        @{ModuleName = 'AzureRM.Dns'; RequiredVersion = '3.5.1'; },
+        @{ModuleName = 'AzureRM.KeyVault'; RequiredVersion = '4.2.0'; },
+        @{ModuleName = 'AzureRM.Network'; RequiredVersion = '5.0.1'; },
+        @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.0.2'; },
+        @{ModuleName = 'AzureRM.Storage'; RequiredVersion = '1.1.0.1'; },
+        @{ModuleName = 'AzureRM.Tags'; RequiredVersion = '4.0.2'; },
+        @{ModuleName = 'AzureRM.UsageAggregates'; RequiredVersion = '4.0.3'; })
+#        @{ModuleName = 'AzureRM.Websites'; RequiredVersion = '5.0.1'; },
+#        @{ModuleName = 'AzureRM.Insights'; RequiredVersion = '5.0.0'; })
 
     # Assemblies that must be loaded prior to importing this module
     # RequiredAssemblies = @()
