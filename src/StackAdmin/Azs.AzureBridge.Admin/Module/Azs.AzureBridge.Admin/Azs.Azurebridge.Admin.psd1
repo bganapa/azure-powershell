@@ -17,7 +17,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     RootModule        = 'Azs.Azurebridge.Admin.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '0.2.0-preview'
+    ModuleVersion     = '0.2.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -116,6 +116,8 @@ Licensed under the MIT License. See License.txt in the project root for license 
             # A URL to an icon representing this module.
             # IconUri = ''
 
+			Prerelease = 'preview'
+			
             # ReleaseNotes of this module
             ReleaseNotes = '## 2018.9.10
             * Module dependencies updated
