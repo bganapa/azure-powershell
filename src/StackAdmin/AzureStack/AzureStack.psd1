@@ -12,7 +12,7 @@
     # RootModule = ''
 
     # Version number of this module.
-    ModuleVersion          = '1.6.0'
+    ModuleVersion          = '1.7.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
@@ -51,7 +51,7 @@
     # ProcessorArchitecture = ''
 
     # Modules that must be imported into the global environment prior to importing this module
-    RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; RequiredVersion = '5.8.2'; },
+    RequiredModules        = @(@{ModuleName = 'AzureRM.Profile'; ModuleVersion = '5.8.2'; },
         @{ModuleName = 'AzureRM.Resources'; RequiredVersion = '6.0.2'; },
         @{ModuleName = 'Azs.AzureBridge.Admin'; RequiredVersion = '0.2.0'; },
         @{ModuleName = 'Azs.Backup.Admin'; RequiredVersion = '0.2.0'; },
