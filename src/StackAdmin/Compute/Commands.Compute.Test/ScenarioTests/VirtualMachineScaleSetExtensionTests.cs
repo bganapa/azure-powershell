@@ -26,11 +26,18 @@ namespace Microsoft.Azure.Commands.Compute.Test.ScenarioTests
             ComputeTestController.NewInstance.RunPsTest("Test-VirtualMachineScaleSetDiskEncryptionExtension");
         }
 
-        [Fact(Skip = "TODO: Provided resource group does not exist")]
+        [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
         public void TestDisableVirtualMachineScaleSetDiskEncryption()
         {
             ComputeTestController.NewInstance.RunPsTest("Test-DisableVirtualMachineScaleSetDiskEncryption");
+        }
+
+        [Fact]
+        [Trait(Category.AcceptanceType, Category.CheckIn)]
+        public void TestDisableVirtualMachineScaleSetDiskEncryption2()
+        {
+            ComputeTestController.NewInstance.RunPsTest("Test-DisableVirtualMachineScaleSetDiskEncryption2");
         }
 
         [Fact]
@@ -40,7 +47,7 @@ namespace Microsoft.Azure.Commands.Compute.Test.ScenarioTests
             ComputeTestController.NewInstance.RunPsTest("Test-GetVirtualMachineScaleSetDiskEncryptionStatus");
         }
 
-        [Fact(Skip = "TODO: Resource group 'hyleevmssdetest2' could not be found")]
+        [Fact]
         [Trait(Category.AcceptanceType, Category.CheckIn)]
         public void TestGetVirtualMachineScaleSetDiskEncryptionDataDisk()
         {
