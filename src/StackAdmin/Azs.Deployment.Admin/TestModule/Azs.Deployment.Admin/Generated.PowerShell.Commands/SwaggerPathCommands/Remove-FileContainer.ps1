@@ -20,9 +20,8 @@ Licensed under the MIT License. See License.txt in the project root for license 
     The file container identifier.
 
 #>
-function Remove-FileContainer
-{
-    [CmdletBinding(DefaultParameterSetName='FileContainers_Delete')]
+function Remove-FileContainer {
+    [CmdletBinding(DefaultParameterSetName = 'FileContainers_Delete')]
     param(    
         [Parameter(Mandatory = $true, ValueFromPipelineByPropertyName = $true, ParameterSetName = 'ResourceId_FileContainers_Delete')]
         [System.String]
@@ -38,71 +37,71 @@ function Remove-FileContainer
         $Name
     )
 
-    Begin 
-    {
-	    Initialize-PSSwaggerDependencies -Azure
+    Begin {
+        Initialize-PSSwaggerDependencies -Azure
         $tracerObject = $null
         if (('continue' -eq $DebugPreference) -or ('inquire' -eq $DebugPreference)) {
             $oldDebugPreference = $global:DebugPreference
-			$global:DebugPreference = "continue"
+            $global:DebugPreference = "continue"
             $tracerObject = New-PSSwaggerClientTracing
             Register-PSSwaggerClientTracing -TracerObject $tracerObject
         }
-	}
+    }
 
     Process {
     
-    $ErrorActionPreference = 'Stop'
+        $ErrorActionPreference = 'Stop'
 
-    $NewServiceClient_params = @{
-        FullClientTypeName = 'Microsoft.AzureStack.Management.Deployment.Admin.DeploymentAdminClient'
-    }
+        $NewServiceClient_params = @{
+            FullClientTypeName = 'Microsoft.AzureStack.Management.Deployment.Admin.DeploymentAdminClient'
+        }
 
-    $GlobalParameterHashtable = @{}
-    $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
+        $GlobalParameterHashtable = @{ }
+        $NewServiceClient_params['GlobalParameterHashtable'] = $GlobalParameterHashtable
      
-    $GlobalParameterHashtable['SubscriptionId'] = $null
-    if($PSBoundParameters.ContainsKey('SubscriptionId')) {
-        $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
-    }
+        $GlobalParameterHashtable['SubscriptionId'] = $null
+        if ($PSBoundParameters.ContainsKey('SubscriptionId')) {
+            $GlobalParameterHashtable['SubscriptionId'] = $PSBoundParameters['SubscriptionId']
+        }
 
-    $DeploymentAdminClient = New-ServiceClient @NewServiceClient_params
+        $DeploymentAdminClient = New-ServiceClient @NewServiceClient_params
 
-    $FileContainerId = $Name
+        $FileContainerId = $Name
 
  
-    if('InputObject_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
-        $GetArmResourceIdParameterValue_params = @{
-            IdTemplate = '/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/fileContainers/{fileContainerId}'
+        if ('InputObject_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
+            $GetArmResourceIdParameterValue_params = @{
+                IdTemplate = '/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/fileContainers/{fileContainerId}'
+            }
+
+            if ('ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
+                $GetArmResourceIdParameterValue_params['Id'] = $ResourceId
+            }
+            else {
+                $GetArmResourceIdParameterValue_params['Id'] = $InputObject.Id
+            }
+            $ArmResourceIdParameterValues = Get-ArmResourceIdParameterValue @GetArmResourceIdParameterValue_params
+            $fileContainerId = $ArmResourceIdParameterValues['fileContainerId']
         }
 
-        if('ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
-            $GetArmResourceIdParameterValue_params['Id'] = $ResourceId
+
+        if ('FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'InputObject_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
+            Write-Verbose -Message 'Performing operation DeleteWithHttpMessagesAsync on $DeploymentAdminClient.'
+            $TaskResult = $DeploymentAdminClient.FileContainers.DeleteWithHttpMessagesAsync($FileContainerId)
         }
         else {
-            $GetArmResourceIdParameterValue_params['Id'] = $InputObject.Id
+            Write-Verbose -Message 'Failed to map parameter set to operation method.'
+            throw 'Module failed to find operation to execute.'
         }
-        $ArmResourceIdParameterValues = Get-ArmResourceIdParameterValue @GetArmResourceIdParameterValue_params
-        $fileContainerId = $ArmResourceIdParameterValues['fileContainerId']
-    }
 
-
-    if ('FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'InputObject_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName -or 'ResourceId_FileContainers_Delete' -eq $PsCmdlet.ParameterSetName) {
-        Write-Verbose -Message 'Performing operation DeleteWithHttpMessagesAsync on $DeploymentAdminClient.'
-        $TaskResult = $DeploymentAdminClient.FileContainers.DeleteWithHttpMessagesAsync($FileContainerId)
-    } else {
-        Write-Verbose -Message 'Failed to map parameter set to operation method.'
-        throw 'Module failed to find operation to execute.'
-    }
-
-    if ($TaskResult) {
-        $GetTaskResult_params = @{
-            TaskResult = $TaskResult
-        }
+        if ($TaskResult) {
+            $GetTaskResult_params = @{
+                TaskResult = $TaskResult
+            }
             
-        Get-TaskResult @GetTaskResult_params
+            Get-TaskResult @GetTaskResult_params
         
-    }
+        }
     }
 
     End {

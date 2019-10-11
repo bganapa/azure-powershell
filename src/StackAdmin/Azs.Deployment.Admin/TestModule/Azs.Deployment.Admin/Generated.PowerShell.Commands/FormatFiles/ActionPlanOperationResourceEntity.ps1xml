@@ -14,7 +14,13 @@ Licensed under the MIT License. See License.txt in the project root for license 
             <TableControl>
                 <TableHeaders>
                     <TableColumnHeader>
-                        <Width>60</Width>
+                        <Width>30</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>30</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>30</Width>
                     </TableColumnHeader>
                     <TableColumnHeader/>
                 </TableHeaders>
@@ -23,6 +29,12 @@ Licensed under the MIT License. See License.txt in the project root for license 
                         <TableColumnItems>
                             <TableColumnItem>
                                 <PropertyName>BlobContainerName</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ActionPlanInstanceId</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ActionPlanOperationId</PropertyName>
                             </TableColumnItem>
                             <TableColumnItem>
                                 <PropertyName>ETag</PropertyName>

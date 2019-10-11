@@ -26,8 +26,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     The secret value in a secure string format.
 
 #>
-function New-SecretParametersObject
-{
+function New-SecretParametersObject {
     param(    
         [Parameter(Mandatory = $false)]
         [string]
@@ -50,10 +49,9 @@ function New-SecretParametersObject
         $SecretValue
     )
     
-    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.SecretParameters -ArgumentList @($secretValue,$pfxFileName,$pfxPassword,$symmetricKey,$password)
+    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.SecretParameters -ArgumentList @($secretValue, $pfxFileName, $pfxPassword, $symmetricKey, $password)
 
-    if(Get-Member -InputObject $Object -Name Validate -MemberType Method)
-    {
+    if (Get-Member -InputObject $Object -Name Validate -MemberType Method) {
         $Object.Validate()
     }
 

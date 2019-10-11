@@ -5,23 +5,30 @@ Licensed under the MIT License. See License.txt in the project root for license 
 
 <#
 .SYNOPSIS
-    Parameters for bootstrap action
+    Parameters for deploy action
 
 .DESCRIPTION
-    Parameters for bootstrap action
+    Parameters for deploy action
 
 .PARAMETER Version
     Generic Version object
 
+.PARAMETER Parameters
+    Deployment parameters, value in JToken
+
 #>
-function New-BootStrapActionParametersObject {
+function New-DeployActionParametersObject {
     param(    
         [Parameter(Mandatory = $false)]
         [string]
-        $Version
+        $Version,
+    
+        [Parameter(Mandatory = $false)]
+        [string]
+        $Parameters
     )
     
-    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.BootStrapActionParameters -ArgumentList @($version)
+    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.DeployActionParameters -ArgumentList @($version, $parameters)
 
     if (Get-Member -InputObject $Object -Name Validate -MemberType Method) {
         $Object.Validate()

@@ -14,19 +14,22 @@ Licensed under the MIT License. See License.txt in the project root for license 
             <TableControl>
                 <TableHeaders>
                     <TableColumnHeader>
-                        <Width>20</Width>
+                        <Width>17</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>20</Width>
+                        <Width>17</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>20</Width>
+                        <Width>17</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>20</Width>
+                        <Width>17</Width>
                     </TableColumnHeader>
                     <TableColumnHeader>
-                        <Width>20</Width>
+                        <Width>17</Width>
+                    </TableColumnHeader>
+                    <TableColumnHeader>
+                        <Width>17</Width>
                     </TableColumnHeader>
                     <TableColumnHeader/>
                 </TableHeaders>
@@ -44,6 +47,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
                             </TableColumnItem>
                             <TableColumnItem>
                                 <PropertyName>SubscriptionId</PropertyName>
+                            </TableColumnItem>
+                            <TableColumnItem>
+                                <PropertyName>ProvisioningState</PropertyName>
                             </TableColumnItem>
                             <TableColumnItem>
                                 <PropertyName>StartTime</PropertyName>

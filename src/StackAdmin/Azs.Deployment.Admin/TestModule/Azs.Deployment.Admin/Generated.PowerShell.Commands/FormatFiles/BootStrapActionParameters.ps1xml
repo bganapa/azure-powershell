@@ -7,9 +7,9 @@ Licensed under the MIT License. See License.txt in the project root for license 
 <Configuration>
     <ViewDefinitions>
         <View>
-            <Name>Microsoft.AzureStack.Management.Deployment.Admin.Models.GenericIdentifier</Name>
+            <Name>Microsoft.AzureStack.Management.Deployment.Admin.Models.BootStrapActionParameters</Name>
             <ViewSelectedBy>
-                <TypeName>Microsoft.AzureStack.Management.Deployment.Admin.Models.GenericIdentifier</TypeName>
+                <TypeName>Microsoft.AzureStack.Management.Deployment.Admin.Models.BootStrapActionParameters</TypeName>
             </ViewSelectedBy>
             <TableControl>
                 <TableHeaders>
@@ -19,7 +19,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
                     <TableRowEntry>
                         <TableColumnItems>
                             <TableColumnItem>
-                                <PropertyName>Value</PropertyName>
+                                <PropertyName>Version</PropertyName>
                             </TableColumnItem>
                         </TableColumnItems>
                     </TableRowEntry>

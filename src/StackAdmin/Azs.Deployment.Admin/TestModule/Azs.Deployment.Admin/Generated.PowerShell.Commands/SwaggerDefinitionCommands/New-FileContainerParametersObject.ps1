@@ -17,8 +17,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     Specifies the file post copy action.
 
 #>
-function New-FileContainerParametersObject
-{
+function New-FileContainerParametersObject {
     param(    
         [Parameter(Mandatory = $false)]
         [string]
@@ -30,10 +29,9 @@ function New-FileContainerParametersObject
         $PostCopyAction
     )
     
-    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.FileContainerParameters -ArgumentList @($postCopyAction,$sourceUri)
+    $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.FileContainerParameters -ArgumentList @($postCopyAction, $sourceUri)
 
-    if(Get-Member -InputObject $Object -Name Validate -MemberType Method)
-    {
+    if (Get-Member -InputObject $Object -Name Validate -MemberType Method) {
         $Object.Validate()
     }
 

@@ -159,7 +159,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/actionPlans/{planId}/operations": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/actionPlans/{planId}/operations": {
       "get": {
         "x-ms-examples": {
           "Lists the action plan operations": {
@@ -201,9 +201,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/PlanIdParameter"
           },
           {
@@ -229,7 +226,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/actionPlans/{planId}/operations/{operationId}": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/actionPlans/{planId}/operations/{operationId}": {
       "get": {
         "x-ms-examples": {
           "Gets the specified action plan operation": {
@@ -269,9 +266,6 @@
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/LocationParameter"
           },
           {
             "$ref": "#/parameters/PlanIdParameter"
@@ -553,7 +547,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/bootstrap": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/bootstrap": {
       "post": {
         "x-ms-examples": {
           "Invokes bootstrap action on the product deployment": {
@@ -595,9 +589,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/ProductIdParameter"
           },
           {
@@ -624,7 +615,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/deploy": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/deploy": {
       "post": {
         "x-ms-examples": {
           "Invokes deploy action on the product": {
@@ -666,9 +657,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/ProductIdParameter"
           },
           {
@@ -695,7 +683,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/remove": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/remove": {
       "post": {
         "x-ms-examples": {
           "Invokes remove action on the product deployment": {
@@ -737,9 +725,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/ProductIdParameter"
           },
           {
@@ -763,7 +748,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/rotateSecrets": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/rotateSecrets": {
       "post": {
         "x-ms-examples": {
           "Invokes rotate secrets action on the product deployment": {
@@ -805,9 +790,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/ProductIdParameter"
           },
           {
@@ -831,7 +813,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/unlock": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/unlock": {
       "post": {
         "x-ms-examples": {
           "Unlocks the product subscription": {
@@ -873,9 +855,6 @@
             "$ref": "#/parameters/SubscriptionIdParameter"
           },
           {
-            "$ref": "#/parameters/LocationParameter"
-          },
-          {
             "$ref": "#/parameters/ProductIdParameter"
           },
           {
@@ -898,7 +877,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/{location}/productDeployments/{productId}/lock": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productDeployments/{productId}/lock": {
       "post": {
         "x-ms-examples": {
           "locks the product subscription": {
@@ -938,9 +917,6 @@
         "parameters": [
           {
             "$ref": "#/parameters/SubscriptionIdParameter"
-          },
-          {
-            "$ref": "#/parameters/LocationParameter"
           },
           {
             "$ref": "#/parameters/ProductIdParameter"
@@ -1211,7 +1187,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secret-name}": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secretName}": {
       "get": {
         "x-ms-examples": {
           "Return the product package details.": {
@@ -1261,7 +1237,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secret-name}/import": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secretName}/import": {
       "post": {
         "x-ms-examples": {
           "Updates a product secret.": {
@@ -1315,7 +1291,7 @@
         ]
       }
     },
-    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secret-name}/validate": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Deployment.Admin/locations/global/productSecrets/{productId}/secrets/{secretName}/validate": {
       "post": {
         "x-ms-examples": {
           "Updates a product secret.": {
@@ -1469,7 +1445,7 @@
       "properties": {
         "actionPlanInstanceId": {
           "description": "Action plan instance identifier",
-          "$ref": "#/definitions/GenericIdentifier"
+          "type": "string"
         },
         "blobContainerName": {
           "description": "Blob container name storing the deployment data",
@@ -1481,16 +1457,6 @@
         },
         "eTag": {
           "description": "Entity tag of the resource",
-          "type": "string"
-        }
-      }
-    },
-    "GenericIdentifier": {
-      "description": "Parameters for bootstrap action",
-      "type": "object",
-      "properties": {
-        "value": {
-          "description": "Identifier Value",
           "type": "string"
         }
       }
@@ -1531,7 +1497,7 @@
         },
         "provisioningState": {
           "description": "The provisioning state",
-          "$ref": "#/definitions/ProvisioningState"
+          "type": "string"
         }
       }
     },
@@ -1550,20 +1516,6 @@
         "details": {
           "description": "Error message details",
           "$ref": "#/definitions/ExtendedErrorInfo"
-        }
-      }
-    },
-    "ProvisioningState": {
-      "description": "Provisioning state value",
-      "type": "object",
-      "properties": {
-        "state": {
-          "description": "The provisioning state",
-          "type": "string"
-        },
-        "isTerminal": {
-          "description": "a value indicating whether this instance is terminal",
-          "type": "boolean"
         }
       }
     },
@@ -1589,11 +1541,11 @@
       "properties": {
         "actionPlanInstanceId": {
           "description": "Action plan instance identifier",
-          "$ref": "#/definitions/GenericIdentifier"
+          "type": "string"
         },
         "actionPlanOperationId": {
           "description": "Action plan operation identifier",
-          "$ref": "#/definitions/GenericIdentifier"
+          "type": "string"
         },
         "blobContainerName": {
           "description": "Blob container name storing the deployment data",
@@ -1653,7 +1605,7 @@
         },
         "provisioningState": {
           "description": "The provisioning state",
-          "$ref": "#/definitions/ProvisioningState"
+          "type": "string"
         }
       }
     },
@@ -1693,7 +1645,7 @@
         },
         "provisioningState": {
           "description": "Provisioning state of the resource.",
-          "$ref": "#/definitions/ProvisioningState"
+          "type": "string"
         }
       },
       "allOf": [
@@ -1780,7 +1732,7 @@
       "properties": {
         "version": {
           "description": "Generic Version object",
-          "$ref": "#/definitions/GenericVersion"
+          "type": "string"
         },
         "parameters": {
           "description": "Deployment parameters, value in JToken",
@@ -1794,7 +1746,7 @@
       "properties": {
         "version": {
           "description": "Generic Version object",
-          "$ref": "#/definitions/GenericVersion"
+          "type": "string"
         }
       }
     },
@@ -1804,16 +1756,6 @@
       "properties": {
         "duration": {
           "description": "Duration in TimeSpan format(Define which ISO format)",
-          "type": "string"
-        }
-      }
-    },
-    "GenericVersion": {
-      "description": "Represents a version string",
-      "type": "object",
-      "properties": {
-        "versionString": {
-          "description": "Version string in the format of integers seperated with dots",
           "type": "string"
         }
       }
@@ -1840,7 +1782,7 @@
         },
         "provisioningState": {
           "description": "Provisioning state of the resource.",
-          "$ref": "#/definitions/ProvisioningState"
+          "type": "string"
         }
       },
       "allOf": [
@@ -1920,7 +1862,7 @@
         },
         "provisioningState": {
           "description": "Provisioning state of the resource.",
-          "$ref": "#/definitions/ProvisioningState"
+          "type": "string"
         },
         "secretKind": {
           "description": "Specifies the secret kind.",
@@ -2162,7 +2104,7 @@
       "in": "body",
       "required": true,
       "schema": {
-        "$ref": "#/definitions/GenericVersion"
+        "$ref": "#/definitions/DeployActionParameters"
       },
       "x-ms-parameter-location": "method"
     },
@@ -2176,7 +2118,7 @@
     },
     "SecretNameParameter": {
       "description": "The secret name.",
-      "name": "secret-name",
+      "name": "secretName",
       "in": "path",
       "required": true,
       "type": "string",

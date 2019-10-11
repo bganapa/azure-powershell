@@ -114,4 +114,5 @@ New-PSSwaggerModule `
     -Header MICROSOFT_MIT_NO_CODEGEN `
     -Verbose `
     -CopyUtilityModuleToOutput `
+    -DefaultCommandPrefix Azs `
     -Debug

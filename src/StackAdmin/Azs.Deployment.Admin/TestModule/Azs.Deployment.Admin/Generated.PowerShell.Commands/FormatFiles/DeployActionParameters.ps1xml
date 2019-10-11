@@ -13,11 +13,17 @@ Licensed under the MIT License. See License.txt in the project root for license 
             </ViewSelectedBy>
             <TableControl>
                 <TableHeaders>
+                    <TableColumnHeader>
+                        <Width>60</Width>
+                    </TableColumnHeader>
                     <TableColumnHeader/>
                 </TableHeaders>
                 <TableRowEntries>
                     <TableRowEntry>
                         <TableColumnItems>
+                            <TableColumnItem>
+                                <PropertyName>Version</PropertyName>
+                            </TableColumnItem>
                             <TableColumnItem>
                                 <PropertyName>Parameters</PropertyName>
                             </TableColumnItem>

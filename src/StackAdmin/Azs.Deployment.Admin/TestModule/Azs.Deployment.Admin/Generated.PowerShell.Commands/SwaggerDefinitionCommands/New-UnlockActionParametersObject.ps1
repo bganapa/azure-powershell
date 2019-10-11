@@ -14,8 +14,7 @@ Licensed under the MIT License. See License.txt in the project root for license 
     Duration in TimeSpan format(Define which ISO format)
 
 #>
-function New-UnlockActionParametersObject
-{
+function New-UnlockActionParametersObject {
     param(    
         [Parameter(Mandatory = $false)]
         [string]
@@ -24,8 +23,7 @@ function New-UnlockActionParametersObject
     
     $Object = New-Object -TypeName Microsoft.AzureStack.Management.Deployment.Admin.Models.UnlockActionParameters -ArgumentList @($duration)
 
-    if(Get-Member -InputObject $Object -Name Validate -MemberType Method)
-    {
+    if (Get-Member -InputObject $Object -Name Validate -MemberType Method) {
         $Object.Validate()
     }
 
